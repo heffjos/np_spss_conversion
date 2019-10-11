@@ -97,7 +97,7 @@ compare_counts <- counts_all %>%
 # write each form_name out individually
 nested_form_names <- data_long %>%
   select(-key) %>%
-  nest(-form_name) %>%
+  nest_legacy(-form_name) %>%
   mutate(data = map(data, spread, redcap, value),
          data = map(data, filter_at, vars(-record_id, -redcap_repeat_instance), any_vars(!is.na(.))))
 
