@@ -27,7 +27,9 @@ name_mapper = c(
   "HVLT_MemProfile_MixedExplained" = "hvlt_memprofile_mixedexplained_1",
   "letfluency_ver" = "letfluency_ver_1",
   "trails_ver" = "trails_ver_1",
-  "wcst_ver" = "wcst_ver_1")
+  "wcst_ver" = "wcst_ver_1",
+  "NpsyDate_1" = "np_date_1",
+  "Date_BL" = "np_date_BL")
 
 data_dictionary_file <- "clinical_data_dictionary_latest.csv"
 
