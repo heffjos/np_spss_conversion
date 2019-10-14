@@ -93,6 +93,8 @@ counts_values <- data_long %>%
 
 # this is important; show this variable to people
 # missing values in has_values mean zero of those variables were filed for that instance
+# displays the number of variables for that instance and form
+# displays the variables with values for that instance and form
 compare_counts <- counts_all %>%
   left_join(counts_values, by = c("form_name", "redcap_repeat_instance"))
 
