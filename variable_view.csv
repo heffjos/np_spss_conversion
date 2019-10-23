@@ -1,0 +1,1817 @@
+Filter1,Numeric,8,2,EUlmer_INS,None,None,8,Right,Nominal,Input
+subjectID,Restricted Numeric,4,0,"Patient ID Number, see Master Identification Log to re-identify",None,None,11,Right,Nominal,Input
+LastName,String,20,0,,None,None,8,Left,Nominal,Input
+FirstName,String,20,0,,None,None,8,Left,Nominal,Input
+NpsyDate_1,Date,10,0,Date of 1st neuropsychological eval that corresponds to NeuroReader,None,None,8,Right,Nominal,Input
+MRN,Numeric,8,0,,None,None,8,Right,Nominal,Input
+DOB,Date,10,0,,None,None,8,Right,Nominal,Input
+Include_JakBondi,Numeric,8,0,Include or Exclude in JakBondi MCI study for AACN 2019,"{0, Exclude}...",None,8,Right,Nominal,Input
+JakBondi_MCI_AmnesticvsNonamnestic,Numeric,8,2,Categorization of MCI type (Jak and Bondi criteria) Amnestic vs Nonamnestic NE,"{.00, Amnestic}...",None,16,Right,Nominal,Input
+JakBondi_MCI_type,Numeric,8,2,Categorization of MCI type (Jak and Bondi criteria) NE,"{.00, aMCI, single}...",None,14,Right,Nominal,Input
+JakBondi_Domains,String,49,0,Specific domains affected when using Jak/Bondi MCI criteria,None,None,10,Left,Nominal,Input
+Petersen_AmnesticvsNonamnestic,Numeric,8,2,Categorization of MCI type (Petersen criteria) Amnestic vs Nonamnestic NE,"{.00, Amnestic}...",None,19,Right,Nominal,Input
+PetersenMCItype,Numeric,7,2,Categorization of MCI type (Petersen criteria) NE,"{.00, aMCI, single}...",None,9,Right,Nominal,Input
+PetersenMCI_Domains,String,46,0,Specific domains affected when using Petersen MCI criteria,None,None,11,Left,Nominal,Input
+Petersen_Amnestic_NonAmnestic_KR,Numeric,8,2,,"{.00, Amnestic}...",None,14,Right,Nominal,Input
+PetersenMCI_Memory,Numeric,8,2,,"{.00, Normal Memory}...",None,8,Right,Nominal,Input
+PetersenMCI_Attention,Numeric,8,2,,"{.00, Normal Attention}...",None,8,Right,Nominal,Input
+PetersenMCI_Language,Numeric,8,2,,"{.00, Normal Language}...",None,8,Right,Nominal,Input
+PetersenMCI_EF,Numeric,8,2,,"{.00, Normal EF}...",None,8,Right,Nominal,Input
+PetersenMCI_Visuospatial,Numeric,8,2,,"{.00, Normal Visuospatial}...",None,8,Right,Nominal,Input
+datadoublecheck,Numeric,8,2,Actual NeuroReader and NP test results confirmed or corrected for time 1,"{.00, No}...",None,19,Right,Nominal,Input
+notes,String,800,0,,None,None,50,Left,Nominal,Input
+Amnestic,Numeric,8,2,from data entry by Kate and Laura (?) for INS,"{.00, Amnestic}...",None,8,Right,Nominal,Input
+Domains,Numeric,8,2,from data entry by Kate and Laura (?) for INS,"{.00, Single Domain}...",None,8,Right,Nominal,Input
+MCItype,Numeric,8,2,from data entry by Kate and Laura (?) for INS,"{.00, aMCI, single}...",None,8,Right,Nominal,Input
+NP_provider_1,Numeric,8,2,NP Provider at time 1,"{1.00, Umfleet}...",None,8,Right,Nominal,Input
+effort_1,Numeric,8,2,did the neuropsychologist conclude that results were invalid due to poor effort?,"{.00, no, NP profile considered valid}...",None,8,Right,Nominal,Input
+etiology_lu_1,Numeric,8,2,etiology clear or presumed,"{.00, AD}...",None,34,Right,Nominal,Input
+etiology_1_NPsy,Numeric,40,0,etiology of neurobehavioral syndrome as stated in NP report at time 1,"{0, AD}...",None,13,Right,Nominal,Input
+etiology_NPsy_Explained,String,800,0,Etiology explained,None,None,87,Left,Nominal,Input
+neurobehav_1,Numeric,8,2,Neurobehavioral syndrome per neuropsychologist time 1,"{.00, Normal}...",None,27,Right,Nominal,Input
+data_entry_ambiguities,String,800,0,Information not explicitly stated in record or report but deduced from other information,None,None,51,Left,Nominal,Input
+ed_yrs,Numeric,8,2,Years of education,None,None,8,Right,Scale,Input
+ed_level,Numeric,8,2,Level of education,"{.00, 8th grade or less}...",None,9,Right,Nominal,Input
+devel_hx,Numeric,8,2,History of developmental delay,"{.00, No}...",None,8,Right,Nominal,Input
+devel_hx_explained,String,800,0,"Description of developmental delay (e.g., LD type, ADHD, other neurodevelopmental disorder)",None,None,8,Left,Nominal,Input
+sex,Numeric,8,2,Sex,"{.00, Male}...",None,8,Right,Nominal,Input
+race,Numeric,8,2,Race,"{.00, Caucasian}...",None,8,Right,Nominal,Input
+hand,Numeric,8,2,Handedness,"{.00, RH}...",None,8,Right,Nominal,Input
+employ_1,Numeric,8,2,Employment status,"{.00, Full-time}...",None,8,Right,Nominal,Input
+occup_1,String,200,0,Occupation,None,None,49,Left,Nominal,Input
+occup_categories,Numeric,8,2,Occupation categories,"{.00, Homemaker}...",None,26,Right,Nominal,Input
+occup_recat_homemaker,Numeric,8,2,"Occupation categories, homemaker recategorized","{1.00, Manual}...",None,8,Right,Nominal,Input
+marital_1,Numeric,8,2,Marital status,"{.00, Single}...",None,8,Right,Nominal,Input
+lang_first,Numeric,8,2,First language,"{.00, English}...",None,8,Right,Nominal,Input
+lang_fluency,Numeric,8,2,Fluent in other language?,"{.00, No}...",None,8,Right,Nominal,Input
+lang_sec,String,20,0,Secondary language,"{0, English}...",None,8,Left,Nominal,Input
+cog_onset_1,Numeric,8,2,Age of onset of cognitive decline,None,None,8,Right,Scale,Input
+cog_course_1,Numeric,8,2,Course of cognitive problems,"{.00, Gradual}...",None,8,Right,Nominal,Input
+cog_onset_report,Numeric,8,2,who reported onset and course of cognitive problems,"{.00, patient only}...",None,8,Right,Nominal,Input
+diabetes_1,Numeric,8,2,Diabetes,"{.00, No}...",None,8,Right,Nominal,Input
+hypertension_1,Numeric,8,2,Hypertension,"{.00, No}...",None,8,Right,Nominal,Input
+cva_1,Numeric,8,2,Cerebrovascular accident,"{.00, No}...",None,8,Right,Nominal,Input
+cholesterol_1,Numeric,8,2,High cholesterol,"{.00, No}...",None,8,Right,Nominal,Input
+cad_1,Numeric,8,2,Coronary artery disease,"{.00, No}...",None,8,Right,Nominal,Input
+VascularRisksPresent,Numeric,8,2,"Presence of any vascular risks (Diabetes, HTN, CVA, cholesterol, CAD)","{.00, no}...",None,8,Right,Nominal,Input
+VascularRisks_Number,Numeric,8,2,Number of vascular risks,None,None,8,Right,Nominal,Input
+thyroid_1,Numeric,8,2,,"{.00, hypothyroidism}...",None,8,Right,Nominal,Input
+tbi_1,Numeric,8,2,history of mild Traumatic brain injury,"{.00, No}...",None,8,Right,Nominal,Input
+tumor_1,Numeric,8,2,Brain tumor,"{.00, No}...",None,8,Right,Nominal,Input
+other_neurol_1,Numeric,8,2,Other neurologic problems,"{.00, No}...",None,13,Right,Nominal,Input
+other_neurol_prob_1,String,1000,0,Description of other neurologic problems,None,None,12,Left,Nominal,Input
+neurologytx_1,Numeric,8,2,is patient treated by neurologist,"{.00, yes}...",None,8,Right,Nominal,Input
+famhx_dem_1,Numeric,8,3,Family history of dementia,"{.000, No}...",None,13,Right,Nominal,Input
+famhx_rel_1,Numeric,8,2,Immediate fam hx of dementia,"{.00, None}...",None,8,Right,Nominal,Input
+famhx_demtype_1,Numeric,8,2,Family history of dementia: type of dementia,"{.00, AD}...",None,12,Right,Nominal,Input
+famhx_demtype_explained_1,String,500,0,,None,None,8,Left,Nominal,Input
+famhx_onset_1,Numeric,8,2,Family history age of onset,"{.00, <50}...",None,8,Right,Nominal,Input
+famhx_onset_explained_1,String,500,0,,None,None,8,Left,Nominal,Input
+psydx_1,Numeric,8,2,Psychiatric diagnosis time 1,"{.00, No diagnosis}...",None,18,Right,Nominal,Input
+traumahx_1,Numeric,8,2,History of trauma,"{.00, No}...",None,8,Right,Nominal,Input
+premorbidpsych_1,Numeric,8,2,premorbid psychiatric history,"{.00, no}...",None,8,Right,Nominal,Input
+premorbidpsych_description_1,String,10000,0,description of premorbid psychiatric history time 1,None,None,10,Left,Nominal,Input
+rx_mem_1,Numeric,8,2,Prescription for memory medication time 1,"{.00, No}...",None,17,Right,Nominal,Input
+rm_memname_1,Numeric,20,0,Name of memory medication time 1,"{0, namenda}...",None,15,Right,Nominal,Input
+rx_thyroid_1,Numeric,8,2,prescription for hypo or hyperthyroidism,"{.00, no}...",None,8,Right,Nominal,Input
+rx_antidep_1,Numeric,8,2,Prescription for antidepressant medication time 1,"{.00, No}...",None,7,Right,Nominal,Input
+rx_anx_1,Numeric,8,2,Prescription for anxiolytic medication time 1,"{.00, No}...",None,8,Right,Nominal,Input
+rx_antipsy_1,Numeric,8,2,Prescription for antipsychotic medication time 1,"{.00, No}...",None,8,Right,Nominal,Input
+mood_curr_1,Numeric,8,2,Current mood problems per report during intake time 1,"{.00, No}...",None,8,Right,Nominal,Input
+therapy_1,Numeric,8,2,current psychotherapy time 1,"{.00, No}...",None,8,Right,Nominal,Input
+priortx_1,Numeric,8,2,Prior mental health tx,"{.00, No}...",None,8,Right,Nominal,Input
+suicide_1,Numeric,8,2,Current suicidal ideation time 1,"{.00, No}...",None,8,Right,Nominal,Input
+psychosis_1,Numeric,8,2,Current psychosis time 1,"{.00, No}...",None,8,Right,Nominal,Input
+psychosistype_1,Numeric,8,2,,"{.00, none}...",None,14,Right,Nominal,Input
+sleep_1,Numeric,8,2,Current sleep problems time 1,"{.00, No}...",None,8,Right,Nominal,Input
+OSAtx_1,Numeric,8,2,"If have OSA, is it being treated?","{.00, No}...",None,8,Right,Nominal,Input
+sleep_med_1,Numeric,8,2,Sleep medication time 1,"{.00, No}...",None,8,Right,Nominal,Input
+appetite_1,Numeric,8,2,Appetite changes time 1,"{.00, No}...",None,8,Right,Nominal,Input
+etoh_abuse_1,Numeric,8,2,Alcohol abuse time 1,"{.00, None}...",None,8,Right,Nominal,Input
+etoh_drinks_1,Numeric,8,2,Number of drinks time 1,"{.00, None}...",None,8,Right,Nominal,Input
+tobacco_1,Numeric,8,2,Tobacco use time 1,"{.00, None}...",None,8,Right,Nominal,Input
+drug_1,Numeric,8,2,Recreational drug use time 1,"{.00, None}...",None,8,Right,Nominal,Input
+drug_type_1,Numeric,20,0,Recreational drug use - drug type time 1,"{0, No}...",None,8,Right,Nominal,Input
+drug_name_1,String,50,0,Recreational drug use - drug name time 1,None,None,8,Left,Nominal,Input
+famhx_psy_1,Numeric,8,2,Family history of psychiatric problems,"{.00, No}...",None,8,Right,Nominal,Input
+famhx_psyrel_1,Numeric,8,2,Family history of psychiatric: relative,"{.00, None}...",None,11,Right,Nominal,Input
+Outside_Neuropsych_1,Date,10,0,Date of outside neuropsych testing done,None,None,8,Right,Scale,Input
+declinefromoutsideeval_1,Numeric,8,2,cognitive decline compared to outside NP eval,"{.00, no}...",None,8,Right,Nominal,Input
+neuroim,Numeric,8,2,Neuroimaging,"{.00, No}...",None,8,Right,Nominal,Input
+FDGPET,Date,10,0,enter date,None,None,8,Right,Scale,Input
+PET_amyvid,Date,10,0,PET amyvid date,None,None,8,Right,Scale,Input
+PET_result,Numeric,8,2,positive or neg for amyvid,"{.00, negative}...",None,8,Right,Nominal,Input
+APOE,Numeric,8,2,apoe e4 status,"{.00, not in records}...",None,8,Right,Nominal,Input
+neuroim_type,Numeric,8,2,Type of neuroimaging,"{.00, CT}...",None,8,Right,Nominal,Input
+ct_date,Date,10,0,Date of CT,None,None,8,Right,Scale,Input
+ct_ab,Numeric,8,2,CT normal or abnormal,"{.00, Normal}...",None,8,Right,Nominal,Input
+ct_atrophy,Numeric,8,2,CT findings: atrophy,"{.00, None}...",None,8,Right,Nominal,Input
+ct_vent,Numeric,8,2,CT: enlarged lateral ventricles,"{.00, Normal}...",None,8,Right,Nominal,Input
+ct_vasc,Numeric,8,2,CT: vascular,"{.00, None}...",None,8,Right,Nominal,Input
+ct_other,String,100,0,CT: other,None,None,8,Left,Nominal,Input
+mri_date,Date,10,0,Date of MRI,None,None,8,Right,Scale,Input
+mri_ab,Numeric,8,2,MRI normal or abnormal,"{.00, Normal}...",None,8,Right,Nominal,Input
+mri_atrophy,Numeric,8,2,MRI: atrophy,"{.00, None}...",None,8,Right,Nominal,Input
+mri_hippatro,Numeric,8,2,MRI: hippocampal atrophy,"{.00, None}...",None,8,Right,Nominal,Input
+mri_hippscler,Numeric,8,2,MRI: hippocampal sclerosis,"{.00, None}...",None,8,Right,Nominal,Input
+mri_vascular,Numeric,8,2,MRI: vascular,"{.00, None}...",None,8,Right,Nominal,Input
+mri_wm,Numeric,8,2,MRI: white matter changes,"{.00, None}...",None,8,Right,Nominal,Input
+mri_tumor,Numeric,8,2,MRI: tumor,"{.00, None}...",None,8,Right,Nominal,Input
+mri_date_2,Date,10,0,Date of MRI,None,None,8,Right,Scale,Input
+mri_ab_2,Numeric,8,2,MRI normal or abnormal,"{.00, Normal}...",None,8,Right,Nominal,Input
+mri_atrophy_2,Numeric,8,2,MRI: atrophy,"{.00, None}...",None,8,Right,Nominal,Input
+mri_hippatro_2,Numeric,8,2,MRI: hippocampal atrophy,"{.00, None}...",None,8,Right,Nominal,Input
+mri_hippscler_2,Numeric,8,2,MRI: hippocampal sclerosis,"{.00, None}...",None,8,Right,Nominal,Input
+mri_vascular_2,Numeric,8,2,MRI: vascular,"{.00, None}...",None,8,Right,Nominal,Input
+mri_wm_2,Numeric,8,2,MRI: white matter changes,"{.00, None}...",None,8,Right,Nominal,Input
+mri_tumor_2,Numeric,8,2,MRI: tumor,"{.00, None}...",None,8,Right,Nominal,Input
+age_1,Numeric,8,2,Age at first Neuropsych eval within 1 year of NeuroReader,None,None,8,Right,Scale,Input
+Addenbrookedate_1,Date,10,0,date of addenbrooke within 12 months of 1st neuroreader (usually documented in neurology visit),None,None,8,Right,Nominal,Input
+Addenbrooke_tot_1,Numeric,8,2,overall addenbrooke score time 1,None,None,8,Right,Scale,Input
+Addenbrooke_MMSE_1,Numeric,8,2,MMSE subscale derived from Addenbrooke time 1,None,None,8,Right,Scale,Input
+Addenbrooke_Attn_1,Numeric,8,2,insert addenbrooke Attention subscale here time 1,None,None,8,Right,Scale,Input
+Addenbrooke_Mem_1,Numeric,8,2,insert Memory subscale here time 1,None,None,8,Right,Scale,Input
+Addenbrooke_Fluency_1,Numeric,8,2,insert Fluency subscale here time 1,None,None,8,Right,Scale,Input
+Addenbrooke_Lang_1,Numeric,8,2,insert Language subscale here time 1,None,None,8,Right,Scale,Input
+Addenbrooke_Visuo_1,Numeric,8,2,insert Visuospatial subscale here time 1,None,None,8,Right,Scale,Input
+wms_io_raw_1,Numeric,8,2,WMS Info/Orientation raw score,None,None,11,Right,Scale,Input
+wms_io_per_1,Numeric,8,2,WMS Info/Orientation percentile,None,None,8,Right,Scale,Input
+moca_1_date,Date,10,0,Date of MoCA if different than NP testing date,None,None,8,Right,Scale,Input
+moca_1,Numeric,8,2,Montreal Cognitive Assessment at time 1,None,None,8,Right,Scale,Input
+wais_ver_1,Numeric,8,2,WAIS version,"{.00, WAIS-3}...",None,8,Right,Nominal,Input
+fsiq_1,Numeric,8,2,Full Scale IQ (SS),None,None,8,Right,Scale,Input
+vci_1,Numeric,8,2,Verbal Comprehension Index (SS),None,None,8,Right,Scale,Input
+sim_raw_1,Numeric,8,2,Similarities raw score,None,None,8,Right,Scale,Input
+sim_ss_1,Numeric,8,2,Similarities scaled score,None,None,8,Right,Scale,Input
+voc_raw_1,Numeric,8,2,Vocabulary raw score,None,None,8,Right,Scale,Input
+voc_ss_1,Numeric,8,2,Vocabulary scaled score,None,None,8,Right,Scale,Input
+in_raw_1,Numeric,8,2,Information raw score,None,None,8,Right,Scale,Input
+in_ss_1,Numeric,8,2,Information scaled score,None,None,8,Right,Scale,Input
+pri_1,Numeric,8,2,Perceptual Reasoning Index,None,None,8,Right,Scale,Input
+bd_raw_1,Numeric,8,2,Block Design raw score,None,None,8,Right,Scale,Input
+bd_ss_1,Numeric,8,2,Block Design scaled score,None,None,8,Right,Scale,Input
+mr_raw_1,Numeric,8,2,Matrix Reasoning raw score,None,None,8,Right,Scale,Input
+mr_ss_1,Numeric,8,2,Matrix Reasoning scaled score,None,None,8,Right,Scale,Input
+vp_raw_1,Numeric,8,2,Visual Puzzles raw score,None,None,8,Right,Scale,Input
+vp_ss_1,Numeric,8,2,Visual Puzzles scaled score,None,None,8,Right,Scale,Input
+wmi_1,Numeric,8,2,Working Memory Index,None,None,8,Right,Scale,Input
+dsp_raw_1,Numeric,8,2,Digit Span raw score,None,None,8,Right,Scale,Input
+dsp_ss_1,Numeric,8,2,Digit Span scaled score,None,None,8,Right,Scale,Input
+ar_raw_1,Numeric,8,2,Arithmetic raw score,None,None,8,Right,Scale,Input
+ar_ss_1,Numeric,8,2,Arithmetic scaled score,None,None,8,Right,Scale,Input
+psi_1,Numeric,8,2,Processing Speed Index,None,None,8,Right,Scale,Input
+ss_raw_1,Numeric,8,2,Symbol Search raw score,None,None,8,Right,Scale,Input
+ss_ss_1,Numeric,8,2,Symbol Search scaled score,None,None,8,Right,Scale,Input
+cd_raw_1,Numeric,8,2,Coding raw score,None,None,8,Right,Scale,Input
+cd_ss_1,Numeric,8,2,Coding scaled score,None,None,8,Right,Scale,Input
+wms_ver_1,Numeric,8,2,WMS version,"{.00, WMS-3}...",None,8,Right,Nominal,Input
+LM_ver_1,Numeric,8,2,Logical Memory version,"{.00, Adult}...",None,8,Right,Nominal,Input
+LMI_raw_1,Numeric,8,2,Logical Memory I raw score,None,None,8,Right,Scale,Input
+LMI_ss_1,Numeric,8,2,Logical Memory I standard score,None,None,8,Right,Scale,Input
+LMII_raw_1,Numeric,8,2,Logical Memory II raw score,None,None,8,Right,Scale,Input
+LMII_ss_1,Numeric,8,2,Logical Memory II standard score,None,None,8,Right,Scale,Input
+LMrec_raw_1,Numeric,8,2,Logical Memory recognition raw score,None,None,8,Right,Scale,Input
+LMrec_per_1,Numeric,8,2,Logical Memory recognition percentile,"{.00, <2}...",None,8,Right,Nominal,Input
+VPAI_raw_1,Numeric,8,2,Verbal Paired Associates I raw score,None,None,8,Right,Scale,Input
+VPAI_ss_1,Numeric,8,2,Verbal Paired Associates I scaled score,None,None,8,Right,Scale,Input
+VPAII_raw_1,Numeric,8,2,Verbal Paired Associates II raw score,None,None,8,Right,Scale,Input
+VPAII_ss_1,Numeric,8,2,Verbal Paired Associates II scaled score,None,None,8,Right,Scale,Input
+VPArec_raw_1,Numeric,8,2,Verbal Paired Associates recognition raw score,None,None,8,Right,Scale,Input
+VPArec_perc_1,Numeric,8,2,Verbal Paired Associates recognition percentile,"{.00, <2}...",None,8,Right,Nominal,Input
+VRI_raw_1,Numeric,8,2,Visual Reproduction I raw score,None,None,8,Right,Scale,Input
+VRI_ss_1,Numeric,8,2,Visual Reproduction I standard score,None,None,8,Right,Scale,Input
+VRII_raw_1,Numeric,8,2,Visual Reproduction II raw score,None,None,8,Right,Scale,Input
+VRII_ss_1,Numeric,8,2,Visual Reproduction II standard score,None,None,8,Right,Scale,Input
+VRrec_raw_1,Numeric,8,2,Visual Reproduction recognition raw score,None,None,8,Right,Scale,Input
+VRrec_per_1,Numeric,8,2,Visual Reproduction recognition percentile,"{.00, <2}...",None,8,Right,Nominal,Input
+VRcopy_raw_1,Numeric,8,2,Visual Reproduction Copy trial raw score,None,None,8,Right,Scale,Input
+VRcopy_perc_1,Numeric,8,2,Visual Reproduction Copy trial percentile,"{.00, <2}...",None,8,Right,Nominal,Input
+hvlt_form_1,Numeric,8,2,list hvlt form here,"{1.00, form 1}...",None,8,Right,Nominal,Input
+hvlt_tot_raw_1,Numeric,8,2,HVLT total recall raw score,None,None,4,Right,Scale,Input
+hvlt_tot_ss_1,Numeric,8,2,HVLT total recall standard score,None,None,8,Right,Scale,Input
+hvlt_tot_per_1,Numeric,8,2,HVLT total recall perseverations,None,None,8,Right,Scale,Input
+hvlt_tot_int_1,Numeric,8,2,HVLT total recall intrusions,None,None,6,Right,Scale,Input
+hvlt_delay_raw_1,Numeric,8,2,HVLT delayed recall raw score,None,None,8,Right,Scale,Input
+hvlt_delay_ss_1,Numeric,8,2,HVLT delayed recall standard score,None,None,8,Right,Scale,Input
+hvlt_perc_raw_1,Numeric,8,2,HVLT percent retention raw score,None,None,8,Right,Scale,Input
+hvlt_perc_ss_1,Numeric,8,2,HVLT percent retention standard score,None,None,7,Right,Scale,Input
+hvlt_disc_raw_1,Numeric,8,2,HVLT discrimination index raw score,None,None,8,Right,Scale,Input
+hvlt_disc_ss_1,Numeric,8,2,HVLT discrimination index standard score,None,None,8,Right,Scale,Input
+HVLT_MemProfile,Numeric,8,2,,"{.00, Normal Memory}...",None,25,Right,Nominal,Input
+WordListMemProfile2,Numeric,8,2,Word List Memory Profile,"{.00, Normal Memory}...",None,36,Right,Nominal,Input
+cvlt_form_1,Numeric,8,2,CVLT-II form,"{.00, STD}...",None,8,Right,Nominal,Input
+cvlt_tot_raw_1,Numeric,8,2,CVLT-II total recall raw score,None,None,8,Right,Scale,Input
+cvlt_tot_ss_1,Numeric,8,2,CVLT-II total recall standard score,None,None,8,Right,Scale,Input
+cvlt_sdelayfree_raw_1,Numeric,8,2,CVLT-II short delay free recall raw score,None,None,8,Right,Scale,Input
+cvlt_sdelayfree_ss_1,Numeric,8,2,CVLT-II short delay free recall standard score,None,None,8,Right,Scale,Input
+cvlt_sdelaycued_raw_1,Numeric,8,2,CVLT-II short delay cued recall raw score,None,None,8,Right,Scale,Input
+cvlt_sdelaycued_ss_1,Numeric,8,2,CVLT-II short delay cued recall standard score,None,None,8,Right,Scale,Input
+cvlt_ldelayfree_raw_1,Numeric,8,2,CVLT-II long delay free recall raw score,None,None,8,Right,Scale,Input
+cvlt_ldelayfree_ss_1,Numeric,8,2,CVLT-II long delay free recall standard score,None,None,8,Right,Scale,Input
+cvlt_ldelaycued_raw_1,Numeric,8,2,CVLT-II long delay cued recall raw score,None,None,8,Right,Scale,Input
+cvlt_ldelaycued_ss_1,Numeric,8,2,CVLT-II long delay cued recall standard score,None,None,8,Right,Scale,Input
+cvlt_recogdisc_raw_1,Numeric,8,2,CVLT-II recognition discriminability raw score,None,None,8,Right,Scale,Input
+cvlt_recogdisc_ss_1,Numeric,8,2,CVLT-II recognition discriminability standard score,None,None,8,Right,Scale,Input
+cvlt_fcrecog_perc_1,Numeric,8,2,CVLT-II forced choice recognition percent correct,None,None,8,Right,Scale,Input
+BVMT_form_1,Numeric,8,2,BVMT-R form at time 1,"{1.00, FM-1}...",None,8,Right,Nominal,Input
+BVMT_tot_raw_1,Numeric,8,2,BVMT-R Total Recall raw score,None,None,8,Right,Scale,Input
+BVMT_tot_ss_1,Numeric,8,2,BVMT-R Total Recall standard score,None,None,8,Right,Scale,Input
+BVMT_delay_raw_1,Numeric,8,2,BVMT-R Delayed Recall raw score,None,None,8,Right,Scale,Input
+BVMT_delay_ss_1,Numeric,8,2,BVMT-R Delayed Recall standard score,None,None,8,Right,Scale,Input
+BVMT_rec_raw_1,Numeric,8,2,BVMT-R Discrimination Index raw score,None,None,8,Right,Scale,Input
+BVMT_rec_perc_1,Numeric,8,2,BVMT-R Discrimination Index percentile,"{.00, <2}...",None,8,Right,Nominal,Input
+bnt_ver_1,Numeric,8,2,Boston Naming Test version,"{.00, Full}...",None,8,Right,Nominal,Input
+bnt_raw_1,Numeric,8,2,Boston Naming raw score,None,None,8,Right,Scale,Input
+bnt_ss_1,Numeric,8,2,Boston Naming standard score,None,None,8,Right,Scale,Input
+bdae_CIM_raw_1,Numeric,8,2,BDAE Complex Ideational Material raw score,None,None,8,Right,Scale,Input
+bdae_CIM_ss_1,Numeric,8,2,BDAE Complex Ideational Material standard score,None,None,8,Right,Scale,Input
+bdae_RS_raw_1,Numeric,8,2,BDAE Repetition of Sentences raw score,None,None,8,Right,Scale,Input
+bdae_RN_raw_1,Numeric,8,2,BDAE Response Naming raw score,None,None,8,Right,Scale,Input
+bdae_RN_class_1,Numeric,8,2,BDAE Response Naming classification,"{.00, WNL}...",None,8,Right,Nominal,Input
+bdae_CT_raw_1,Numeric,8,2,BDAE Picture Description: Cookie Theft (Written) raw score,None,None,8,Right,Scale,Input
+bdae_SP_raw_1,Numeric,8,2,BDAE Semantic Probe raw score,None,None,8,Right,Scale,Input
+bdae_praxis_NG_raw_1,Numeric,8,2,BDAE Praxis Natural Gestures raw score,None,None,8,Right,Scale,Input
+bdae_praxis_CG_raw_1,Numeric,8,2,BDAE Praxis Conventional Gestures raw score,None,None,8,Right,Scale,Input
+bdae_praxis_UPO_raw_1,Numeric,8,2,BDAE Praxis Use of Pretended Objects raw score,None,None,8,Right,Scale,Input
+bdae_praxis_BFRM_raw_1,Numeric,8,2,BDAE Praxis Bucco-Facial/Respiratory Movements raw score,None,None,8,Right,Scale,Input
+bdae_WC_raw_1,Numeric,8,2,BDAE Word Comprehension (Body Parts) raw score,None,None,8,Right,Scale,Input
+wratread_form_1,Numeric,8,2,WRAT-4 Word Reading form at time 1,"{1.00, Blue}...",None,8,Right,Nominal,Input
+wratread_raw_1,Numeric,8,2,WRAT-4 Word Reading raw score,None,None,8,Right,Scale,Input
+wratread_ss_1,Numeric,8,2,WRAT-4 Word Reading standard score,None,None,8,Right,Scale,Input
+wratread_ss_MissingData,Numeric,8,2,WRAT-4 Word Reading standard score with missing data from prior evals,None,None,8,Right,Scale,Input
+WJIII_WA_raw_1,Numeric,8,2,WJ-III Word Attack raw score,None,None,8,Right,Scale,Input
+WJIII_WA_ss_1,Numeric,8,2,WJ-III Word Attack standard score,None,None,8,Right,Scale,Input
+clock_score_1,Numeric,8,2,Clock Drawing score,None,None,8,Right,Scale,Input
+clock_time_1,Numeric,8,2,Clock drawn with hands at 10 to 11,"{.00, No}...",None,8,Right,Nominal,Input
+clock_class_1,Numeric,8,2,Clock Drawing classification,"{.00, WNL}...",None,8,Right,Nominal,Input
+JLO_form_1,Numeric,8,2,JLO Form/Version,"{1.00, H}...",None,8,Right,Nominal,Input
+JLO_raw_1,Numeric,8,2,JLO raw score,None,None,8,Right,Scale,Input
+JLO_ss_1,Numeric,8,2,JLO standard score,None,None,8,Right,Scale,Input
+sdmt_writ_raw_1,Numeric,8,2,Symbol Digit Modalities Test written raw score,None,None,8,Right,Scale,Input
+sdmt_writ_ss_1,Numeric,8,2,Symbol Digit Modalities Test written standard score,None,None,8,Right,Scale,Input
+sdmt_oral_raw_1,Numeric,8,2,Symbol Digit Modalities Test oral raw score,None,None,8,Right,Scale,Input
+sdmt_oral_ss_1,Numeric,8,2,Symbol Digit Modalities Test oral standard score,None,None,8,Right,Scale,Input
+PASAT_form_1,Numeric,8,2,PASAT Form,"{.00, A}...",None,8,Right,Nominal,Input
+PASAT_3srate_raw_1,Numeric,8,2,"PASAT 3"" rate raw score",None,None,8,Right,Scale,Input
+PASAT_3srate_ss_1,Numeric,8,2,"PASAT 3"" rate standard score",None,None,8,Right,Scale,Input
+PASAT_2srate_raw_1,Numeric,8,2,"PASAT 2"" rate raw score",None,None,8,Right,Scale,Input
+PASAT_2srate_ss_1,Numeric,8,2,"PASAT 2"" rate standard score",None,None,8,Right,Scale,Input
+CPT3_disc_ss_1,Numeric,8,2,CPT3 Detectability scaled score,None,None,8,Right,Scale,Input
+CPT3_detect_class_1,Numeric,8,2,CPT3 Detectability classification,"{.00, Good detection}...",None,8,Right,Nominal,Input
+CPT3_omis_ss_1,Numeric,8,2,CPT3 Omissions standard score,None,None,8,Right,Scale,Input
+CPT3_omis_class_1,Numeric,8,2,CPT3 Omissions classification,"{.00, Low error rate}...",None,8,Right,Nominal,Input
+CPT3_comis_ss_1,Numeric,8,2,CPT3 Commissions standard score,None,None,8,Right,Scale,Input
+CPT3_comis_class_1,Numeric,8,2,CPT3 Commissions classification,"{.00, Low error rate}...",None,8,Right,Nominal,Input
+CPT3_per_ss_1,Numeric,8,2,CPT3 Perseverations standard score,None,None,8,Right,Scale,Input
+CPT3_per_class_1,Numeric,8,2,CPT3 Perseverations classification,"{.00, Low rate of persev}...",None,8,Right,Nominal,Input
+CPT3_HRT_ss_1,Numeric,8,2,CPT3 HRT standard score,None,None,8,Right,Scale,Input
+CPT3_HRT_class_1,Numeric,8,2,CPT3 HRT classification,"{.00, Atypically fast*}...",None,8,Right,Nominal,Input
+CPT3_HRTSD_ss_1,Numeric,8,2,CPT3 HRT SD standard score,None,None,8,Right,Scale,Input
+CPT3_HRTSD_class_1,Numeric,8,2,CPT3 HRT SD classification,"{.00, Good consistency}...",None,8,Right,Nominal,Input
+CPT3_var_ss_1,Numeric,8,2,CPT3 Variability standard score,None,None,8,Right,Scale,Input
+CPT3_var_class_1,Numeric,8,2,CPT3 Variability classification,"{.00, Low variability}...",None,8,Right,Nominal,Input
+CPT3_HRTbc_ss_1,Numeric,8,2,CPT3 HRT Block Change standard score,None,None,8,Right,Scale,Input
+CPT3_HRTbc_class_1,Numeric,8,2,CPT3 HRT Block Change classification,"{.00, Stable RT across blocks}...",None,8,Right,Nominal,Input
+CPT3_HRTisi_ss_1,Numeric,8,2,CPT3 HRT ISI Change standard score,None,None,8,Right,Scale,Input
+CPT3_HRTisi_class_1,Numeric,8,2,CPT3 HRT ISI Change classification,"{.00, Stable RT across ISIs}...",None,8,Right,Nominal,Input
+trails_ver,Numeric,8,2,Trails version,"{.00, STD}...",None,8,Right,Nominal,Input
+trailsa_raw_1,Numeric,8,2,Trails A raw score,None,None,10,Right,Scale,Input
+trailsa_ss_1,Numeric,8,2,Trails A standard score,None,None,8,Right,Scale,Input
+trailsa_err_1,Numeric,8,2,Trails A number of errors,None,None,8,Right,Scale,Input
+trailsb_raw_1,Numeric,8,2,Trails B raw score,None,None,8,Right,Scale,Input
+trailsb_ss_1,Numeric,8,2,Trails B standard score,None,None,8,Right,Scale,Input
+trailsb_err_1,Numeric,8,2,Trails B number of errors,None,None,8,Right,Scale,Input
+wcst_ver,Numeric,8,2,WCST version,"{.00, STD}...",None,8,Right,Nominal,Input
+wcst_cat_raw_1,Numeric,8,2,WCST total categories raw score,None,None,8,Right,Scale,Input
+wcst_cat_perc_1,Numeric,8,2,WCST total categories percentile rank,"{.00, <1}...",None,9,Right,Nominal,Input
+wcst_fms_raw_1,Numeric,8,2,WCST failure to maintain set raw score,None,None,8,Right,Scale,Input
+wcst_fms_perc_1,Numeric,8,2,WCST failure to maintain set percentile rank,"{.00, <1}...",None,9,Right,Nominal,Input
+wcst_err_raw_1,Numeric,8,2,WCST total errors raw score,None,None,8,Right,Scale,Input
+wcst_err_ss_1,Numeric,8,2,WCST total errors standard score,None,None,8,Right,Scale,Input
+wcst_per_raw_1,Numeric,8,2,WCST perseverations raw score,None,None,8,Right,Scale,Input
+wcst_per_ss_1,Numeric,8,2,WCST perseverations standard score,None,None,8,Right,Scale,Input
+letfluency_ver,Numeric,8,2,Letter Fluency version,"{.00, DKEFS-std}...",None,8,Right,Nominal,Input
+DKEFSletterflue_raw_1,Numeric,8,2,"DKEFS Verbal Fluency, Letter Fluency Raw Score",None,None,8,Right,Scale,Input
+DKEFSletterflue_ss_1,Numeric,8,2,"DKEFS Verbal Fluency, Letter Fluency Scaled Score",None,None,8,Right,Scale,Input
+DKEFSletterlfue_per_1,Numeric,8,2,"DKEFS Verbal Fluency, Letter Fluency perseverations",None,None,8,Right,Scale,Input
+DKEFSleterflue_int_1,Numeric,8,2,"DKEFS Verbal Fluency, Letter Fluency intrusions",None,None,8,Right,Scale,Input
+letfluency_raw_1,Numeric,8,2,Letter Fluency raw score,None,None,8,Right,Scale,Input
+letfluency_ss_1,Numeric,8,2,Letter Fluency standard score,None,None,8,Right,Scale,Input
+letfluency_per_1,Numeric,8,2,Letter Fluency perseverations,None,None,8,Right,Scale,Input
+letfluency_int_1,Numeric,8,2,Letter Fluency intrusions,None,None,8,Right,Scale,Input
+catfluency_ver_1,Numeric,8,2,Category Fluency version,"{.00, DKEFS-std}...",None,8,Right,Nominal,Input
+catfluency_raw_1,Numeric,8,2,"DKEFS Verbal Fluency, Category Fluency raw score",None,None,8,Right,Scale,Input
+catfluency_ss_1,Numeric,8,2,"DKEFS Verbal Fluency, Category Fluency scaled score",None,None,8,Right,Scale,Input
+DKEFScatflu_per_1,Numeric,8,2,"DKEFS Verbal Fluency, Category Fluency perseverations",None,None,8,Right,Scale,Input
+DKEFScatflu_int_1,Numeric,8,2,"DKEFS Verbal Fluency, Category Fluency intrusions",None,None,8,Right,Scale,Input
+catfluency_per_1,Numeric,8,2,Category Fluency perseverations,None,None,8,Right,Scale,Input
+catfluency_int_1,Numeric,8,2,Category Fluency intrusions,None,None,8,Right,Scale,Input
+DKEFS_switch_vers_1,Numeric,8,2,DKEFS Switching Version,"{.00, STD}...",None,8,Right,Nominal,Input
+DKEFSswitchfluency_raw_1,Numeric,8,2,"If DKEFS Switching was administered, raw score",None,None,8,Right,Scale,Input
+DKEFSswitchfluency_ss_1,Numeric,8,2,Switching fluency scaled score,None,None,8,Right,Scale,Input
+DKEFSswitchaccuracy_raw_1,Numeric,8,2,Switching accuracy raw score,None,None,8,Right,Scale,Input
+DKEFSswitchaccuracy_ss_1,Numeric,8,2,Switching accuracy scaled score,None,None,8,Right,Scale,Input
+DKEFSTrails_vis_scan_raw_1,Numeric,8,2,DKEFS Trail Making Visual Scanning raw score,None,None,8,Right,Scale,Input
+DKEFSTrails_vis_scan_ss_1,Numeric,8,2,DKEFS Trail Making Visual Scanning scaled score,None,None,8,Right,Scale,Input
+DKEFSTrails_num_seq_raw_1,Numeric,8,2,DKEFS Number Sequencing raw score,None,None,8,Right,Scale,Input
+DKEFSTrails_num_seq_ss_1,Numeric,8,2,DKEFS Number Sequencing scaled score,None,None,8,Right,Scale,Input
+DKEFSTrails_let_seq_raw_1,Numeric,8,2,DKEFS Letter Sequencing raw score,None,None,8,Right,Scale,Input
+DKEFSTrails_let_seq_ss_1,Numeric,8,2,DKEFS Letter Sequencing scaled score,None,None,8,Right,Scale,Input
+DKEFSTrails_switch_raw_1,Numeric,8,2,DKEFS Number-Letter Switching raw score,None,None,8,Right,Scale,Input
+DKEFSTrails_switch_ss_1,Numeric,8,2,DKEFS Number-Letter Switching scaled score,None,None,8,Right,Scale,Input
+DKEFSTrails_errors_raw_1,Numeric,8,2,DKEFS Total Errors raw score,None,None,8,Right,Scale,Input
+DKEFSTrails_errors_ss_1,Numeric,8,2,DKEFS Total Errors scaled score,None,None,8,Right,Scale,Input
+DKEFSTrails_mot_speed_raw_1,Numeric,8,2,DKEFS Motor Speed raw score,None,None,8,Right,Scale,Input
+DKEFSTrails_mot_speed_ss_1,Numeric,8,2,DKEFS Motor Speed scaled score,None,None,8,Right,Scale,Input
+DKEFSTower_ach_score_raw_1,Numeric,8,2,DKEFS Tower Achievement Score raw score,None,None,8,Right,Scale,Input
+DKEFSTower_ach_score_ss_1,Numeric,8,2,DKEFS Tower Achievement Score scaled score,None,None,8,Right,Scale,Input
+DKEFSTower_mean1move_raw_1,Numeric,8,2,DKEFS Tower Mean First Move Time raw score,None,None,8,Right,Scale,Input
+DKEFSTower_mean1move_ss_1,Numeric,8,2,DKEFS Tower Mean First Move Time scaled score,None,None,8,Right,Scale,Input
+DKEFSTower_timepermove_raw_1,Numeric,8,2,DKEFS Tower Time/Move Ratio raw score,None,None,8,Right,Scale,Input
+DKEFSTower_timepermove_ss_1,Numeric,8,2,DKEFS Tower Time/Move Ratio scaled score,None,None,8,Right,Scale,Input
+DKEFSTower_move_acc_raw_1,Numeric,8,2,DKEFS Tower Move Accuracy Ratio raw score,None,None,8,Right,Scale,Input
+DKEFSTower_move_acc_ss_1,Numeric,8,2,DKEFS Tower Move Accuracy Ratio scaled score,None,None,8,Right,Scale,Input
+DKEFSTower_rule_viol_raw_1,Numeric,8,2,DKEFS Tower Rule-Violation/Item Ratio raw score,None,None,8,Right,Scale,Input
+DKEFSTower_rule_viol_ss_1,Numeric,8,2,DKEFS Tower Rule-Violation/Item Ratio scaled score,None,None,8,Right,Scale,Input
+DKEFSTower_tot_rvs_raw_1,Numeric,8,2,DKEFS Tower Total Rule Violations raw score,None,None,8,Right,Scale,Input
+DKEFSTower_tot_rvs_perc_1,Numeric,8,2,DKEFS Tower Total Rule Violations percentile,"{.00, <2}...",None,8,Right,Nominal,Input
+book_cat_errors_raw_1,Numeric,8,2,Booklet Category Test errors raw score,None,None,8,Right,Scale,Input
+book_cat_errors_ss_1,Numeric,8,2,Booklet Category Test errors standard score,None,None,8,Right,Scale,Input
+TapSet_raw_1,Numeric,8,2,Tapping Set raw score,None,None,8,Right,Scale,Input
+MotSeq_raw_1,Numeric,8,2,Motor Sequencing raw score,None,None,8,Right,Scale,Input
+ML_PDE_raw_1,Numeric,8,2,Multiple Loops PDE raw score,None,None,8,Right,Scale,Input
+ML_PFE_raw_1,Numeric,8,2,Multiple Loops PFE raw score,None,None,8,Right,Scale,Input
+RS_PDE_raw_1,Numeric,8,2,Recurrent Series PDE raw score,None,None,8,Right,Scale,Input
+RS_PFE_raw_1,Numeric,8,2,Recurrent Series PFE raw score,None,None,8,Right,Scale,Input
+pegs_DH_trial1_raw_1,Numeric,8,2,Grooved Pegboard Dominant Hand raw score,None,None,8,Right,Scale,Input
+pegs_DH_trial1_ss_1,Numeric,8,2,Grooved Pegboard Dominant Hand standard score,None,None,8,Right,Scale,Input
+pegs_NDH_trial1_raw_1,Numeric,8,2,Grooved Pegboard Non-Dominant Hand raw score,None,None,8,Right,Scale,Input
+pegs_NDH_trial1_ss_1,Numeric,8,2,Grooved Pegboard Non-Dominant Hand standard score,None,None,8,Right,Scale,Input
+gripstrength_DH_raw_1,Numeric,8,2,Grip Strength Dominant Hand raw score,None,None,8,Right,Scale,Input
+gripstrength_DH_ss_1,Numeric,8,2,Grip Strength Dominant Hand scaled score,None,None,8,Right,Scale,Input
+gripstrength_NDH_raw_1,Numeric,8,2,Grip Strength Non-Dominant Hand raw score,None,None,8,Right,Scale,Input
+gripstrength_NDH_ss_1,Numeric,8,2,Grip Strength Non-Dominant Hand scaled score,None,None,8,Right,Scale,Input
+gds_raw_1,Numeric,8,2,Geriatric Depression Scale raw score,None,None,8,Right,Scale,Input
+gds_class_1,Numeric,8,2,Geriatric Depression Scale classification,"{.00, WNL}...",None,8,Right,Nominal,Input
+bdi_raw_1,Numeric,8,2,BDI raw score,None,None,8,Right,Scale,Input
+bdi_class_1,Numeric,8,2,BDI classification,"{.00, Min}...",None,8,Right,Nominal,Input
+depression_label,Numeric,8,2,severity of depression (GDS or BDI),"{.00, WNL to mild}...",None,8,Right,Nominal,Input
+adfacs_iadlperc_1,Numeric,8,2,ADFACS IADL percentile,None,None,8,Right,Scale,Input
+adfacs_adlperc_1,Numeric,8,2,ADFACS ADL percentile,None,None,8,Right,Scale,Input
+adfacs_tot_1,Numeric,8,2,ADFACS total score percentile,None,None,8,Right,Scale,Input
+maq_physio_panic_1,Numeric,8,2,MAQ Physiological Panic T score converted to standard score,None,None,8,Right,Scale,Input
+maq_soc_pho_1,Numeric,8,2,MAQ Social Phobia T score converted to standard score,None,None,8,Right,Scale,Input
+maq_worry_fear_1,Numeric,8,2,MAQ Worry/Fears T score converted to standard score,None,None,8,Right,Scale,Input
+maq_neg_aff_1,Numeric,8,2,MAQ Negative Affectivity T score converted to standard score,None,None,8,Right,Scale,Input
+maq_tot_1,Numeric,8,2,Total MAQ T score converted to standard score,None,None,8,Right,Scale,Input
+bai_raw_1,Numeric,8,2,BAI raw score,None,None,8,Right,Scale,Input
+bai_class_1,Numeric,8,2,BAI classification,"{.00, Min}...",None,8,Right,Nominal,Input
+employ_2,Numeric,8,2,Employment status,"{.00, Full-time}...",None,10,Right,Nominal,Input
+occup_2,String,200,0,Occupation,None,None,10,Left,Nominal,Input
+marital_2,Numeric,8,2,Marital status,"{.00, Single}...",None,8,Right,Nominal,Input
+diabetes_2,Numeric,8,2,Diabetes,"{.00, No}...",None,8,Right,Nominal,Input
+hypertension_2,Numeric,8,2,Hypertension,"{.00, No}...",None,8,Right,Nominal,Input
+cva_2,Numeric,8,2,Cerebrovascular accident,"{.00, No}...",None,8,Right,Nominal,Input
+cholesterol_2,Numeric,8,2,High cholesterol,"{.00, No}...",None,8,Right,Nominal,Input
+cad_2,Numeric,8,2,Coronary artery disease,"{.00, No}...",None,8,Right,Nominal,Input
+tbi_2,Numeric,8,2,Traumatic brain injury,"{.00, No}...",None,8,Right,Nominal,Input
+tumor_2,Numeric,8,2,Brain tumor,"{.00, No}...",None,8,Right,Nominal,Input
+other_neurol_2,Numeric,8,2,Other neurologic problems,"{.00, No}...",None,8,Right,Nominal,Input
+other_neurol_prob_2,String,1000,0,Description of other neurologic problems,None,None,8,Left,Nominal,Input
+neurobehav_2,Numeric,8,2,Neurobehavioral syndrome per neuropsychologist,"{.00, Normal}...",None,8,Right,Nominal,Input
+etiology_2,Numeric,30,0,etiology of neurobehavioral syndrome per neuropsychologist,"{0, AD}...",None,8,Right,Nominal,Input
+etiology_2_explained,String,800,0,Multifactorial explained,None,None,24,Left,Nominal,Input
+rx_mem_2,Numeric,8,2,Prescription for memory medication time 2,"{.00, No}...",None,8,Right,Nominal,Input
+rm_memname_2,Numeric,8,2,Name of memory medication time 2,"{.00, namenda}...",None,8,Right,Nominal,Input
+rx_antidep_2,Numeric,8,2,Prescription for antidepressant medication time 2,"{.00, No}...",None,8,Right,Nominal,Input
+rx_anx_2,Numeric,8,2,Prescription for anxiolytic medication time 2,"{.00, No}...",None,8,Right,Nominal,Input
+rx_antipsy_2,Numeric,8,2,Prescription for antipsychotic medication time 2,"{.00, No}...",None,8,Right,Nominal,Input
+mood_curr_2,Numeric,8,1,Current mood problems per report during time 2,"{.0, No}...",None,13,Right,Nominal,Input
+therapy_2,Numeric,8,2,current psychotherapy time 2,"{.00, No}...",None,11,Right,Nominal,Input
+suicide_2,Numeric,8,2,Current suicidal ideation time 2,"{.00, No}...",None,11,Right,Nominal,Input
+psychosis_2,Numeric,8,2,Current psychosis time 2,"{.00, No}...",None,13,Right,Nominal,Input
+psychosistype_2,Numeric,8,2,,"{.00, none}...",None,8,Right,Nominal,Input
+sleep_2,Numeric,8,2,Current sleep problems time 2,"{.00, No}...",None,10,Right,Nominal,Input
+OSAtx_2,Numeric,8,2,"If have OSA, is it being treated?","{.00, No}...",None,8,Right,Nominal,Input
+sleep_med_2,Numeric,8,2,Sleep medication time 2,"{.00, No}...",None,13,Right,Nominal,Input
+appetite_2,Numeric,8,2,Appetite changes time 2,"{.00, No}...",None,12,Right,Nominal,Input
+etoh_abuse_2,Numeric,8,2,Alcohol abuse time 2,"{.00, None}...",None,8,Right,Nominal,Input
+etoh_drinks_2,Numeric,8,2,Number of drinks time 2,"{.00, None}...",None,8,Right,Nominal,Input
+tobacco_2,Numeric,8,2,Tobacco use time 2,"{.00, None}...",None,8,Right,Nominal,Input
+drug_2,Numeric,8,2,Recreational drug use time 2,"{.00, None}...",None,8,Right,Nominal,Input
+drug_type_2,Numeric,8,2,Recreational drug use - drug type time 2,"{.00, No}...",None,8,Right,Nominal,Input
+drug_name_2,String,8,0,Recreational drug use - drug name time 2,None,None,8,Left,Nominal,Input
+exercise_2,Numeric,8,2,Current exercise time 2,"{.00, No}...",None,8,Right,Nominal,Input
+np_date_2,Date,10,0,Date of 2md neuropsychological eval,None,None,11,Right,Scale,Input
+NP_provider_2,Numeric,8,2,NP Provider at time 2,"{1.00, Umfleet}...",None,8,Right,Nominal,Input
+age_2,Numeric,8,2,Age at 2nd Neuropsych eval,None,None,10,Right,Scale,Input
+Addenbrookedate_2,Date,10,0,date of 2nd addenbrooke within 12 months of second neuroreader,None,None,8,Right,Scale,Input
+Addenbrooke_tot_2,Numeric,8,2,overall addenbrooke score time 2,None,None,8,Right,Scale,Input
+Addenbrooke_MMSE_2,Numeric,8,2,MMSE subscale derived from Addenbrooke time 2,None,None,8,Right,Scale,Input
+Addenbrooke_Attn_2,Numeric,8,2,insert addenbrooke Attention subscale here time 2,None,None,8,Right,Scale,Input
+Addenbrooke_Mem_2,Numeric,8,2,insert Memory subscale here time 2,None,None,8,Right,Scale,Input
+Addenbrooke_Fluency_2,Numeric,8,2,insert Fluency subscale here time 2,None,None,8,Right,Scale,Input
+Addenbrooke_Lang_2,Numeric,8,2,insert Language subscale here time 2,None,None,8,Right,Scale,Input
+Addenbrooke_Visuo_2,Numeric,8,2,insert Visuospatial subscale here time 2,None,None,8,Right,Scale,Input
+wms_io_raw_2,Numeric,8,2,WMS Info/Orientation raw score,None,None,14,Right,Scale,Input
+wms_io_per_2,Numeric,8,2,WMS Info/Orientation percentile,None,None,14,Right,Scale,Input
+moca_2,Numeric,8,2,Montreal Cognitive Assessment at time 2,None,None,8,Right,Scale,Input
+wais_ver_2,Numeric,8,2,WAIS version,"{.00, WAIS-3}...",None,12,Right,Nominal,Input
+fsiq_2,Numeric,8,2,Full Scale IQ (SS),None,None,8,Right,Scale,Input
+vci_2,Numeric,8,2,Verbal Comprehension Index (SS),None,None,10,Right,Scale,Input
+sim_raw_2,Numeric,8,2,Similarities raw score,None,None,11,Right,Scale,Input
+sim_ss_2,Numeric,8,2,Similarities scaled score,None,None,10,Right,Scale,Input
+voc_raw_2,Numeric,8,2,Vocabulary raw score,None,None,8,Right,Scale,Input
+voc_ss_2,Numeric,8,2,Vocabulary scaled score,None,None,8,Right,Scale,Input
+in_raw_2,Numeric,8,2,Information raw score,None,None,10,Right,Scale,Input
+in_ss_2,Numeric,8,2,Information scaled score,None,None,10,Right,Scale,Input
+pri_2,Numeric,8,2,Perceptual Reasoning Index,None,None,8,Right,Scale,Input
+bd_raw_2,Numeric,8,2,Block Design raw score,None,None,10,Right,Scale,Input
+bd_ss_2,Numeric,8,2,Block Design scaled score,None,None,10,Right,Scale,Input
+mr_raw_2,Numeric,8,2,Matrix Reasoning raw score,None,None,8,Right,Scale,Input
+mr_ss_2,Numeric,8,2,Matrix Reasoning scaled score,None,None,8,Right,Scale,Input
+vp_raw_2,Numeric,8,2,Visual Puzzles raw score,None,None,8,Right,Scale,Input
+vp_ss_2,Numeric,8,2,Visual Puzzles scaled score,None,None,8,Right,Scale,Input
+wmi_2,Numeric,8,2,Working Memory Index,None,None,8,Right,Scale,Input
+dsp_raw_2,Numeric,8,2,Digit Span raw score,None,None,11,Right,Scale,Input
+dsp_ss_2,Numeric,8,2,Digit Span scaled score,None,None,10,Right,Scale,Input
+ar_raw_2,Numeric,8,2,Arithmetic raw score,None,None,8,Right,Scale,Input
+ar_ss_2,Numeric,8,2,Arithmetic scaled score,None,None,8,Right,Scale,Input
+psi_2,Numeric,8,2,Processing Speed Index,None,None,10,Right,Scale,Input
+ss_raw_2,Numeric,8,2,Symbol Search raw score,None,None,10,Right,Scale,Input
+ss_ss_2,Numeric,8,2,Symbol Search scaled score,None,None,10,Right,Scale,Input
+cd_raw_2,Numeric,8,2,Coding raw score,None,None,10,Right,Scale,Input
+cd_ss_2,Numeric,8,2,Coding scaled score,None,None,10,Right,Scale,Input
+wms_ver_2,Numeric,8,2,WMS version,"{.00, WMS-3}...",None,11,Right,Nominal,Input
+LM_ver_2,Numeric,8,2,Logical Memory version,"{.00, Adult}...",None,10,Right,Nominal,Input
+LMI_raw_2,Numeric,8,2,Logical Memory I raw score,None,None,11,Right,Scale,Input
+LMI_ss_2,Numeric,8,2,Logical Memory I standard score,None,None,10,Right,Scale,Input
+LMII_raw_2,Numeric,8,2,Logical Memory II raw score,None,None,12,Right,Scale,Input
+LMII_ss_2,Numeric,8,2,Logical Memory II standard score,None,None,11,Right,Scale,Input
+LMrec_raw_2,Numeric,8,2,Logical Memory recognition raw score,None,None,13,Right,Scale,Input
+LMrec_per_2,Numeric,8,2,Logical Memory recognition percentile,"{.00, <2}...",None,13,Right,Nominal,Input
+VPAI_raw_2,Numeric,8,2,Verbal Paired Associates I raw score,None,None,8,Right,Scale,Input
+VPAI_ss_2,Numeric,8,2,Verbal Paired Associates I scaled score,None,None,8,Right,Scale,Input
+VPAII_raw_2,Numeric,8,2,Verbal Paired Associates II raw score,None,None,8,Right,Scale,Input
+VPAII_ss_2,Numeric,8,2,Verbal Paired Associates II scaled score,None,None,8,Right,Scale,Input
+VPArec_raw_2,Numeric,8,2,Verbal Paired Associates recognition raw score,None,None,8,Right,Scale,Input
+VPArec_perc_2,Numeric,8,2,Verbal Paired Associates recognition percentile,"{.00, <2}...",None,8,Right,Nominal,Input
+VRI_raw_2,Numeric,8,2,Visual Reproduction I raw score,None,None,11,Right,Scale,Input
+VRI_ss_2,Numeric,8,2,Visual Reproduction I standard score,None,None,10,Right,Scale,Input
+VRII_raw_2,Numeric,8,2,Visual Reproduction II raw score,None,None,12,Right,Scale,Input
+VRII_ss_2,Numeric,8,2,Visual Reproduction II standard score,None,None,11,Right,Scale,Input
+VRrec_raw_2,Numeric,8,2,Visual Reproduction recognition raw score,None,None,13,Right,Scale,Input
+VRrec_per_2,Numeric,8,2,Visual Reproduction recognition percentile,"{.00, <2}...",None,13,Right,Nominal,Input
+VRcopy_raw_2,Numeric,8,2,Visual Reproduction Copy trial raw score,None,None,8,Right,Scale,Input
+VRcopy_perc_2,Numeric,8,2,Visual Reproduction Copy trial percentile,"{.00, <2}...",None,8,Right,Nominal,Input
+spat_span_raw_2,Numeric,8,2,Spatial Span raw score,None,None,8,Right,Scale,Input
+spat_span_ss_2,Numeric,8,2,Spatial Span scaled score,None,None,8,Right,Nominal,Input
+hvlt_form_2,Numeric,8,2,list hvlt form here,"{1.00, form 1}...",None,8,Right,Nominal,Input
+hvlt_tot_raw_2,Numeric,8,2,HVLT total recall raw score,None,None,16,Right,Scale,Input
+hvlt_tot_ss_2,Numeric,8,2,HVLT total recall standard score,None,None,15,Right,Scale,Input
+hvlt_tot_int_2,Numeric,8,2,HVLT total recall intrusions,None,None,16,Right,Scale,Input
+hvlt_tot_per_2,Numeric,8,2,HVLT total recall perseverations,None,None,16,Right,Scale,Input
+hvlt_delay_raw_2,Numeric,8,2,HVLT delayed recall raw score,None,None,18,Right,Scale,Input
+hvlt_delay_ss_2,Numeric,8,2,HVLT delayed recall standard score,None,None,17,Right,Scale,Input
+hvlt_perc_raw_2,Numeric,8,2,HVLT percent retention raw score,None,None,17,Right,Scale,Input
+hvlt_perc_ss_2,Numeric,8,2,HVLT percent retention standard score,None,None,16,Right,Scale,Input
+hvlt_disc_raw_2,Numeric,8,2,HVLT discrimination index raw score,None,None,17,Right,Scale,Input
+hvlt_disc_ss_2,Numeric,8,2,HVLT discrimination index standard score,None,None,16,Right,Scale,Input
+cvlt_form_2,Numeric,8,2,CVLT-II form,"{.00, STD}...",None,8,Right,Nominal,Input
+cvlt_tot_raw_2,Numeric,8,2,CVLT-II total recall raw score,None,None,8,Right,Scale,Input
+cvlt_tot_ss_2,Numeric,8,2,CVLT-II total recall standard score,None,None,8,Right,Scale,Input
+cvlt_sdelayfree_raw_2,Numeric,8,2,CVLT-II short delay free recall raw score,None,None,8,Right,Scale,Input
+cvlt_sdelayfree_ss_2,Numeric,8,2,CVLT-II short delay free recall standard score,None,None,8,Right,Scale,Input
+cvlt_sdelaycued_raw_2,Numeric,8,2,CVLT-II short delay cued recall raw score,None,None,8,Right,Scale,Input
+cvlt_sdelaycued_ss_2,Numeric,8,2,CVLT-II short delay cued recall standard score,None,None,8,Right,Scale,Input
+cvlt_ldelayfree_raw_2,Numeric,8,2,CVLT-II long delay free recall raw score,None,None,8,Right,Scale,Input
+cvlt_ldelayfree_ss_2,Numeric,8,2,CVLT-II long delay free recall standard score,None,None,8,Right,Scale,Input
+cvlt_ldelaycued_raw_2,Numeric,8,2,CVLT-II long delay cued recall raw score,None,None,8,Right,Scale,Input
+cvlt_ldelaycued_ss_2,Numeric,8,2,CVLT-II long delay cued recall standard score,None,None,8,Right,Scale,Input
+cvlt_recogdisc_raw_2,Numeric,8,2,CVLT-II recognition discriminability raw score,None,None,8,Right,Scale,Input
+cvlt_recogdisc_ss_2,Numeric,8,2,CVLT-II recognition discriminability standard score,None,None,8,Right,Scale,Input
+cvlt_fcrecog_perc_2,Numeric,8,2,CVLT-II forced choice recognition percent correct,None,None,8,Right,Scale,Input
+BVMT_form_2,Numeric,8,2,BVMT-R form time 2,"{1.00, FM-1}...",None,8,Right,Nominal,Input
+BVMT_tot_raw_2,Numeric,8,2,BVMT-R Total Recall raw score,None,None,8,Right,Scale,Input
+BVMT_tot_ss_2,Numeric,8,2,BVMT-R Total Recall standard score,None,None,8,Right,Scale,Input
+BVMT_delay_raw_2,Numeric,8,2,BVMT-R Delayed Recall raw score,None,None,8,Right,Scale,Input
+BVMT_delay_ss_2,Numeric,8,2,BVMT-R Delayed Recall standard score,None,None,8,Right,Scale,Input
+BVMT_rec_raw_2,Numeric,8,2,BVMT-R Discrimination Index raw score,None,None,8,Right,Scale,Input
+BVMT_rec_perc_2,Numeric,8,2,BVMT-R Discrimination Index percentile,"{.00, <2}...",None,8,Right,Nominal,Input
+bnt_ver_2,Numeric,8,2,Boston Naming Test version,"{.00, Full}...",None,8,Right,Nominal,Input
+bnt_raw_2,Numeric,8,2,Boston Naming raw score,None,None,11,Right,Scale,Input
+bnt_ss_2,Numeric,8,2,Boston Naming standard score,None,None,10,Right,Scale,Input
+bdae_CIM_raw_2,Numeric,8,2,BDAE Complex Ideational Material raw score,None,None,8,Right,Scale,Input
+bdae_CIM_ss_2,Numeric,8,2,BDAE Complex Ideational Material standard score,None,None,8,Right,Scale,Input
+bdae_RS_raw_2,Numeric,8,2,BDAE Repetition of Sentences raw score,None,None,8,Right,Scale,Input
+bdae_RN_raw_2,Numeric,8,2,BDAE Response Naming raw score,None,None,8,Right,Scale,Input
+bdae_RN_class_2,Numeric,8,2,BDAE Response Naming classification,"{.00, WNL}...",None,8,Right,Nominal,Input
+bdae_CT_raw_2,Numeric,8,2,BDAE Picture Description: Cookie Theft (Written) raw score,None,None,8,Right,Scale,Input
+bdae_SP_raw_2,Numeric,8,2,BDAE Semantic Probe raw score,None,None,8,Right,Scale,Input
+bdae_praxis_NG_raw_2,Numeric,8,2,BDAE Praxis Natural Gestures raw score,None,None,8,Right,Scale,Input
+bdae_praxis_CG_raw_2,Numeric,8,2,BDAE Praxis Conventional Gestures raw score,None,None,8,Right,Scale,Input
+bdae_praxis_UPO_raw_2,Numeric,8,2,BDAE Praxis Use of Pretended Objects raw score,None,None,8,Right,Scale,Input
+bdae_praxis_BFRM_raw_2,Numeric,8,2,BDAE Praxis Bucco-Facial/Respiratory Movements raw score,None,None,8,Right,Scale,Input
+bdae_WC_raw_2,Numeric,8,2,BDAE Word Comprehension (Body Parts) raw score,None,None,8,Right,Scale,Input
+wratread_form_2,Numeric,8,2,WRAT-4 Word Reading form at time 2,"{1.00, Blue}...",None,8,Right,Nominal,Input
+wratread_raw_2,Numeric,8,2,WRAT-4 Word Reading raw score,None,None,16,Right,Scale,Input
+wratread_ss_2,Numeric,8,2,WRAT-4 Word Reading standard score,None,None,15,Right,Scale,Input
+WJIII_WA_raw_2,Numeric,8,2,WJ-III Word Attack raw score,None,None,8,Right,Scale,Input
+WJIII_WA_ss_2,Numeric,8,2,WJ-III Word Attack standard score,None,None,8,Right,Scale,Input
+clock_score_2,Numeric,8,2,Clock Drawing score,None,None,15,Right,Scale,Input
+clock_time_2,Numeric,8,2,Clock drawn with hands at 10 to 11,"{.00, No}...",None,14,Right,Nominal,Input
+clock_class_2,Numeric,8,2,Clock Drawing classification,"{.00, WNL}...",None,8,Right,Nominal,Input
+JLO_form_2,Numeric,8,2,JLO Form/Version,"{1.00, H}...",None,8,Right,Nominal,Input
+JLO_raw_2,Numeric,8,2,JLO raw score,None,None,8,Right,Scale,Input
+JLO_ss_2,Numeric,8,2,JLO standard score,None,None,8,Right,Scale,Input
+sdmt_writ_raw_2,Numeric,8,2,Symbol Digit Modalities Test written raw score,None,None,17,Right,Scale,Input
+sdmt_writ_ss_2,Numeric,8,2,Symbol Digit Modalities Test written standard score,None,None,16,Right,Scale,Input
+sdmt_oral_raw_2,Numeric,8,2,Symbol Digit Modalities Test oral raw score,None,None,17,Right,Scale,Input
+sdmt_oral_ss_2,Numeric,8,2,Symbol Digit Modalities Test oral standard score,None,None,16,Right,Scale,Input
+PASAT_form_2,Numeric,8,2,PASAT Form,"{.00, A}...",None,8,Right,Nominal,Input
+PASAT_3srate_raw_2,Numeric,8,2,"PASAT 3"" rate raw score",None,None,8,Right,Scale,Input
+PASAT_3srate_ss_2,Numeric,8,2,"PASAT 3"" rate standard score",None,None,8,Right,Scale,Input
+PASAT_2srate_raw_2,Numeric,8,2,"PASAT 2"" rate raw score",None,None,8,Right,Scale,Input
+PASAT_2srate_ss_2,Numeric,8,2,"PASAT 2"" rate standard score",None,None,8,Right,Scale,Input
+CPT3_disc_ss_2,Numeric,8,2,CPT3 Detectability scaled score,None,None,8,Right,Scale,Input
+CPT3_detect_class_2,Numeric,8,2,CPT3 Detectability classification,"{.00, Good detection}...",None,8,Right,Nominal,Input
+CPT3_omis_ss_2,Numeric,8,2,CPT3 Omissions standard score,None,None,8,Right,Scale,Input
+CPT3_omis_class_2,Numeric,8,2,CPT3 Omissions classification,"{.00, Low error rate}...",None,8,Right,Nominal,Input
+CPT3_comis_ss_2,Numeric,8,2,CPT3 Commissions standard score,None,None,8,Right,Scale,Input
+CPT3_comis_class_2,Numeric,8,2,CPT3 Commissions classification,"{.00, Low error rate}...",None,8,Right,Nominal,Input
+CPT3_per_ss_2,Numeric,8,2,CPT3 Perseverations standard score,None,None,8,Right,Scale,Input
+CPT3_per_class_2,Numeric,8,2,CPT3 Perseverations classification,"{.00, Low rate of persev}...",None,8,Right,Nominal,Input
+CPT3_HRT_ss_2,Numeric,8,2,CPT3 HRT standard score,None,None,8,Right,Scale,Input
+CPT3_HRT_class_2,Numeric,8,2,CPT3 HRT classification,"{.00, Atypically fast*}...",None,8,Right,Nominal,Input
+CPT3_HRTSD_ss_2,Numeric,8,2,CPT3 HRT SD standard score,None,None,8,Right,Scale,Input
+CPT3_HRTSD_class_2,Numeric,8,2,CPT3 HRT SD classification,"{.00, Good consistency}...",None,8,Right,Nominal,Input
+CPT3_var_ss_2,Numeric,8,2,CPT3 Variability standard score,None,None,8,Right,Scale,Input
+CPT3_var_class_2,Numeric,8,2,CPT3 Variability classification,"{.00, Low variability}...",None,8,Right,Nominal,Input
+CPT3_HRTbc_ss_2,Numeric,8,2,CPT3 HRT Block Change standard score,None,None,8,Right,Scale,Input
+CPT3_HRTbc_class_2,Numeric,8,2,CPT3 HRT Block Change classification,"{.00, Stable RT across blocks}...",None,8,Right,Nominal,Input
+CPT3_HRTisi_ss_2,Numeric,8,2,CPT3 HRT ISI Change standard score,None,None,8,Right,Scale,Input
+CPT3_HRTisi_class_2,Numeric,8,2,CPT3 HRT ISI Change classification,"{.00, Stable RT across ISIs}...",None,8,Right,Nominal,Input
+trails_ver_2,Numeric,8,2,Trails version,"{.00, STD}...",None,8,Right,Nominal,Input
+trailsa_raw_2,Numeric,8,2,Trails A raw score,None,None,15,Right,Scale,Input
+trailsa_ss_2,Numeric,8,2,Trails A standard score,None,None,14,Right,Scale,Input
+trailsa_err_2,Numeric,8,2,Trails A number of errors,None,None,15,Right,Scale,Input
+trailsb_raw_2,Numeric,8,2,Trails B raw score,None,None,15,Right,Scale,Input
+trailsb_ss_2,Numeric,8,2,Trails B standard score,None,None,14,Right,Scale,Input
+trailsb_err_2,Numeric,8,2,Trails B number of errors,None,None,15,Right,Scale,Input
+wcst_ver_2,Numeric,8,2,WCST version,"{.00, STD}...",None,8,Right,Nominal,Input
+wcst_cat_raw_2,Numeric,8,2,WCST total categories raw score,None,None,16,Right,Scale,Input
+wcst_cat_perc_2,Numeric,8,2,WCST total categories percentile rank,"{.00, <1}...",None,17,Right,Nominal,Input
+wcst_fms_raw_2,Numeric,8,2,WCST failure to maintain set raw score,None,None,16,Right,Scale,Input
+wcst_fms_perc_2,Numeric,8,2,WCST failure to maintain set percentile rank,"{.00, <1}...",None,17,Right,Nominal,Input
+wcst_err_raw_2,Numeric,8,2,WCST total errors raw score,None,None,16,Right,Scale,Input
+wcst_err_ss_2,Numeric,8,2,WCST total errors standard score,None,None,15,Right,Scale,Input
+wcst_per_raw_2,Numeric,8,2,WCST perseverations raw score,None,None,16,Right,Scale,Input
+wcst_per_ss_2,Numeric,8,2,WCST perseverations standard score,None,None,15,Right,Scale,Input
+letfluency_ver_2,Numeric,8,2,Letter Fluency version,"{.00, DKEFS-std}...",None,18,Right,Nominal,Input
+DKEFSletterflue_raw_2,Numeric,8,2,"DKEFS Verbal Fluency, Letter Fluency Raw Score",None,None,8,Right,Scale,Input
+DKEFSletterflue_ss_2,Numeric,8,2,"DKEFS Verbal Fluency, Letter Fluency Scaled Score",None,None,8,Right,Scale,Input
+DKEFSletterlfue_per_2,Numeric,8,2,"DKEFS Verbal Fluency, Letter Fluency perseverations",None,None,8,Right,Scale,Input
+DKEFSleterflue_int_2,Numeric,8,2,"DKEFS Verbal Fluency, Letter Fluency intrusions",None,None,8,Right,Scale,Input
+letfluency_raw_2,Numeric,8,2,Letter Fluency raw score,None,None,18,Right,Scale,Input
+letfluency_ss_2,Numeric,8,2,Letter Fluency standard score,None,None,17,Right,Scale,Input
+letfluency_per_2,Numeric,8,2,Letter Fluency perseverations,None,None,18,Right,Scale,Input
+letfluency_int_2,Numeric,8,2,Letter Fluency intrusions,None,None,18,Right,Scale,Input
+catfluency_ver_2,Numeric,8,2,Category Fluency version,"{.00, DKEFS-std}...",None,18,Right,Nominal,Input
+DKEFScatflu_raw_2,Numeric,8,2,"DKEFS Verbal Fluency, Category Fluency raw score",None,None,8,Right,Scale,Input
+DKEFScatflu_ss_2,Numeric,8,2,"DKEFS Verbal Fluency, Category Fluency scaled score",None,None,8,Right,Scale,Input
+DKEFScatflu_per_2,Numeric,8,2,"DKEFS Verbal Fluency, Category Fluency perseverations",None,None,8,Right,Scale,Input
+DKEFScatflu_int_2,Numeric,8,2,"DKEFS Verbal Fluency, Category Fluency intrusions",None,None,8,Right,Scale,Input
+catfluency_raw_2,Numeric,8,2,Category Fluency raw score,None,None,18,Right,Scale,Input
+catfluency_ss_2,Numeric,8,2,Category Fluency standard score,None,None,17,Right,Scale,Input
+catfluency_per_2,Numeric,8,2,Category Fluency perseverations,None,None,18,Right,Scale,Input
+catfluency_int_2,Numeric,8,2,Category Fluency intrusions,None,None,18,Right,Scale,Input
+DKEFS_switch_vers_2,Numeric,8,2,DKEFS Switching Version,"{.00, STD}...",None,8,Right,Nominal,Input
+DKEFSswitchfluency_raw_2,Numeric,8,2,"If DKEFS Switching was administered, raw score",None,None,8,Right,Scale,Input
+DKEFSswitchfluency_ss_2,Numeric,8,2,Switching fluency scaled score,None,None,8,Right,Scale,Input
+DKEFSswitchaccuracy_raw_2,Numeric,8,2,Switching accuracy raw score,None,None,8,Right,Scale,Input
+DKEFSswitchaccuracy_ss_2,Numeric,8,2,Switching accuracy scaled score,None,None,8,Right,Scale,Input
+DKEFSTrails_vis_scan_raw_2,Numeric,8,2,DKEFS Trail Making Visual Scanning raw score,None,None,8,Right,Scale,Input
+DKEFSTrails_vis_scan_ss_2,Numeric,8,2,DKEFS Trail Making Visual Scanning scaled score,None,None,8,Right,Scale,Input
+DKEFSTrails_num_seq_raw_2,Numeric,8,2,DKEFS Number Sequencing raw score,None,None,8,Right,Scale,Input
+DKEFSTrails_num_seq_ss_2,Numeric,8,2,DKEFS Number Sequencing scaled score,None,None,8,Right,Scale,Input
+DKEFSTrails_let_seq_raw_2,Numeric,8,2,DKEFS Letter Sequencing raw score,None,None,8,Right,Scale,Input
+DKEFSTrails_let_seq_ss_2,Numeric,8,2,DKEFS Letter Sequencing scaled score,None,None,8,Right,Scale,Input
+DKEFSTrails_switch_raw_2,Numeric,8,2,DKEFS Number-Letter Switching raw score,None,None,8,Right,Scale,Input
+DKEFSTrails_switch_ss_2,Numeric,8,2,DKEFS Number-Letter Switching scaled score,None,None,8,Right,Scale,Input
+DKEFSTrails_errors_raw_2,Numeric,8,2,DKEFS Total Errors raw score,None,None,8,Right,Scale,Input
+DKEFSTrails_errors_ss_2,Numeric,8,2,DKEFS Total Errors scaled score,None,None,8,Right,Scale,Input
+DKEFSTrails_mot_speed_raw_2,Numeric,8,2,DKEFS Motor Speed raw score,None,None,8,Right,Scale,Input
+DKEFSTrails_mot_speed_ss_2,Numeric,8,2,DKEFS Motor Speed scaled score,None,None,8,Right,Scale,Input
+DKEFSTower_ach_score_raw_2,Numeric,8,2,DKEFS Tower Achievement Score raw score,None,None,8,Right,Scale,Input
+DKEFSTower_ach_score_ss_2,Numeric,8,2,DKEFS Tower Achievement Score scaled score,None,None,8,Right,Scale,Input
+DKEFSTower_mean1move_raw_2,Numeric,8,2,DKEFS Tower Mean First Move Time raw score,None,None,8,Right,Scale,Input
+DKEFSTower_mean1move_ss_2,Numeric,8,2,DKEFS Tower Mean First Move Time scaled score,None,None,8,Right,Scale,Input
+DKEFSTower_timepermove_raw_2,Numeric,8,2,DKEFS Tower Time/Move Ratio raw score,None,None,8,Right,Scale,Input
+DKEFSTower_timepermove_ss_2,Numeric,8,2,DKEFS Tower Time/Move Ratio scaled score,None,None,8,Right,Scale,Input
+DKEFSTower_move_acc_raw_2,Numeric,8,2,DKEFS Tower Move Accuracy Ratio raw score,None,None,8,Right,Scale,Input
+DKEFSTower_move_acc_ss_2,Numeric,8,2,DKEFS Tower Move Accuracy Ratio scaled score,None,None,8,Right,Scale,Input
+DKEFSTower_rule_viol_raw_2,Numeric,8,2,DKEFS Tower Rule-Violation/Item Ratio raw score,None,None,8,Right,Scale,Input
+DKEFSTower_rule_viol_ss_2,Numeric,8,2,DKEFS Tower Rule-Violation/Item Ratio scaled score,None,None,8,Right,Scale,Input
+DKEFSTower_tot_rvs_raw_2,Numeric,8,2,DKEFS Tower Total Rule Violations raw score,None,None,8,Right,Scale,Input
+DKEFSTower_tot_rvs_perc_2,Numeric,8,2,DKEFS Tower Total Rule Violations percentile,"{.00, <2}...",None,8,Right,Nominal,Input
+book_cat_errors_raw_2,Numeric,8,2,Booklet Category Test errors raw score,None,None,8,Right,Scale,Input
+book_cat_errors_ss_2,Numeric,8,2,Booklet Category Test errors standard score,None,None,8,Right,Scale,Input
+TapSet_raw_2,Numeric,8,2,Tapping Set raw score,None,None,8,Right,Scale,Input
+MotSeq_raw_2,Numeric,8,2,Motor Sequencing raw score,None,None,8,Right,Scale,Input
+ML_PDE_raw_2,Numeric,8,2,Multiple Loops PDE raw score,None,None,8,Right,Scale,Input
+ML_PFE_raw_2,Numeric,8,2,Multiple Loops PFE raw score,None,None,8,Right,Scale,Input
+RS_PDE_raw_2,Numeric,8,2,Recurrent Series PDE raw score,None,None,8,Right,Scale,Input
+RS_PFE_raw_2,Numeric,8,2,Recurrent Series PFE raw score,None,None,8,Right,Scale,Input
+pegs_DH_trial1_raw_2,Numeric,8,2,Grooved Pegboard Dominant Hand raw score,None,None,8,Right,Scale,Input
+pegs_DH_trial1_ss_2,Numeric,8,2,Grooved Pegboard Dominant Hand standard score,None,None,8,Right,Scale,Input
+pegs_NDH_trial1_raw_2,Numeric,8,2,Grooved Pegboard Non-Dominant Hand raw score,None,None,8,Right,Scale,Input
+pegs_NDH_trial1_ss_2,Numeric,8,2,Grooved Pegboard Non-Dominant Hand standard score,None,None,8,Right,Scale,Input
+gripstrength_DH_raw_2,Numeric,8,2,Grip Strength Dominant Hand raw score,None,None,8,Right,Scale,Input
+gripstrength_DH_ss_2,Numeric,8,2,Grip Strength Dominant Hand scaled score,None,None,8,Right,Scale,Input
+gripstrength_NDH_raw_2,Numeric,8,2,Grip Strength Non-Dominant Hand raw score,None,None,8,Right,Scale,Input
+gripstrength_NDH_ss_2,Numeric,8,2,Grip Strength Non-Dominant Hand scaled score,None,None,8,Right,Scale,Input
+gds_raw_2,Numeric,8,2,Geriatric Depression Scale raw score,None,None,11,Right,Scale,Input
+gds_class_2,Numeric,8,2,Geriatric Depression Scale classification,"{.00, WNL}...",None,13,Right,Nominal,Input
+bdi_raw_2,Numeric,8,2,BDI raw score,None,None,11,Right,Scale,Input
+bdi_class_2,Numeric,8,2,BDI classification,"{.00, Min}...",None,13,Right,Nominal,Input
+depression_label_2,Numeric,8,2,severity of depression (GDS or BDI),"{.00, WNL to mild}...",None,8,Right,Nominal,Input
+adfacs_iadlperc_2,Numeric,8,2,ADFACS IADL percentile,None,None,19,Right,Scale,Input
+adfacs_adlperc_2,Numeric,8,2,ADFACS ADL percentile,None,None,18,Right,Scale,Input
+adfacs_tot_2,Numeric,8,2,ADFACS total score percentile,None,None,14,Right,Scale,Input
+maq_physio_panic_2,Numeric,8,2,MAQ Physiological Panic T score converted to standard score,None,None,11,Right,Scale,Input
+maq_soc_pho_2,Numeric,8,2,MAQ Social Phobia T score converted to standard score,None,None,10,Right,Scale,Input
+maq_worry_fear_2,Numeric,8,2,MAQ Worry/Fears T score converted to standard score,None,None,8,Right,Scale,Input
+maq_neg_aff_2,Numeric,8,2,MAQ Negative Affectivity T score converted to standard score,None,None,8,Right,Scale,Input
+maq_tot_2,Numeric,8,2,Total MAQ T score converted to standard score,None,None,8,Right,Scale,Input
+bai_raw_2,Numeric,8,2,BAI raw score,None,None,8,Right,Scale,Input
+bai_class_2,Numeric,8,2,BAI classification,"{.00, Min}...",None,8,Right,Nominal,Input
+employ_3,Numeric,8,2,Employment status,"{.00, Full-time}...",None,10,Right,Nominal,Input
+occup_3,String,8,0,Occupation,None,None,8,Left,Nominal,Input
+marital_3,Numeric,8,2,Marital status,"{.00, Single}...",None,8,Right,Nominal,Input
+cog_onset_3,Numeric,8,2,Age of onset of cognitive decline,None,None,8,Right,Scale,Input
+neurobehav_3,Numeric,8,2,Neurobehavioral syndrome per neuropsychologist,"{.00, Normal}...",None,14,Right,Nominal,Input
+etiology_3,Numeric,8,2,etiology of neurobehavioral syndrome per neuropsychologist,"{.00, AD}...",None,20,Right,Nominal,Input
+etiology_3_explained,String,800,0,Multifactorial explained,None,None,24,Left,Nominal,Input
+diabetes_3,Numeric,8,2,Diabetes,"{.00, No}...",None,8,Right,Nominal,Input
+hypertension_3,Numeric,8,2,Hypertension,"{.00, No}...",None,8,Right,Nominal,Input
+cva_3,Numeric,8,2,Cerebrovascular accident,"{.00, No}...",None,8,Right,Nominal,Input
+cholesterol_3,Numeric,8,2,High cholesterol,"{.00, No}...",None,8,Right,Nominal,Input
+cad_3,Numeric,8,2,Coronary artery disease,"{.00, No}...",None,8,Right,Nominal,Input
+tbi_3,Numeric,8,2,Traumatic brain injury,"{.00, No}...",None,8,Right,Nominal,Input
+tumor_3,Numeric,8,2,Brain tumor,"{.00, No}...",None,8,Right,Nominal,Input
+other_neurol_3,Numeric,8,2,Other neurologic problems,"{.00, No}...",None,8,Right,Nominal,Input
+other_neurol_prob_3,String,8,0,Description of other neurologic problems,None,None,8,Left,Nominal,Input
+neurologytx_3,Numeric,8,2,is patient treated by neurologist,"{.00, yes}...",None,8,Right,Nominal,Input
+rx_mem_3,Numeric,8,2,Prescription for memory medication time 3,"{.00, No}...",None,8,Right,Nominal,Input
+rm_memname_3,Numeric,8,2,Name of memory medication time 3,"{.00, namenda}...",None,8,Right,Nominal,Input
+rx_antidep_3,Numeric,8,2,Prescription for antidepressant medication time 3,"{.00, No}...",None,8,Right,Nominal,Input
+rx_anx_3,Numeric,8,2,Prescription for anxiolytic medication time 3,"{.00, No}...",None,8,Right,Nominal,Input
+rx_antipsy_3,Numeric,8,2,Prescription for antipsychotic medication time 3,"{.00, No}...",None,8,Right,Nominal,Input
+mood_curr_3,Numeric,8,2,Current mood problems per report during time 3,"{.00, No}...",None,13,Right,Nominal,Input
+therapy_3,Numeric,8,2,current psychotherapy time 3,"{.00, No}...",None,11,Right,Nominal,Input
+suicide_3,Numeric,8,2,Current suicidal ideation time 3,"{.00, No}...",None,11,Right,Nominal,Input
+psychosis_3,Numeric,8,2,Current psychosis time 3,"{.00, No}...",None,13,Right,Nominal,Input
+psychosistype_3,Numeric,8,2,,"{.00, none}...",None,8,Right,Nominal,Input
+sleep_3,Numeric,8,2,Current sleep problems time 3,"{.00, No}...",None,10,Right,Nominal,Input
+OSAtx_3,Numeric,8,2,"If have OSA, is it being treated?","{.00, No}...",None,8,Right,Nominal,Input
+sleep_med_3,Numeric,8,2,Sleep medication time 3,"{.00, No}...",None,13,Right,Nominal,Input
+appetite_3,Numeric,8,2,Appetite changes time 3,"{.00, No}...",None,12,Right,Nominal,Input
+etoh_abuse_3,Numeric,8,2,Alcohol abuse time 3,"{.00, None}...",None,8,Right,Nominal,Input
+etoh_drinks_3,Numeric,8,2,Number of drinks time 3,"{.00, None}...",None,8,Right,Nominal,Input
+tobacco_3,Numeric,8,2,Tobacco use time 3,"{.00, None}...",None,8,Right,Nominal,Input
+drug_3,Numeric,8,2,Recreational drug use time 3,"{.00, None}...",None,8,Right,Nominal,Input
+drug_type_3,Numeric,8,2,Recreational drug use - drug type time 3,"{.00, No}...",None,8,Right,Nominal,Input
+np_date_3,Date,10,0,Date of 3rd neuropsychological eval,None,None,11,Right,Scale,Input
+NP_provider_3,Numeric,8,2,NP Provider at time 3,"{1.00, Umfleet}...",None,8,Right,Nominal,Input
+age_3,Numeric,8,2,Age at 3rd Neuropsych eval,None,None,10,Right,Scale,Input
+Addenbrookedate_3,Date,10,0,date of 3rd addenbrooke within 12 months of neuroreader 3 documented in neurology visit,None,None,8,Right,Scale,Input
+Addenbrooke_tot_3,Numeric,8,2,overall addenbrooke score time 3 documented in neurology visit,None,None,8,Right,Scale,Input
+Addenbrooke_MMSE_3,Numeric,8,2,MMSE subscale derived from Addenbrooke time 3,None,None,8,Right,Scale,Input
+Addenbrooke_Attn_3,Numeric,8,2,insert addenbrooke Attention subscale here time 3,None,None,8,Right,Scale,Input
+Addenbrooke_Mem_3,Numeric,8,2,insert Memory subscale here time 3,None,None,8,Right,Scale,Input
+Addenbrooke_Fluency_3,Numeric,8,2,insert Fluency subscale here time 3,None,None,8,Right,Scale,Input
+Addenbrooke_Lang_3,Numeric,8,2,insert Language subscale here time 3,None,None,8,Right,Scale,Input
+Addenbrooke_Visuo_3,Numeric,8,2,insert Visuospatial subscale here time 3,None,None,8,Right,Scale,Input
+wms_io_raw_3,Numeric,8,2,WMS Info/Orientation raw score,None,None,14,Right,Scale,Input
+wms_io_per_3,Numeric,8,2,WMS Info/Orientation percentile,None,None,14,Right,Scale,Input
+moca_3,Numeric,8,2,Montreal Cognitive Assessment at time 3,None,None,8,Right,Nominal,Input
+wais_ver_3,Numeric,8,2,WAIS version,"{.00, WAIS-3}...",None,12,Right,Nominal,Input
+fsiq_3,Numeric,8,2,Full Scale IQ (SS),None,None,8,Right,Scale,Input
+vci_3,Numeric,8,2,Verbal Comprehension Index (SS),None,None,10,Right,Scale,Input
+sim_raw_3,Numeric,8,2,Similarities raw score,None,None,11,Right,Scale,Input
+sim_ss_3,Numeric,8,2,Similarities scaled score,None,None,10,Right,Scale,Input
+voc_raw_3,Numeric,8,2,Vocabulary raw score,None,None,8,Right,Scale,Input
+voc_ss_3,Numeric,8,2,Vocabulary scaled score,None,None,8,Right,Scale,Input
+in_raw_3,Numeric,8,2,Information raw score,None,None,10,Right,Scale,Input
+in_ss_3,Numeric,8,2,Information scaled score,None,None,10,Right,Scale,Input
+pri_3,Numeric,8,2,Perceptual Reasoning Index,None,None,8,Right,Scale,Input
+bd_raw_3,Numeric,8,2,Block Design raw score,None,None,10,Right,Scale,Input
+bd_ss_3,Numeric,8,2,Block Design scaled score,None,None,10,Right,Scale,Input
+mr_raw_3,Numeric,8,2,Matrix Reasoning raw score,None,None,8,Right,Scale,Input
+mr_ss_3,Numeric,8,2,Matrix Reasoning scaled score,None,None,8,Right,Scale,Input
+vp_raw_3,Numeric,8,2,Visual Puzzles raw score,None,None,8,Right,Scale,Input
+vp_ss_3,Numeric,8,2,Visual Puzzles scaled score,None,None,8,Right,Scale,Input
+wmi_3,Numeric,8,2,Working Memory Index,None,None,8,Right,Scale,Input
+dsp_raw_3,Numeric,8,2,Digit Span raw score,None,None,11,Right,Scale,Input
+dsp_ss_3,Numeric,8,2,Digit Span scaled score,None,None,10,Right,Scale,Input
+ar_raw_3,Numeric,8,2,Arithmetic raw score,None,None,8,Right,Scale,Input
+ar_ss_3,Numeric,8,2,Arithmetic scaled score,None,None,8,Right,Scale,Input
+psi_3,Numeric,8,2,Processing Speed Index,None,None,10,Right,Scale,Input
+ss_raw_3,Numeric,8,2,Symbol Search raw score,None,None,10,Right,Scale,Input
+ss_ss_3,Numeric,8,2,Symbol Search scaled score,None,None,10,Right,Scale,Input
+cd_raw_3,Numeric,8,2,Coding raw score,None,None,10,Right,Scale,Input
+cd_ss_3,Numeric,8,2,Coding scaled score,None,None,10,Right,Scale,Input
+wms_ver_3,Numeric,8,2,WMS version,"{.00, WMS-3}...",None,11,Right,Nominal,Input
+LM_ver_3,Numeric,8,2,Logical Memory version,"{.00, Adult}...",None,10,Right,Nominal,Input
+LMI_raw_3,Numeric,8,2,Logical Memory I raw score,None,None,11,Right,Scale,Input
+LMI_ss_3,Numeric,8,2,Logical Memory I standard score,None,None,10,Right,Scale,Input
+LMII_raw_3,Numeric,8,2,Logical Memory II raw score,None,None,12,Right,Scale,Input
+LMII_ss_3,Numeric,8,2,Logical Memory II standard score,None,None,11,Right,Scale,Input
+LMrec_raw_3,Numeric,8,2,Logical Memory recognition raw score,None,None,13,Right,Scale,Input
+LMrec_per_3,Numeric,8,2,Logical Memory recognition percentile,"{.00, <2}...",None,13,Right,Nominal,Input
+VPAI_raw_3,Numeric,8,2,Verbal Paired Associates I raw score,None,None,8,Right,Scale,Input
+VPAI_ss_3,Numeric,8,2,Verbal Paired Associates I scaled score,None,None,8,Right,Scale,Input
+VPAII_raw_3,Numeric,8,2,Verbal Paired Associates II raw score,None,None,8,Right,Scale,Input
+VPAII_ss_3,Numeric,8,2,Verbal Paired Associates II scaled score,None,None,8,Right,Scale,Input
+VPArec_raw_3,Numeric,8,2,Verbal Paired Associates recognition raw score,None,None,8,Right,Scale,Input
+VPArec_perc_3,Numeric,8,2,Verbal Paired Associates recognition percentile,"{.00, <2}...",None,8,Right,Nominal,Input
+VRI_raw_3,Numeric,8,2,Visual Reproduction I raw score,None,None,11,Right,Scale,Input
+VRI_ss_3,Numeric,8,2,Visual Reproduction I standard score,None,None,10,Right,Scale,Input
+VRII_raw_3,Numeric,8,2,Visual Reproduction II raw score,None,None,12,Right,Scale,Input
+VRII_ss_3,Numeric,8,2,Visual Reproduction II standard score,None,None,11,Right,Scale,Input
+VRrec_raw_3,Numeric,8,2,Visual Reproduction recognition raw score,None,None,13,Right,Scale,Input
+VRrec_per_3,Numeric,8,2,Visual Reproduction recognition percentile,"{.00, <2}...",None,13,Right,Nominal,Input
+VRcopy_raw_3,Numeric,8,2,Visual Reproduction Copy trial raw score,None,None,8,Right,Scale,Input
+VRcopy_perc_3,Numeric,8,2,Visual Reproduction Copy trial percentile,"{.00, <2}...",None,8,Right,Nominal,Input
+hvlt_form_3,Numeric,8,2,list hvlt form here,"{1.00, form 1}...",None,8,Right,Nominal,Input
+hvlt_tot_raw_3,Numeric,8,2,HVLT total recall raw score,None,None,16,Right,Scale,Input
+hvlt_tot_ss_3,Numeric,8,2,HVLT total recall standard score,None,None,15,Right,Scale,Input
+hvlt_tot_int_3,Numeric,8,2,HVLT total recall intrusions,None,None,16,Right,Scale,Input
+hvlt_tot_per_3,Numeric,8,2,HVLT total recall perseverations,None,None,16,Right,Scale,Input
+hvlt_delay_raw_3,Numeric,8,2,HVLT delayed recall raw score,None,None,18,Right,Scale,Input
+hvlt_delay_ss_3,Numeric,8,2,HVLT delayed recall standard score,None,None,17,Right,Scale,Input
+hvlt_perc_raw_3,Numeric,8,2,HVLT percent retention raw score,None,None,17,Right,Scale,Input
+hvlt_perc_ss_3,Numeric,8,2,HVLT percent retention standard score,None,None,16,Right,Scale,Input
+hvlt_disc_raw_3,Numeric,8,2,HVLT discrimination index raw score,None,None,17,Right,Scale,Input
+hvlt_disc_ss_3,Numeric,8,2,HVLT discrimination index standard score,None,None,16,Right,Scale,Input
+hvlt_disc_tp_3,Numeric,8,2,HVLT discrimination index true positives,None,None,16,Right,Scale,Input
+hvlt_disc_fp_3,Numeric,8,2,HVLT discrimination index false positives,None,None,16,Right,Scale,Input
+hvlt_disc_fn_3,Numeric,8,2,HVLT discrimination index false negatives,None,None,16,Right,Scale,Input
+cvlt_form_3,Numeric,8,2,CVLT-II form,"{.00, STD}...",None,8,Right,Nominal,Input
+cvlt_tot_raw_3,Numeric,8,2,CVLT-II total recall raw score,None,None,8,Right,Scale,Input
+cvlt_tot_ss_3,Numeric,8,2,CVLT-II total recall standard score,None,None,8,Right,Scale,Input
+cvlt_sdelayfree_raw_3,Numeric,8,2,CVLT-II short delay free recall raw score,None,None,8,Right,Scale,Input
+cvlt_sdelayfree_ss_3,Numeric,8,2,CVLT-II short delay free recall standard score,None,None,8,Right,Scale,Input
+cvlt_sdelaycued_raw_3,Numeric,8,2,CVLT-II short delay cued recall raw score,None,None,8,Right,Scale,Input
+cvlt_sdelaycued_ss_3,Numeric,8,2,CVLT-II short delay cued recall standard score,None,None,8,Right,Scale,Input
+cvlt_ldelayfree_raw_3,Numeric,8,2,CVLT-II long delay free recall raw score,None,None,8,Right,Scale,Input
+cvlt_ldelayfree_ss_3,Numeric,8,2,CVLT-II long delay free recall standard score,None,None,8,Right,Scale,Input
+cvlt_ldelaycued_raw_3,Numeric,8,2,CVLT-II long delay cued recall raw score,None,None,8,Right,Scale,Input
+cvlt_ldelaycued_ss_3,Numeric,8,2,CVLT-II long delay cued recall standard score,None,None,8,Right,Scale,Input
+cvlt_recogdisc_raw_3,Numeric,8,2,CVLT-II recognition discriminability raw score,None,None,8,Right,Scale,Input
+cvlt_recogdisc_ss_3,Numeric,8,2,CVLT-II recognition discriminability standard score,None,None,8,Right,Scale,Input
+cvlt_fcrecog_perc_3,Numeric,8,2,CVLT-II forced choice recognition percent correct,None,None,8,Right,Scale,Input
+BVMT_form_3,Numeric,8,2,BVMT-R form at time 3,"{1.00, FM-1}...",None,8,Right,Nominal,Input
+BVMT_tot_raw_3,Numeric,8,2,BVMT-R Total Recall raw score,None,None,8,Right,Scale,Input
+BVMT_tot_ss_3,Numeric,8,2,BVMT-R Total Recall standard score,None,None,8,Right,Scale,Input
+BVMT_delay_raw_3,Numeric,8,2,BVMT-R Delayed Recall raw score,None,None,8,Right,Scale,Input
+BVMT_delay_ss_3,Numeric,8,2,BVMT-R Delayed Recall standard score,None,None,8,Right,Scale,Input
+BVMT_rec_raw_3,Numeric,8,2,BVMT-R Discrimination Index raw score,None,None,8,Right,Scale,Input
+BVMT_rec_perc_3,Numeric,8,2,BVMT-R Discrimination Index percentile,"{.00, <2}...",None,8,Right,Nominal,Input
+bnt_ver_3,Numeric,8,2,Boston Naming Test version,"{.00, Full}...",None,8,Right,Nominal,Input
+bnt_raw_3,Numeric,8,2,Boston Naming raw score,None,None,11,Right,Scale,Input
+bnt_ss_3,Numeric,8,2,Boston Naming standard score,None,None,10,Right,Scale,Input
+bdae_CIM_raw_3,Numeric,8,2,BDAE Complex Ideational Material raw score,None,None,8,Right,Scale,Input
+bdae_CIM_ss_3,Numeric,8,2,BDAE Complex Ideational Material standard score,None,None,8,Right,Scale,Input
+bdae_RS_raw_3,Numeric,8,2,BDAE Repetition of Sentences raw score,None,None,8,Right,Scale,Input
+bdae_RN_raw_3,Numeric,8,2,BDAE Response Naming raw score,None,None,8,Right,Scale,Input
+bdae_RN_class_3,Numeric,8,2,BDAE Response Naming classification,"{.00, WNL}...",None,8,Right,Nominal,Input
+bdae_CT_raw_3,Numeric,8,2,BDAE Picture Description: Cookie Theft (Written) raw score,None,None,8,Right,Scale,Input
+bdae_SP_raw_3,Numeric,8,2,BDAE Semantic Probe raw score,None,None,8,Right,Scale,Input
+bdae_praxis_NG_raw_3,Numeric,8,2,BDAE Praxis Natural Gestures raw score,None,None,8,Right,Scale,Input
+bdae_praxis_CG_raw_3,Numeric,8,2,BDAE Praxis Conventional Gestures raw score,None,None,8,Right,Scale,Input
+bdae_praxis_UPO_raw_3,Numeric,8,2,BDAE Praxis Use of Pretended Objects raw score,None,None,8,Right,Scale,Input
+bdae_praxis_BFRM_raw_3,Numeric,8,2,BDAE Praxis Bucco-Facial/Respiratory Movements raw score,None,None,8,Right,Scale,Input
+bdae_WC_raw_3,Numeric,8,2,BDAE Word Comprehension (Body Parts) raw score,None,None,8,Right,Scale,Input
+wratread_form_3,Numeric,8,2,WRAT-4 Word Reading form at time 3,"{1.00, Blue}...",None,8,Right,Nominal,Input
+wratread_raw_3,Numeric,8,2,WRAT-4 Word Reading raw score,None,None,16,Right,Scale,Input
+wratread_ss_3,Numeric,8,2,WRAT-4 Word Reading standard score,None,None,15,Right,Scale,Input
+WJIII_WA_raw_3,Numeric,8,2,WJ-III Word Attack raw score,None,None,8,Right,Scale,Input
+WJIII_WA_ss_3,Numeric,8,2,WJ-III Word Attack standard score,None,None,8,Right,Scale,Input
+clock_score_3,Numeric,8,2,Clock Drawing score,None,None,15,Right,Scale,Input
+clock_time_3,Numeric,8,2,Clock drawn with hands at 10 to 11,"{.00, No}...",None,14,Right,Nominal,Input
+clock_class_3,Numeric,8,2,Clock Drawing classification,"{.00, WNL}...",None,8,Right,Nominal,Input
+JLO_form_3,Numeric,8,2,JLO Form/Version,"{1.00, H}...",None,8,Right,Nominal,Input
+JLO_raw_3,Numeric,8,2,JLO raw score,None,None,8,Right,Scale,Input
+JLO_ss_3,Numeric,8,2,JLO standard score,None,None,8,Right,Scale,Input
+sdmt_writ_raw_3,Numeric,8,2,Symbol Digit Modalities Test written raw score,None,None,17,Right,Scale,Input
+sdmt_writ_ss_3,Numeric,8,2,Symbol Digit Modalities Test written standard score,None,None,16,Right,Scale,Input
+sdmt_oral_raw_3,Numeric,8,2,Symbol Digit Modalities Test oral raw score,None,None,17,Right,Scale,Input
+sdmt_oral_ss_3,Numeric,8,2,Symbol Digit Modalities Test oral standard score,None,None,16,Right,Scale,Input
+PASAT_form_3,Numeric,8,2,PASAT Form,"{.00, A}...",None,8,Right,Nominal,Input
+PASAT_3srate_raw_3,Numeric,8,2,"PASAT 3"" rate raw score",None,None,8,Right,Scale,Input
+PASAT_3srate_ss_3,Numeric,8,2,"PASAT 3"" rate standard score",None,None,8,Right,Scale,Input
+PASAT_2srate_raw_3,Numeric,8,2,"PASAT 2"" rate raw score",None,None,8,Right,Scale,Input
+PASAT_2srate_ss_3,Numeric,8,2,"PASAT 2"" rate standard score",None,None,8,Right,Scale,Input
+CPT3_disc_ss_3,Numeric,8,2,CPT3 Detectability scaled score,None,None,8,Right,Scale,Input
+CPT3_detect_class_3,Numeric,8,2,CPT3 Detectability classification,"{.00, Good detection}...",None,8,Right,Nominal,Input
+CPT3_omis_ss_3,Numeric,8,2,CPT3 Omissions standard score,None,None,8,Right,Scale,Input
+CPT3_omis_class_3,Numeric,8,2,CPT3 Omissions classification,"{.00, Low error rate}...",None,8,Right,Nominal,Input
+CPT3_comis_ss_3,Numeric,8,2,CPT3 Commissions standard score,None,None,8,Right,Scale,Input
+CPT3_comis_class_3,Numeric,8,2,CPT3 Commissions classification,"{.00, Low error rate}...",None,8,Right,Nominal,Input
+CPT3_per_ss_3,Numeric,8,2,CPT3 Perseverations standard score,None,None,8,Right,Scale,Input
+CPT3_per_class_3,Numeric,8,2,CPT3 Perseverations classification,"{.00, Low rate of persev}...",None,8,Right,Nominal,Input
+CPT3_HRT_ss_3,Numeric,8,2,CPT3 HRT standard score,None,None,8,Right,Scale,Input
+CPT3_HRT_class_3,Numeric,8,2,CPT3 HRT classification,"{.00, Atypically fast*}...",None,8,Right,Nominal,Input
+CPT3_HRTSD_ss_3,Numeric,8,2,CPT3 HRT SD standard score,None,None,8,Right,Scale,Input
+CPT3_HRTSD_class_3,Numeric,8,2,CPT3 HRT SD classification,"{.00, Good consistency}...",None,8,Right,Nominal,Input
+CPT3_var_ss_3,Numeric,8,2,CPT3 Variability standard score,None,None,8,Right,Scale,Input
+CPT3_var_class_3,Numeric,8,2,CPT3 Variability classification,"{.00, Low variability}...",None,8,Right,Nominal,Input
+CPT3_HRTbc_ss_3,Numeric,8,2,CPT3 HRT Block Change standard score,None,None,8,Right,Scale,Input
+CPT3_HRTbc_class_3,Numeric,8,2,CPT3 HRT Block Change classification,"{.00, Stable RT across blocks}...",None,8,Right,Nominal,Input
+CPT3_HRTisi_ss_3,Numeric,8,2,CPT3 HRT ISI Change standard score,None,None,8,Right,Scale,Input
+CPT3_HRTisi_class_3,Numeric,8,2,CPT3 HRT ISI Change classification,"{.00, Stable RT across ISIs}...",None,8,Right,Nominal,Input
+trails_ver_3,Numeric,8,2,Trails version,"{.00, STD}...",None,8,Right,Nominal,Input
+trailsa_raw_3,Numeric,8,2,Trails A raw score,None,None,15,Right,Scale,Input
+trailsa_ss_3,Numeric,8,2,Trails A standard score,None,None,14,Right,Scale,Input
+trailsa_err_3,Numeric,8,2,Trails A number of errors,None,None,15,Right,Scale,Input
+trailsb_raw_3,Numeric,8,2,Trails B raw score,None,None,15,Right,Scale,Input
+trailsb_ss_3,Numeric,8,2,Trails B standard score,None,None,14,Right,Scale,Input
+trailsb_err_3,Numeric,8,2,Trails B number of errors,None,None,15,Right,Scale,Input
+wcst_ver_3,Numeric,8,2,WCST version,"{.00, STD}...",None,8,Right,Nominal,Input
+wcst_cat_raw_3,Numeric,8,2,WCST total categories raw score,None,None,16,Right,Scale,Input
+wcst_cat_perc_3,Numeric,8,2,WCST total categories percentile rank,"{.00, <1}...",None,17,Right,Nominal,Input
+wcst_fms_raw_3,Numeric,8,2,WCST failure to maintain set raw score,None,None,16,Right,Scale,Input
+wcst_fms_perc_3,Numeric,8,2,WCST failure to maintain set percentile rank,"{.00, <1}...",None,17,Right,Nominal,Input
+wcst_err_raw_3,Numeric,8,2,WCST total errors raw score,None,None,16,Right,Scale,Input
+wcst_err_ss_3,Numeric,8,2,WCST total errors standard score,None,None,15,Right,Scale,Input
+wcst_per_raw_3,Numeric,8,2,WCST perseverations raw score,None,None,16,Right,Scale,Input
+wcst_per_ss_3,Numeric,8,2,WCST perseverations standard score,None,None,15,Right,Scale,Input
+letfluency_ver_3,Numeric,8,2,Letter Fluency version,"{.00, DKEFS-std}...",None,18,Right,Nominal,Input
+DKEFSletterflue_raw_3,Numeric,8,2,"DKEFS Verbal Fluency, Letter Fluency Raw Score",None,None,8,Right,Scale,Input
+DKEFSletterflue_ss_3,Numeric,8,2,"DKEFS Verbal Fluency, Letter Fluency Scaled Score",None,None,8,Right,Scale,Input
+DKEFSletterlfue_per_3,Numeric,8,2,"DKEFS Verbal Fluency, Letter Fluency perseverations",None,None,8,Right,Scale,Input
+DKEFSleterflue_int_3,Numeric,8,2,"DKEFS Verbal Fluency, Letter Fluency intrusions",None,None,8,Right,Scale,Input
+letfluency_raw_3,Numeric,8,2,Letter Fluency raw score,None,None,18,Right,Scale,Input
+letfluency_ss_3,Numeric,8,2,Letter Fluency standard score,None,None,17,Right,Scale,Input
+letfluency_per_3,Numeric,8,2,Letter Fluency perseverations,None,None,18,Right,Scale,Input
+letfluency_int_3,Numeric,8,2,Letter Fluency intrusions,None,None,18,Right,Scale,Input
+catfluency_ver_3,Numeric,8,2,Category Fluency version,"{.00, DKEFS-std}...",None,18,Right,Nominal,Input
+DKEFScatflu_raw_3,Numeric,8,2,"DKEFS Verbal Fluency, Category Fluency raw score",None,None,8,Right,Scale,Input
+DKEFScatflu_ss_3,Numeric,8,2,"DKEFS Verbal Fluency, Category Fluency scaled score",None,None,8,Right,Scale,Input
+DKEFScatflu_per_3,Numeric,8,2,"DKEFS Verbal Fluency, Category Fluency perseverations",None,None,8,Right,Scale,Input
+DKEFScatflu_int_3,Numeric,8,2,"DKEFS Verbal Fluency, Category Fluency intrusions",None,None,8,Right,Scale,Input
+catfluency_raw_3,Numeric,8,2,Category Fluency raw score,None,None,18,Right,Scale,Input
+catfluency_ss_3,Numeric,8,2,Category Fluency standard score,None,None,17,Right,Scale,Input
+catfluency_per_3,Numeric,8,2,Category Fluency perseverations,None,None,18,Right,Scale,Input
+catfluency_int_3,Numeric,8,2,Category Fluency intrusions,None,None,18,Right,Scale,Input
+DKEFS_switch_vers_3,Numeric,8,2,DKEFS Switching Version,"{.00, STD}...",None,8,Right,Nominal,Input
+DKEFSswitchfluency_raw_3,Numeric,8,2,"If DKEFS Switching was administered, raw score",None,None,8,Right,Scale,Input
+DKEFSswitchfluency_ss_3,Numeric,8,2,Switching fluency scaled score,None,None,8,Right,Scale,Input
+DKEFSswitchaccuracy_raw_3,Numeric,8,2,Switching accuracy raw score,None,None,8,Right,Scale,Input
+DKEFSswitchaccuracy_ss_3,Numeric,8,2,Switching accuracy scaled score,None,None,8,Right,Scale,Input
+DKEFSTrails_vis_scan_raw_3,Numeric,8,2,DKEFS Trail Making Visual Scanning raw score,None,None,8,Right,Scale,Input
+DKEFSTrails_vis_scan_ss_3,Numeric,8,2,DKEFS Trail Making Visual Scanning scaled score,None,None,8,Right,Scale,Input
+DKEFSTrails_num_seq_raw_3,Numeric,8,2,DKEFS Number Sequencing raw score,None,None,8,Right,Scale,Input
+DKEFSTrails_num_seq_ss_3,Numeric,8,2,DKEFS Number Sequencing scaled score,None,None,8,Right,Scale,Input
+DKEFSTrails_let_seq_raw_3,Numeric,8,2,DKEFS Letter Sequencing raw score,None,None,8,Right,Scale,Input
+DKEFSTrails_let_seq_ss_3,Numeric,8,2,DKEFS Letter Sequencing scaled score,None,None,8,Right,Scale,Input
+DKEFSTrails_switch_raw_3,Numeric,8,2,DKEFS Number-Letter Switching raw score,None,None,8,Right,Scale,Input
+DKEFSTrails_switch_ss_3,Numeric,8,2,DKEFS Number-Letter Switching scaled score,None,None,8,Right,Scale,Input
+DKEFSTrails_errors_raw_3,Numeric,8,2,DKEFS Total Errors raw score,None,None,8,Right,Scale,Input
+DKEFSTrails_errors_ss_3,Numeric,8,2,DKEFS Total Errors scaled score,None,None,8,Right,Scale,Input
+DKEFSTrails_mot_speed_raw_3,Numeric,8,2,DKEFS Motor Speed raw score,None,None,8,Right,Scale,Input
+DKEFSTrails_mot_speed_ss_3,Numeric,8,2,DKEFS Motor Speed scaled score,None,None,8,Right,Scale,Input
+DKEFSTower_ach_score_raw_3,Numeric,8,2,DKEFS Tower Achievement Score raw score,None,None,8,Right,Scale,Input
+DKEFSTower_ach_score_ss_3,Numeric,8,2,DKEFS Tower Achievement Score scaled score,None,None,8,Right,Scale,Input
+DKEFSTower_mean1move_raw_3,Numeric,8,2,DKEFS Tower Mean First Move Time raw score,None,None,8,Right,Scale,Input
+DKEFSTower_mean1move_ss_3,Numeric,8,2,DKEFS Tower Mean First Move Time scaled score,None,None,8,Right,Scale,Input
+DKEFSTower_timepermove_raw_3,Numeric,8,2,DKEFS Tower Time/Move Ratio raw score,None,None,8,Right,Scale,Input
+DKEFSTower_timepermove_ss_3,Numeric,8,2,DKEFS Tower Time/Move Ratio scaled score,None,None,8,Right,Scale,Input
+DKEFSTower_move_acc_raw_3,Numeric,8,2,DKEFS Tower Move Accuracy Ratio raw score,None,None,8,Right,Scale,Input
+DKEFSTower_move_acc_ss_3,Numeric,8,2,DKEFS Tower Move Accuracy Ratio scaled score,None,None,8,Right,Scale,Input
+DKEFSTower_rule_viol_raw_3,Numeric,8,2,DKEFS Tower Rule-Violation/Item Ratio raw score,None,None,8,Right,Scale,Input
+DKEFSTower_rule_viol_ss_3,Numeric,8,2,DKEFS Tower Rule-Violation/Item Ratio scaled score,None,None,8,Right,Scale,Input
+DKEFSTower_tot_rvs_raw_3,Numeric,8,2,DKEFS Tower Total Rule Violations raw score,None,None,8,Right,Scale,Input
+DKEFSTower_tot_rvs_perc_3,Numeric,8,2,DKEFS Tower Total Rule Violations percentile,"{.00, <2}...",None,8,Right,Nominal,Input
+book_cat_errors_raw_3,Numeric,8,2,Booklet Category Test errors raw score,None,None,8,Right,Scale,Input
+book_cat_errors_ss_3,Numeric,8,2,Booklet Category Test errors standard score,None,None,8,Right,Scale,Input
+TapSet_raw_3,Numeric,8,2,Tapping Set raw score,None,None,8,Right,Scale,Input
+MotSeq_raw_3,Numeric,8,2,Motor Sequencing raw score,None,None,8,Right,Scale,Input
+ML_PDE_raw_3,Numeric,8,2,Multiple Loops PDE raw score,None,None,8,Right,Scale,Input
+ML_PFE_raw_3,Numeric,8,2,Multiple Loops PFE raw score,None,None,8,Right,Scale,Input
+RS_PDE_raw_3,Numeric,8,2,Recurrent Series PDE raw score,None,None,8,Right,Scale,Input
+RS_PFE_raw_3,Numeric,8,2,Recurrent Series PFE raw score,None,None,8,Right,Scale,Input
+pegs_DH_trial1_raw_3,Numeric,8,2,Grooved Pegboard Dominant Hand raw score,None,None,8,Right,Scale,Input
+pegs_DH_trial1_ss_3,Numeric,8,2,Grooved Pegboard Dominant Hand standard score,None,None,8,Right,Scale,Input
+pegs_NDH_trial1_raw_3,Numeric,8,2,Grooved Pegboard Non-Dominant Hand raw score,None,None,8,Right,Scale,Input
+pegs_NDH_trial1_ss_3,Numeric,8,2,Grooved Pegboard Non-Dominant Hand standard score,None,None,8,Right,Scale,Input
+gripstrength_DH_raw_3,Numeric,8,2,Grip Strength Dominant Hand raw score,None,None,8,Right,Scale,Input
+gripstrength_DH_ss_3,Numeric,8,2,Grip Strength Dominant Hand scaled score,None,None,8,Right,Scale,Input
+gripstrength_NDH_raw_3,Numeric,8,2,Grip Strength Non-Dominant Hand raw score,None,None,8,Right,Scale,Input
+gripstrength_NDH_ss_3,Numeric,8,2,Grip Strength Non-Dominant Hand scaled score,None,None,8,Right,Scale,Input
+gds_raw_3,Numeric,8,2,Geriatric Depression Scale raw score,None,None,11,Right,Scale,Input
+gds_class_3,Numeric,8,2,Geriatric Depression Scale classification,"{.00, WNL}...",None,13,Right,Nominal,Input
+bdi_raw_3,Numeric,8,2,BDI raw score,None,None,11,Right,Scale,Input
+bdi_class_3,Numeric,8,2,BDI classification,"{.00, Min}...",None,13,Right,Nominal,Input
+depression_label3,Numeric,8,2,severity of depression (GDS or BDI),"{.00, WNL to mild}...",None,8,Right,Nominal,Input
+adfacs_iadlperc_3,Numeric,8,2,ADFACS IADL percentile,None,None,19,Right,Scale,Input
+adfacs_adlperc_3,Numeric,8,2,ADFACS ADL percentile,None,None,18,Right,Scale,Input
+adfacs_tot_3,Numeric,8,2,ADFACS total score percentile,None,None,14,Right,Scale,Input
+maq_physio_panic_3,Numeric,8,2,maq_physio_panic_3,None,None,8,Right,Scale,Input
+maq_soc_pho_3,Numeric,8,2,maq_soc_pho_3,None,None,8,Right,Scale,Input
+maq_worry_fear_3,Numeric,8,2,maq_worry_fear_3,None,None,8,Right,Scale,Input
+maq_neg_aff_3,Numeric,8,2,maq_neg_aff_3,None,None,8,Right,Scale,Input
+maq_tot_3,Numeric,8,2,maq_tot_3,None,None,8,Right,Scale,Input
+bai_raw_3,Numeric,8,2,BAI raw score,None,None,8,Right,Scale,Input
+bai_ss_3,Numeric,8,2,BAI classification,"{.00, Min}...",None,8,Right,Nominal,Input
+cognitive_change_3,Numeric,8,2,cognitive decline since prior neuropsych evaluation,"{.00, stable}...",None,8,Right,Nominal,Input
+NeuroReaderDate_1,Date,10,0,Date of MRI scan with NR,None,None,8,Right,Scale,Input
+mTIV_1,Numeric,8,2,measured total intracranial volum (mTIV) mL,None,None,8,Right,Scale,Input
+WBV_vol_1,Numeric,8,2,Whole Brain Volume mL,None,None,8,Right,Scale,Input
+WBV_TIVperc_1,Numeric,8,2,Whole Brain vol/mTIV ratio (%),None,None,12,Right,Scale,Input
+WBV_Zscore_1,Numeric,8,2,Whole Brain Volume z score,None,None,8,Right,Scale,Input
+WBV_perc_1,Numeric,8,2,Whole Brain Volume percentile,None,None,8,Right,Scale,Input
+GrayMatter_vol_1,Numeric,8,2,Gray Matter Volume mL,None,None,12,Right,Scale,Input
+GrayMatter_TIVperc_1,Numeric,8,2,Gray Matter vol/mTIV ratio (%),None,None,9,Right,Scale,Input
+GrayMatter_Zscore_1,Numeric,8,2,Gray Matter Volume z score,None,None,8,Right,Scale,Input
+GrayMatter_perc_1,Numeric,8,2,Gray Matter Volume percentile,None,None,8,Right,Scale,Input
+WhiteMatter_vol_1,Numeric,8,2,White Matter Volume mL,None,None,8,Right,Scale,Input
+WhiteMatter_TIVperc_1,Numeric,8,2,White Matter vol/mTIV ratio (%),None,None,8,Right,Scale,Input
+WhiteMatter_Zscore_1,Numeric,8,2,White Matter Volume z score,None,None,8,Right,Scale,Input
+WhiteMatter_perc_1,Numeric,8,2,White Matter Volume percentile,None,None,8,Right,Scale,Input
+Hippocampus_Asym_Index_1,Numeric,8,2,Hippocampus asymmetry index,None,None,16,Right,Scale,Input
+Hippocampus_Asym_Zscor_1,Numeric,8,2,hippocampus asymmetry z score,None,None,15,Right,Scale,Input
+Hippocampus_Asym_percentile_1,Numeric,8,2,hippocampus asymmetry percentile,None,None,22,Right,Scale,Input
+Hippocampus_vol_1,Numeric,8,2,hippocampus volume,None,None,18,Right,Scale,Input
+Hippocampus_TIVperc_1,Numeric,8,2,hippocampus vol/mTIV ratio(%),None,None,19,Right,Scale,Input
+Hippocampus_Zscore_1,Numeric,8,2,hippocampus z score,None,None,17,Right,Scale,Input
+Hippocampus_perc_1,Numeric,8,2,hippocampus percentile,None,None,18,Right,Scale,Input
+Hippocampus_R_vol_1,Numeric,8,2,Right hippocampus volume,None,None,20,Right,Scale,Input
+Hippocampus_R_TIVperc_1,Numeric,8,2,Right hippocampus vol/mTIV ratio(%),None,None,26,Right,Scale,Input
+Hippocampus_R_Zscore_1,Numeric,8,2,Right hippocampus z score,None,None,23,Right,Scale,Input
+Hippocampus_R_perc_1,Numeric,8,2,Right hippocampus percentile,None,None,21,Right,Scale,Input
+Hippocampus_L_vol_1,Numeric,8,2,Left hippocampus volume,None,None,8,Right,Scale,Input
+Hippocampus_L_TIVperc_1,Numeric,8,2,Left hippocampus vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+Hippocampus_L_Zscore_1,Numeric,8,2,Left hippocampus z score,None,None,8,Right,Scale,Input
+Hippocampus_L_perc_1,Numeric,8,2,Left hippocampus percentile,None,None,8,Right,Scale,Input
+Amygdala_vol_1,Numeric,8,2,amygdala volume,None,None,8,Right,Scale,Input
+Amygdala_TIVperc_1,Numeric,8,2,amygdala vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+Amygdala_Zscore_1,Numeric,8,2,amygdala z score,None,None,8,Right,Scale,Input
+Amygdala_perc_1,Numeric,8,2,amygdala percentile,None,None,8,Right,Scale,Input
+Amygdala_R_vol_1,Numeric,8,2,Right amygdala volume,None,None,8,Right,Scale,Input
+Amygdala_R_TIVperc_1,Numeric,8,2,Right amygdala vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+Amygdala_R_Zscore_1,Numeric,8,2,Right amygdala z score,None,None,8,Right,Scale,Input
+Amygdala_R_perc_1,Numeric,8,2,Right amygdala percentile,None,None,8,Right,Scale,Input
+Amygdala_L_vol_1,Numeric,8,2,Left amygdala volume,None,None,8,Right,Scale,Input
+Amygdala_L_TIVperc_1,Numeric,8,2,Left amygdala vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+Amygdala_L_Zscore_1,Numeric,8,2,Left amygdala z score,None,None,8,Right,Scale,Input
+Amygdala_L_perc_1,Numeric,8,2,Left amygdala percentile,None,None,8,Right,Scale,Input
+Putamen_vol_1,Numeric,8,2,putamen volume,None,None,8,Right,Scale,Input
+Putamen_TIVperc_1,Numeric,8,2,putamen vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+Putamen_Zscore_1,Numeric,8,2,putamen z score,None,None,8,Right,Scale,Input
+Putamen_perc_1,Numeric,8,2,putamen percentile,None,None,8,Right,Scale,Input
+Putamen_R_vol_1,Numeric,8,2,Right putamen volume,None,None,8,Right,Scale,Input
+Putamen_R_TIVperc_1,Numeric,8,2,Right putamen vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+Putamen_R_Zscore_1,Numeric,8,2,Right putamen z score,None,None,8,Right,Scale,Input
+Putamen_R_perc_1,Numeric,8,2,Right putamen percentile,None,None,8,Right,Scale,Input
+Putamen_L_vol_1,Numeric,8,2,Left putamen volume,None,None,8,Right,Scale,Input
+Putamen_L_TIVperc_1,Numeric,8,2,Left putamen vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+Putamen_L_Zscore_1,Numeric,8,2,Left putamen z score,None,None,8,Right,Scale,Input
+Putamen_L_perc_1,Numeric,8,2,Left putamen percentile,None,None,8,Right,Scale,Input
+Thalamus_vol_1,Numeric,8,2,thalamus volume,None,None,8,Right,Scale,Input
+Thalamus_TIVperc_1,Numeric,8,2,thalamus vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+Thalamus_Zscore_1,Numeric,8,2,thalamus z score,None,None,8,Right,Scale,Input
+Thalamus_perc_1,Numeric,8,2,thalamus percentile,None,None,8,Right,Scale,Input
+Thalamus_R_vol_1,Numeric,8,2,Right thalamus volume,None,None,8,Right,Scale,Input
+Thalamus_R_TIVperc_1,Numeric,8,2,Right thalamus vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+Thalamus_R_Zscore_1,Numeric,8,2,Right thalamus z score,None,None,8,Right,Scale,Input
+Thalamus_R_perc_1,Numeric,8,2,Right thalamus percentile,None,None,8,Right,Scale,Input
+Thalamus_L_vol_1,Numeric,8,2,Left thalamus volume,None,None,8,Right,Scale,Input
+Thalamus_L_TIVperc_1,Numeric,8,2,Left thalamus vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+Thalamus_L_Zscore_1,Numeric,8,2,Left thalamus z score,None,None,8,Right,Scale,Input
+Thalamus_L_perc_1,Numeric,8,2,Left thalamus percentile,None,None,8,Right,Scale,Input
+VentD_vol_1,Numeric,8,2,Ventral diencephalon volume,None,None,8,Right,Scale,Input
+VentD_TIVperc_1,Numeric,8,2,Ventral diencephalon vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+VentD_Zscore_1,Numeric,8,2,Ventral diencephalon z score,None,None,8,Right,Scale,Input
+VentD_perc_1,Numeric,8,2,Ventral diencephalon percentile,None,None,8,Right,Scale,Input
+VentD_R_vol_1,Numeric,8,2,Right Ventral diencephalon volume,None,None,8,Right,Scale,Input
+VentD_R_TIVperc_1,Numeric,8,2,Right Ventral diencephalon vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+VentD_R_Zscore_1,Numeric,8,2,Right Ventral diencephalon z score,None,None,8,Right,Scale,Input
+VentD_R_perc_1,Numeric,8,2,Right Ventral diencephalon percentile,None,None,8,Right,Scale,Input
+VentD_L_vol_1,Numeric,8,2,Left Ventral diencephalon volume,None,None,8,Right,Scale,Input
+VentD_L_TIVperc_1,Numeric,8,2,Left Ventral diencephalon vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+VentD_L_Zscore_1,Numeric,8,2,Left Ventral diencephalon z score,None,None,8,Right,Scale,Input
+VentD_L_perc_1,Numeric,8,2,Left Diencephalon ventricles percentile,None,None,8,Right,Scale,Input
+Pallidum_vol_1,Numeric,8,2,pallidum volume,None,None,8,Right,Scale,Input
+Pallidum_TIVperc_1,Numeric,8,2,pallidum vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+Pallidum_Zscore_1,Numeric,8,2,pallidum z score,None,None,8,Right,Scale,Input
+Pallidum_perc_1,Numeric,8,2,pallidum percentile,None,None,8,Right,Scale,Input
+Pallidum_R_vol_1,Numeric,8,2,Right pallidum volume,None,None,8,Right,Scale,Input
+Pallidum_R_TIVperc_1,Numeric,8,2,Right pallidum vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+Pallidum_R_Zscore_1,Numeric,8,2,Right pallidum z score,None,None,8,Right,Scale,Input
+Pallidum_R_perc_1,Numeric,8,2,Right pallidum percentile,None,None,8,Right,Scale,Input
+Pallidum_L_vol_1,Numeric,8,2,Left pallidum volume,None,None,8,Right,Scale,Input
+Pallidum_L_TIVperc_1,Numeric,8,2,Left pallidum vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+Pallidum_L_Zscore_1,Numeric,8,2,Left pallidum z score,None,None,8,Right,Scale,Input
+Pallidum_L_perc_1,Numeric,8,2,Left pallidum percentile,None,None,8,Right,Scale,Input
+Caudate_vol_1,Numeric,8,2,caudate volume,None,None,8,Right,Scale,Input
+Caudate_TIVperc_1,Numeric,8,2,caudate vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+Caudate_Zscore_1,Numeric,8,2,caudate z score,None,None,8,Right,Scale,Input
+Caudate_perc_1,Numeric,8,2,caudate percentile,None,None,8,Right,Scale,Input
+Caudate_R_vol_1,Numeric,8,2,Right caudate volume,None,None,8,Right,Scale,Input
+Caudate_R_TIVperc_1,Numeric,8,2,Right caudate vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+Caudate_R_Zscore_1,Numeric,8,2,Right caudate z score,None,None,8,Right,Scale,Input
+Caudate_R_perc_1,Numeric,8,2,Right caudate percentile,None,None,8,Right,Scale,Input
+Caudate_L_vol_1,Numeric,8,2,Left caudate volume,None,None,8,Right,Scale,Input
+Caudate_L_TIVperc_1,Numeric,8,2,Left caudate vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+Caudate_L_Zscore_1,Numeric,8,2,Left caudate z score,None,None,8,Right,Scale,Input
+Caudate_L_perc_1,Numeric,8,2,Left caudate percentile,None,None,8,Right,Scale,Input
+BrainStem_vol_1,Numeric,8,2,brain stem volume,None,None,8,Right,Scale,Input
+BrainStem_TIVperc_1,Numeric,8,2,brain stem vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+BrainStem_Zscore_1,Numeric,8,2,brain stem z score,None,None,8,Right,Scale,Input
+BrainStem_perc_1,Numeric,8,2,brain stem percentile,None,None,8,Right,Scale,Input
+FrontalLobe_vol_1,Numeric,8,2,Frontal lobe volume,None,None,8,Right,Scale,Input
+FrontalLobe_TIVperc_1,Numeric,8,2,Frontal lobe vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+FrontalLobe_Zscore_1,Numeric,8,2,Frontal lobe z score,None,None,8,Right,Scale,Input
+FrontalLobe_perc_1,Numeric,8,2,Frontal lobe percentile,None,None,8,Right,Scale,Input
+FrontalLobe_R_vol_1,Numeric,8,2,Right Frontal lobe volume,None,None,8,Right,Scale,Input
+FrontalLobe_R_TIVperc_1,Numeric,8,2,Right Frontal lobe vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+FrontalLobe_R_Zscore_1,Numeric,8,2,Right Frontal lobe z score,None,None,8,Right,Scale,Input
+FrontalLobe_R_perc_1,Numeric,8,2,Right Frontal lobe percentile,None,None,8,Right,Scale,Input
+FrontalLobe_L_vol_1,Numeric,8,2,Left Frontal lobe volume,None,None,8,Right,Scale,Input
+FrontalLobe_L_TIVperc_1,Numeric,8,2,Left Frontal lobe vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+FrontalLobe_L_Zscore_1,Numeric,8,2,Left Frontal lobe z score,None,None,8,Right,Scale,Input
+FrontalLobe_L_perc_1,Numeric,8,2,Left Frontal lobe percentile,None,None,8,Right,Scale,Input
+ParietalLobe_vol_1,Numeric,8,2,Parietal lobe volume,None,None,8,Right,Scale,Input
+ParietalLobe_TIVperc_1,Numeric,8,2,Parietal lobe vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+ParietalLobe_Zscore_1,Numeric,8,2,Parietal lobe z score,None,None,8,Right,Scale,Input
+ParietalLobe_perc_1,Numeric,8,2,Parietal lobe percentile,None,None,8,Right,Scale,Input
+ParietalLobe_R_vol_1,Numeric,8,2,Right Parietal lobe volume,None,None,8,Right,Scale,Input
+ParietalLobe_R_TIVperc_1,Numeric,8,2,Right Parietal lobe vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+ParietalLobe_R_Zscore_1,Numeric,8,2,Right Parietal lobe z score,None,None,8,Right,Scale,Input
+ParietalLobe_R_perc_1,Numeric,8,2,Right Parietal lobe percentile,None,None,8,Right,Scale,Input
+ParietalLobe_L_vol_1,Numeric,8,2,Left Parietal lobe volume,None,None,8,Right,Scale,Input
+ParietalLobe_L_TIVperc_1,Numeric,8,2,Left Parietal lobe vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+ParietalLobe_L_Zscore_1,Numeric,8,2,Left Parietal lobe z score,None,None,8,Right,Scale,Input
+ParietalLobe_L_perc_1,Numeric,8,2,Left Parietal lobe percentile,None,None,8,Right,Scale,Input
+OccipitalLobe_vol_1,Numeric,8,2,Occipital lobe volume,None,None,8,Right,Scale,Input
+OccipitalLobe_TIVperc_1,Numeric,8,2,Occipital lobe vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+OccipitalLobe_Zscore_1,Numeric,8,2,Occipital lobe z score,None,None,8,Right,Scale,Input
+OccipitalLobe_perc_1,Numeric,8,2,Occipital lobe percentile,None,None,8,Right,Scale,Input
+OccipitalLobe_R_vol_1,Numeric,8,2,Right Occipital lobe volume,None,None,8,Right,Scale,Input
+OccipitalLobe_R_TIVperc_1,Numeric,8,2,Right Occipital lobe vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+OccipitalLobe_R_Zscore_1,Numeric,8,2,Right Occipital lobe z score,None,None,8,Right,Scale,Input
+OccipitalLobe_R_perc_1,Numeric,8,2,Right Occipital lobe percentile,None,None,8,Right,Scale,Input
+OccipitalLobe_L_vol_1,Numeric,8,2,Left Occipital lobe volume,None,None,8,Right,Scale,Input
+OccipitalLobe_L_TIVperc_1,Numeric,8,2,Left Occipital lobe vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+OccipitalLobe_L_Zscore_1,Numeric,8,2,Left Occipital lobe z score,None,None,8,Right,Scale,Input
+OccipitalLobe_L_perc_1,Numeric,8,2,Left Occipital lobe percentile,None,None,8,Right,Scale,Input
+TemporalLobe_vol_1,Numeric,8,2,Temporal lobe volume,None,None,8,Right,Scale,Input
+TemporalLobe_TIVperc_1,Numeric,8,2,Temporal lobe vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+TemporalLobe_Zscore_1,Numeric,8,2,Temporal lobe z score,None,None,8,Right,Scale,Input
+TemporalLobe_perc_1,Numeric,8,2,Temporal lobe percentile,None,None,8,Right,Scale,Input
+TemporalLobe_R_vol_1,Numeric,8,2,Right Temporal lobe volume,None,None,8,Right,Scale,Input
+TemporalLobe_R_TIVperc_1,Numeric,8,2,Right Temporal lobe vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+TemporalLobe_R_Zscore_1,Numeric,8,2,Right Temporal lobe z score,None,None,8,Right,Scale,Input
+TemporalLobe_R_perc_1,Numeric,8,2,Right Temporal lobe percentile,None,None,8,Right,Scale,Input
+TemporalLobe_L_vol_1,Numeric,8,2,Left Temporal lobe volume,None,None,8,Right,Scale,Input
+TemporalLobe_L_TIVperc_1,Numeric,8,2,Left Temporal lobe vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+TemporalLobe_L_Zscore_1,Numeric,8,2,Left Temporal lobe z score,None,None,8,Right,Scale,Input
+TemporalLobe_L_perc_1,Numeric,8,2,Left Temporal lobe percentile,None,None,8,Right,Scale,Input
+Cerebellum_vol_1,Numeric,8,2,cerebellum volume,None,None,8,Right,Scale,Input
+Cerebellum_TIVperc_1,Numeric,8,2,cerebellum vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+Cerebellum_Zscore_1,Numeric,8,2,cerebellum z score,None,None,8,Right,Scale,Input
+Cerebellum_perc_1,Numeric,8,2,cerebellum percentile,None,None,8,Right,Scale,Input
+Cerebellum_R_vol_1,Numeric,8,2,Right cerebellum volume,None,None,8,Right,Scale,Input
+Cerebellum_R_TIVperc_1,Numeric,8,2,Right cerebellum vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+Cerebellum_R_Zscore_1,Numeric,8,2,Right cerebellum z score,None,None,8,Right,Scale,Input
+Cerebellum_R_perc_1,Numeric,8,2,Right cerebellum percentile,None,None,8,Right,Scale,Input
+Cerebellum_L_vol_1,Numeric,8,2,Left cerebellum volume,None,None,8,Right,Scale,Input
+Cerebellum_L_TIVperc_1,Numeric,8,2,Left cerebellum vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+Cerebellum_L_Zscore_1,Numeric,8,2,Left cerebellum z score,None,None,8,Right,Scale,Input
+Cerebellum_L_perc_1,Numeric,8,2,Left cerebellum percentile,None,None,8,Right,Scale,Input
+CSF_Dura_vol_1,Numeric,8,2,CSF dura matter volume,None,None,8,Right,Scale,Input
+CSF_Dura_TIVperc_1,Numeric,8,2,CSF dura matter vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+CSF_Dura_Zscore_1,Numeric,8,2,CSF dura matter z score,None,None,8,Right,Scale,Input
+CSF_Dura_perc_1,Numeric,8,2,CSF dura matter percentile,None,None,8,Right,Scale,Input
+LateralVent_vol_1,Numeric,8,2,Lateral ventricles volume,None,None,8,Right,Scale,Input
+LateralVent_TIVperc_1,Numeric,8,2,Lateral ventricles vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+LateralVent_Zscore_1,Numeric,8,2,Lateral ventricles z score,None,None,8,Right,Scale,Input
+LateralVent_perc_1,Numeric,8,2,Lateral ventricles percentile,None,None,8,Right,Scale,Input
+LateralVent_R_vol_1,Numeric,8,2,Right Lateral ventricles volume,None,None,8,Right,Scale,Input
+LateralVent_R_TIVperc_1,Numeric,8,2,Right Lateral ventricles vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+LateralVent_R_Zscore_1,Numeric,8,2,Right Lateral ventricles z score,None,None,8,Right,Scale,Input
+LateralVent_R_perc_1,Numeric,8,2,Right Lateral ventricles percentile,None,None,8,Right,Scale,Input
+LateralVent_L_vol_1,Numeric,8,2,Left Lateral ventricles volume,None,None,8,Right,Scale,Input
+LateralVent_L_TIVperc_1,Numeric,8,2,Left Lateral ventricles vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+LateralVent_L_Zscore_1,Numeric,8,2,Left Lateral ventricles z score,None,None,8,Right,Scale,Input
+LateralVent_L_perc_1,Numeric,8,2,Left Lateral ventricles percentile,None,None,8,Right,Scale,Input
+WM_load_1,Numeric,8,2,Fazekas grading by Mohit,"{.00, Low load. Fazekas grade 0 or 1}...",None,9,Right,Nominal,Input
+fazekas_1,Numeric,8,2,Fazekas rating,None,None,8,Right,Scale,Input
+Amnestic_NPsyRating,Numeric,8,2,from data entry by Kate and Laura (?) for INS,"{.00, Amnestic}...",None,8,Right,Nominal,Input
+MCIType_WMLoad,Numeric,8,2,,"{1.00, Amnestic MCI low WM Load}...",None,8,Right,Nominal,Input
+filter_$,Numeric,1,0,memoryprofile_manuscript_includeVexclude = 0 (FILTER),"{0, Not Selected}...",None,10,Right,Nominal,Input
+employ_BL,Numeric,8,2,Employment status,"{.00, Full-time}...",None,8,Right,Nominal,Input
+occup_BL,String,100,0,Occupation,None,None,10,Left,Nominal,Input
+marital_BL,Numeric,8,2,Marital status,"{.00, Single}...",None,8,Right,Nominal,Input
+lang_first_BL,Numeric,8,2,First language,"{.00, English}...",None,8,Right,Nominal,Input
+lang_fluency_BL,Numeric,8,2,Fluent in other language?,"{.00, No}...",None,8,Right,Nominal,Input
+lang_sec_BL,Numeric,8,2,Secondary language,"{.00, English}...",None,8,Right,Nominal,Input
+cog_onset_BL,Numeric,8,2,Age of onset of cognitive decline,None,None,8,Right,Scale,Input
+neurobehav_BL,Numeric,8,2,Neurobehavioral syndrome per neuropsychologist,"{.00, Normal}...",None,8,Right,Nominal,Input
+etiology_BL,Numeric,8,2,etiology of neurobehavioral syndrome per neuropsychologist,"{.00, AD}...",None,8,Right,Nominal,Input
+etiology_BL_explained,String,800,0,Multifactorial explained,None,None,24,Left,Nominal,Input
+diabetes_BL,Numeric,8,2,Diabetes,"{.00, No}...",None,8,Right,Nominal,Input
+hypertension_BL,Numeric,8,2,Hypertension,"{.00, No}...",None,8,Right,Nominal,Input
+cva_BL,Numeric,8,2,Cerebrovascular accident,"{.00, No}...",None,8,Right,Nominal,Input
+cholesterol_BL,Numeric,8,2,High cholesterol,"{.00, No}...",None,8,Right,Nominal,Input
+cad_BL,Numeric,8,2,Coronary artery disease,"{.00, No}...",None,8,Right,Nominal,Input
+tbi_BL,Numeric,8,2,Traumatic brain injury,"{.00, No}...",None,8,Right,Nominal,Input
+tumor_BL,Numeric,8,2,Brain tumor,"{.00, No}...",None,8,Right,Nominal,Input
+other_neurol_BL,Numeric,8,2,Other neurologic problems,"{.00, No}...",None,8,Right,Nominal,Input
+other_neurol_prob_BL,String,1000,0,Description of other neurologic problems,None,None,8,Left,Nominal,Input
+neurologytx_BL,Numeric,8,2,is patient treated by neurologist,"{.00, yes}...",None,8,Right,Nominal,Input
+famhx_dem_BL,Numeric,8,2,Family history of dementia,"{.00, No}...",None,8,Right,Nominal,Input
+famhx_rel_BL,Numeric,8,2,Immediate fam hx of dementia,"{.00, None}...",None,8,Right,Nominal,Input
+famhx_demtype_BL,Numeric,8,2,Family history of dementia: type of dementia,"{.00, AD}...",None,8,Right,Nominal,Input
+famhx_demtype_explained_BL,String,500,0,,None,None,8,Left,Nominal,Input
+famhx_onset_BL,Numeric,8,2,Family history age of onset,"{.00, <50}...",None,8,Right,Nominal,Input
+famhx_onset_explained_BL,String,500,0,,None,None,8,Left,Nominal,Input
+psydx_BL,Numeric,8,2,Psychiatric diagnosis at BL,"{.00, No diagnosis}...",None,8,Right,Nominal,Input
+traumahx_BL,Numeric,8,2,History of psychological trauma,"{.00, No}...",None,8,Right,Nominal,Input
+premorbidpsych_BL,Numeric,8,2,premorbid psychiatric history,"{.00, no}...",None,8,Right,Nominal,Input
+premorbidpsych_description_BL,String,1000,0,description of premorbid psychiatric history time BL,None,None,8,Left,Nominal,Input
+rx_mem_BL,Numeric,8,2,Prescription for memory medication time BL,"{.00, No}...",None,8,Right,Nominal,Input
+rm_memname_BL,Numeric,8,2,Name of memory medication time BL,"{.00, namenda}...",None,8,Right,Nominal,Input
+rx_antidep_BL,Numeric,8,2,Prescription for antidepressant medication time BL,"{.00, No}...",None,8,Right,Nominal,Input
+rx_anx_BL,Numeric,8,2,Prescription for anxiolytic medication time BL,"{.00, No}...",None,8,Right,Nominal,Input
+rx_antipsy_BL,Numeric,8,2,Prescription for antipsychotic medication time BL,"{.00, No}...",None,8,Right,Nominal,Input
+mood_curr_BL,Numeric,8,2,Current mood problems per report during intake time BL,"{.00, No}...",None,8,Right,Nominal,Input
+therapy_BL,Numeric,8,2,current psychotherapy time BL,"{.00, No}...",None,8,Right,Nominal,Input
+priortx_BL,Numeric,8,2,Prior mental health tx,"{.00, No}...",None,8,Right,Nominal,Input
+suicide_BL,Numeric,8,2,Current suicidal ideation time BL,"{.00, No}...",None,8,Right,Nominal,Input
+psychosis_BL,Numeric,8,2,Current psychosis time BL,"{.00, No}...",None,8,Right,Nominal,Input
+psychosistype_BL,Numeric,8,2,,"{.00, none}...",None,8,Right,Nominal,Input
+sleep_BL,Numeric,8,2,Current sleep problems time BL,"{.00, No}...",None,8,Right,Nominal,Input
+OSAtx_BL,Numeric,8,2,"If have OSA, is it being treated?","{.00, No}...",None,8,Right,Nominal,Input
+sleep_med_BL,Numeric,8,2,Sleep medication time BL,"{.00, No}...",None,8,Right,Nominal,Input
+appetite_BL,Numeric,8,2,Appetite changes time BL,"{.00, No}...",None,8,Right,Nominal,Input
+etoh_abuse_BL,Numeric,8,2,Alcohol abuse time BL,"{.00, None}...",None,8,Right,Nominal,Input
+etoh_drinks_BL,Numeric,8,2,Number of drinks time BL,"{.00, None}...",None,8,Right,Nominal,Input
+tobacco_BL,Numeric,8,2,Tobacco use time BL,"{.00, None}...",None,8,Right,Nominal,Input
+drug_BL,Numeric,8,2,Recreational drug use time BL,"{.00, None}...",None,8,Right,Nominal,Input
+drug_type_BL,Numeric,8,2,Recreational drug use - drug type time BL,"{.00, No}...",None,8,Right,Nominal,Input
+drug_name_BL,String,8,0,Recreational drug use - drug name time BL,None,None,8,Left,Nominal,Input
+famhx_psy_BL,Numeric,8,2,Family history of psychiatric problems,"{.00, No}...",None,8,Right,Nominal,Input
+famhx_psyrel_BL,Numeric,8,2,Family history of psychiatric: relative,"{.00, None}...",None,8,Right,Nominal,Input
+Outside_Neuropsych_BL,Date,10,0,Date of outside neuropsych testing done,None,None,8,Right,Scale,Input
+declinefromoutsideeval_BL,Numeric,8,2,cognitive decline compared to outside NP eval,"{.00, no}...",None,8,Right,Nominal,Input
+Date_BL,Date,10,0,Date of first neuropsychological evaluation that does not correspond to NeuroReader,None,None,8,Right,Scale,Input
+NP_provider_BL,Numeric,8,2,NP Provider at baseline,"{1.00, Umfleet}...",None,8,Right,Nominal,Input
+age_BL,Numeric,8,2,Age at first testing,None,None,8,Right,Scale,Input
+Addenbrookedate_BL,Date,10,0,date of earliest addenbrooke if one was completed before time 1,None,None,8,Right,Scale,Input
+Addenbrooke_tot_BL,Numeric,8,2,overall addenbrooke score at baseline documented in neurology visit,None,None,8,Right,Scale,Input
+Addenbrooke_MMSE_BL,Numeric,8,2,MMSE subscale derived from Addenbrooke at BL,None,None,8,Right,Scale,Input
+Addenbrooke_Attn_BL,Numeric,8,2,insert addenbrooke Attention subscale here at BL,None,None,8,Right,Scale,Input
+Addenbrooke_Mem_BL,Numeric,8,2,insert Memory subscale here at BL,None,None,8,Right,Scale,Input
+Addenbrooke_Fluency_BL,Numeric,8,2,insert Fluency subscale here at BL,None,None,8,Right,Scale,Input
+Addenbrooke_Lang_BL,Numeric,8,2,insert Language subscale here at BL,None,None,8,Right,Scale,Input
+Addenbrooke_Visuo_BL,Numeric,8,2,insert Visuospatial subscale here at BL,None,None,8,Right,Scale,Input
+wms_io_raw_BL,Numeric,8,2,WMS Info/Orientation raw score,None,None,8,Right,Scale,Input
+wms_io_per_BL,Numeric,8,2,WMS Info/Orientation percentile,None,None,8,Right,Scale,Input
+moca_BL,Numeric,8,2,Montreal Cognitive Assessment at baseline,None,None,8,Right,Scale,Input
+wais_ver_BL,Numeric,8,2,WAIS version,"{.00, WAIS-3}...",None,8,Right,Nominal,Input
+fsiq_BL,Numeric,8,2,Full Scale IQ (SS),None,None,8,Right,Scale,Input
+vci_BL,Numeric,8,2,Verbal Comprehension Index (SS),None,None,8,Right,Scale,Input
+sim_raw_BL,Numeric,8,2,Similarities raw score,None,None,8,Right,Scale,Input
+sim_ss_BL,Numeric,8,2,Similarities scaled score,None,None,8,Right,Scale,Input
+voc_raw_BL,Numeric,8,2,Vocabulary raw score,None,None,8,Right,Scale,Input
+voc_ss_BL,Numeric,8,2,Vocabulary scaled score,None,None,8,Right,Scale,Input
+in_raw_BL,Numeric,8,2,Information raw score,None,None,8,Right,Scale,Input
+in_ss_BL,Numeric,8,2,Information scaled score,None,None,8,Right,Scale,Input
+pri_BL,Numeric,8,2,Perceptual Reasoning Index,None,None,8,Right,Scale,Input
+bd_raw_BL,Numeric,8,2,Block Design raw score,None,None,8,Right,Scale,Input
+bd_ss_BL,Numeric,8,2,Block Design scaled score,None,None,8,Right,Scale,Input
+mr_raw_BL,Numeric,8,2,Matrix Reasoning raw score,None,None,8,Right,Scale,Input
+mr_ss_BL,Numeric,8,2,Matrix Reasoning scaled score,None,None,8,Right,Scale,Input
+vp_raw_BL,Numeric,8,2,Visual Puzzles raw score,None,None,8,Right,Scale,Input
+vp_ss_BL,Numeric,8,2,Visual Puzzles scaled score,None,None,8,Right,Scale,Input
+wmi_BL,Numeric,8,2,Working Memory Index,None,None,8,Right,Scale,Input
+dsp_raw_BL,Numeric,8,2,Digit Span raw score,None,None,8,Right,Scale,Input
+dsp_ss_BL,Numeric,8,2,Digit Span scaled score,None,None,8,Right,Scale,Input
+ar_raw_BL,Numeric,8,2,Arithmetic raw score,None,None,8,Right,Scale,Input
+ar_ss_BL,Numeric,8,2,Arithmetic scaled score,None,None,8,Right,Scale,Input
+psi_BL,Numeric,8,2,Processing Speed Index,None,None,8,Right,Scale,Input
+ss_raw_BL,Numeric,8,2,Symbol Search raw score,None,None,8,Right,Scale,Input
+ss_ss_BL,Numeric,8,2,Symbol Search scaled score,None,None,8,Right,Scale,Input
+cd_raw_BL,Numeric,8,2,Coding raw score,None,None,8,Right,Scale,Input
+cd_ss_BL,Numeric,8,2,Coding scaled score,None,None,8,Right,Scale,Input
+wms_ver_BL,Numeric,8,2,WMS version,"{.00, WMS-3}...",None,8,Right,Nominal,Input
+LM_ver_BL,Numeric,8,2,Logical Memory version,"{.00, Adult}...",None,8,Right,Nominal,Input
+LMI_raw_BL,Numeric,8,2,Logical Memory I raw score,None,None,8,Right,Scale,Input
+LMI_ss_BL,Numeric,8,2,Logical Memory I standard score,None,None,8,Right,Scale,Input
+LMII_raw_BL,Numeric,8,2,Logical Memory II raw score,None,None,8,Right,Scale,Input
+LMII_ss_BL,Numeric,8,2,Logical Memory II standard score,None,None,8,Right,Scale,Input
+LMrec_raw_BL,Numeric,8,2,Logical Memory recognition raw score,None,None,8,Right,Scale,Input
+LMrec_per_BL,Numeric,8,2,Logical Memory recognition percentile,"{.00, <2}...",None,8,Right,Nominal,Input
+VPAI_raw_BL,Numeric,8,2,Verbal Paired Associates I raw score,None,None,8,Right,Scale,Input
+VPAI_ss_BL,Numeric,8,2,Verbal Paired Associates I scaled score,None,None,8,Right,Scale,Input
+VPAII_raw_BL,Numeric,8,2,Verbal Paired Associates II raw score,None,None,8,Right,Scale,Input
+VPAII_ss_BL,Numeric,8,2,Verbal Paired Associates II scaled score,None,None,8,Right,Scale,Input
+VPArec_raw_BL,Numeric,8,2,Verbal Paired Associates recognition raw score,None,None,8,Right,Scale,Input
+VPArec_perc_BL,Numeric,8,2,Verbal Paired Associates recognition percentile,"{.00, <2}...",None,8,Right,Nominal,Input
+VRI_raw_BL,Numeric,8,2,Visual Reproduction I raw score,None,None,8,Right,Scale,Input
+VRI_ss_BL,Numeric,8,2,Visual Reproduction I standard score,None,None,8,Right,Scale,Input
+VRII_raw_BL,Numeric,8,2,Visual Reproduction II raw score,None,None,8,Right,Scale,Input
+VRII_ss_BL,Numeric,8,2,Visual Reproduction II standard score,None,None,8,Right,Scale,Input
+VRrec_raw_BL,Numeric,8,2,Visual Reproduction recognition raw score,None,None,8,Right,Nominal,Input
+VRrec_per_BL,Numeric,8,2,Visual Reproduction recognition percentile,"{.00, <2}...",None,8,Right,Nominal,Input
+VRcopy_raw_BL,Numeric,8,2,Visual Reproduction Copy trial raw score,None,None,8,Right,Scale,Input
+VRcopy_perc_BL,Numeric,8,2,Visual Reproduction Copy trial percentile,"{.00, <2}...",None,8,Right,Nominal,Input
+hvlt_form_BL,Numeric,8,2,list hvlt form here,"{1.00, form 1}...",None,8,Right,Nominal,Input
+hvlt_tot_raw_BL,Numeric,8,2,HVLT total recall raw score,None,None,8,Right,Scale,Input
+hvlt_tot_ss_BL,Numeric,8,2,HVLT total recall standard score,None,None,8,Right,Scale,Input
+hvlt_tot_per_BL,Numeric,8,2,HVLT total recall perseverations,None,None,8,Right,Scale,Input
+hvlt_tot_int_BL,Numeric,8,2,HVLT total recall intrusions,None,None,8,Right,Scale,Input
+hvlt_delay_raw_BL,Numeric,8,2,HVLT delayed recall raw score,None,None,8,Right,Scale,Input
+hvlt_delay_ss_BL,Numeric,8,2,HVLT delayed recall standard score,None,None,8,Right,Scale,Input
+hvlt_perc_raw_BL,Numeric,8,2,HVLT percent retention raw score,None,None,8,Right,Scale,Input
+hvlt_perc_ss_BL,Numeric,8,2,HVLT percent retention standard score,None,None,8,Right,Scale,Input
+hvlt_disc_raw_BL,Numeric,8,2,HVLT discrimination index raw score,None,None,8,Right,Scale,Input
+hvlt_disc_ss_BL,Numeric,8,2,HVLT discrimination index standard score,None,None,8,Right,Scale,Input
+hvlt_disc_tp_BL,Numeric,8,2,HVLT discrimination index true positives,None,None,8,Right,Scale,Input
+hvlt_disc_fp_BL,Numeric,8,2,HVLT discrimination index false positives,None,None,8,Right,Scale,Input
+hvlt_disc_fn_BL,Numeric,8,2,HVLT discrimination index false negatives,None,None,8,Right,Scale,Input
+cvlt_form_BL,Numeric,8,2,CVLT-II form,"{.00, STD}...",None,8,Right,Nominal,Input
+cvlt_tot_raw_BL,Numeric,8,2,CVLT-II total recall raw score,None,None,8,Right,Scale,Input
+cvlt_tot_ss_BL,Numeric,8,2,CVLT-II total recall standard score,None,None,8,Right,Scale,Input
+cvlt_sdelayfree_raw_BL,Numeric,8,2,CVLT-II short delay free recall raw score,None,None,8,Right,Scale,Input
+cvlt_sdelayfree_ss_BL,Numeric,8,2,CVLT-II short delay free recall standard score,None,None,8,Right,Scale,Input
+cvlt_sdelaycued_raw_BL,Numeric,8,2,CVLT-II short delay cued recall raw score,None,None,8,Right,Scale,Input
+cvlt_sdelaycued_ss_BL,Numeric,8,2,CVLT-II short delay cued recall standard score,None,None,8,Right,Scale,Input
+cvlt_ldelayfree_raw_BL,Numeric,8,2,CVLT-II long delay free recall raw score,None,None,8,Right,Scale,Input
+cvlt_ldelayfree_ss_BL,Numeric,8,2,CVLT-II long delay free recall standard score,None,None,8,Right,Scale,Input
+cvlt_ldelaycued_raw_BL,Numeric,8,2,CVLT-II long delay cued recall raw score,None,None,8,Right,Scale,Input
+cvlt_ldelaycued_ss_BL,Numeric,8,2,CVLT-II long delay cued recall standard score,None,None,8,Right,Scale,Input
+cvlt_recogdisc_raw_BL,Numeric,8,2,CVLT-II recognition discriminability raw score,None,None,8,Right,Scale,Input
+cvlt_recogdisc_ss_BL,Numeric,8,2,CVLT-II recognition discriminability standard score,None,None,8,Right,Scale,Input
+cvlt_fcrecog_perc_BL,Numeric,8,2,CVLT-II forced choice recognition percent correct,None,None,8,Right,Scale,Input
+BVMT_form_BL,Numeric,8,2,BVMT-R form at baseline,"{1.00, FM-1}...",None,8,Right,Nominal,Input
+BVMT_tot_raw_BL,Numeric,8,2,BVMT-R Total Recall raw score,None,None,8,Right,Scale,Input
+BVMT_tot_ss_BL,Numeric,8,2,BVMT-R Total Recall standard score,None,None,8,Right,Scale,Input
+BVMT_delay_raw_BL,Numeric,8,2,BVMT-R Delayed Recall raw score,None,None,8,Right,Scale,Input
+BVMT_delay_ss_BL,Numeric,8,2,BVMT-R Delayed Recall standard score,None,None,8,Right,Scale,Input
+BVMT_rec_raw_BL,Numeric,8,2,BVMT-R Discrimination Index raw score,None,None,8,Right,Scale,Input
+BVMT_rec_perc_BL,Numeric,8,2,BVMT-R Discrimination Index percentile,"{.00, <2}...",None,8,Right,Nominal,Input
+bnt_ver_BL,Numeric,8,2,Boston Naming Test version,"{.00, Full}...",None,8,Right,Nominal,Input
+bnt_raw_BL,Numeric,8,2,Boston Naming raw score,None,None,8,Right,Scale,Input
+bnt_ss_BL,Numeric,8,2,Boston Naming standard score,None,None,8,Right,Scale,Input
+bdae_CIM_raw_BL,Numeric,8,2,BDAE Complex Ideational Material raw score,None,None,8,Right,Scale,Input
+bdae_CIM_ss_bl,Numeric,8,2,BDAE Complex Ideational Material standard score,None,None,8,Right,Scale,Input
+bdae_RS_raw_BL,Numeric,8,2,BDAE Repetition of Sentences raw score,None,None,8,Right,Scale,Input
+bdae_RN_raw_BL,Numeric,8,2,BDAE Response Naming raw score,None,None,8,Right,Scale,Input
+bdae_RN_class_BL,Numeric,8,2,BDAE Response Naming classification,"{.00, WNL}...",None,8,Right,Nominal,Input
+bdae_CT_raw_BL,Numeric,8,2,BDAE Picture Description: Cookie Theft (Written) raw score,None,None,8,Right,Scale,Input
+bdae_SP_raw_BL,Numeric,8,2,BDAE Semantic Probe raw score,None,None,8,Right,Scale,Input
+bdae_praxis_NG_raw_BL,Numeric,8,2,BDAE Praxis Natural Gestures raw score,None,None,8,Right,Scale,Input
+bdae_praxis_CG_raw_BL,Numeric,8,2,BDAE Praxis Conventional Gestures raw score,None,None,8,Right,Scale,Input
+bdae_praxis_UPO_raw_BL,Numeric,8,2,BDAE Praxis Use of Pretended Objects raw score,None,None,8,Right,Scale,Input
+bdae_praxis_BFRM_raw_BL,Numeric,8,2,BDAE Praxis Bucco-Facial/Respiratory Movements raw score,None,None,8,Right,Scale,Input
+bdae_WC_raw_BL,Numeric,8,2,BDAE Word Comprehension (Body Parts) raw score,None,None,8,Right,Scale,Input
+wratread_form_BL,Numeric,8,2,WRAT-4 Word Reading form,"{1.00, Blue}...",None,8,Right,Nominal,Input
+wratread_raw_BL,Numeric,8,2,WRAT-4 Word Reading raw score,None,None,8,Right,Scale,Input
+wratread_ss_BL,Numeric,8,2,WRAT-4 Word Reading standard score,None,None,8,Right,Scale,Input
+WJIII_WA_raw_BL,Numeric,8,2,WJ-III Word Attack raw score,None,None,8,Right,Scale,Input
+WJIII_WA_ss_BL,Numeric,8,2,WJ-III Word Attack standard score,None,None,8,Right,Scale,Input
+clock_score_BL,Numeric,8,2,Clock Drawing score,None,None,8,Right,Scale,Input
+clock_time_BL,Numeric,8,2,Clock drawn with hands at 10 to 11,"{.00, No}...",None,8,Right,Nominal,Input
+clock_class_BL,Numeric,8,2,Clock Drawing classification,"{.00, WNL}...",None,8,Right,Nominal,Input
+JLO_form_BL,Numeric,8,2,JLO Form/Version,"{1.00, H}...",None,8,Right,Nominal,Input
+JLO_raw_BL,Numeric,8,2,JLO raw score,None,None,8,Right,Scale,Input
+JLO_ss_BL,Numeric,8,2,JLO standard score,None,None,8,Right,Scale,Input
+sdmt_writ_raw_BL,Numeric,8,2,Symbol Digit Modalities Test written raw score,None,None,8,Right,Scale,Input
+sdmt_writ_ss_BL,Numeric,8,2,Symbol Digit Modalities Test written standard score,None,None,8,Right,Scale,Input
+sdmt_oral_raw_BL,Numeric,8,2,Symbol Digit Modalities Test oral raw score,None,None,8,Right,Scale,Input
+sdmt_oral_ss_BL,Numeric,8,2,Symbol Digit Modalities Test oral standard score,None,None,8,Right,Scale,Input
+PASAT_form_BL,Numeric,8,2,PASAT Form,"{.00, A}...",None,8,Right,Nominal,Input
+PASAT_3srate_raw_BL,Numeric,8,2,"PASAT 3"" rate raw score",None,None,8,Right,Scale,Input
+PASAT_3srate_ss_BL,Numeric,8,2,"PASAT 3"" rate standard score",None,None,8,Right,Scale,Input
+PASAT_2srate_raw_BL,Numeric,8,2,"PASAT 2"" rate raw score",None,None,8,Right,Scale,Input
+PASAT_2srate_ss_BL,Numeric,8,2,"PASAT 2"" rate standard score",None,None,8,Right,Scale,Input
+CPT3_detect_ss_BL,Numeric,8,2,CPT3 Detectability standard score,None,None,8,Right,Scale,Input
+CPT3_detect_class_BL,Numeric,8,2,CPT3 Detectability classification,"{.00, Good detection}...",None,8,Right,Nominal,Input
+CPT3_omis_ss_BL,Numeric,8,2,CPT3 Omissions standard score,None,None,8,Right,Scale,Input
+CPT3_omis_class_BL,Numeric,8,2,CPT3 Omissions classification,"{.00, Low error rate}...",None,8,Right,Nominal,Input
+CPT3_comis_ss_BL,Numeric,8,2,CPT3 Commissions standard score,None,None,8,Right,Scale,Input
+CPT3_comis_class_BL,Numeric,8,2,CPT3 Commissions classification,"{.00, Low error rate}...",None,8,Right,Nominal,Input
+CPT3_per_ss_BL,Numeric,8,2,CPT3 Perseverations standard score,None,None,8,Right,Scale,Input
+CPT3_per_class_BL,Numeric,8,2,CPT3 Perseverations classification,"{.00, Low rate of persev}...",None,8,Right,Nominal,Input
+CPT3_HRT_ss_BL,Numeric,8,2,CPT3 HRT standard score,None,None,8,Right,Scale,Input
+CPT3_HRT_class_BL,Numeric,8,2,CPT3 HRT classification,"{.00, Atypically fast*}...",None,8,Right,Nominal,Input
+CPT3_HRTSD_ss_BL,Numeric,8,2,CPT3 HRT SD standard score,None,None,8,Right,Scale,Input
+CPT3_HRTSD_class_BL,Numeric,8,2,CPT3 HRT SD classification,"{.00, Good consistency}...",None,8,Right,Nominal,Input
+CPT3_var_ss_BL,Numeric,8,2,CPT3 Variability standard score,None,None,8,Right,Scale,Input
+CPT3_var_class_BL,Numeric,8,2,CPT3 Variability classification,"{.00, Low variability}...",None,8,Right,Nominal,Input
+CPT3_HRTbc_ss_BL,Numeric,8,2,CPT3 HRT Block Change standard score,None,None,8,Right,Scale,Input
+CPT3_HRTbc_class_BL,Numeric,8,2,CPT3 HRT Block Change classification,"{.00, Stable RT across blocks}...",None,8,Right,Nominal,Input
+CPT3_HRTisi_ss_BL,Numeric,8,2,CPT3 HRT ISI Change standard score,None,None,8,Right,Scale,Input
+CPT3_HRTisi_class_BL,Numeric,8,2,CPT3 HRT ISI Change classification,"{.00, Stable RT across ISIs}...",None,8,Right,Nominal,Input
+trails_ver_BL,Numeric,8,2,Trails version,"{.00, STD}...",None,8,Right,Nominal,Input
+trailsa_raw_BL,Numeric,8,2,Trails A raw score,None,None,8,Right,Scale,Input
+trailsa_ss_BL,Numeric,8,2,Trails A standard score,None,None,8,Right,Scale,Input
+trailsa_err_BL,Numeric,8,2,Trails A number of errors,None,None,8,Right,Scale,Input
+trailsb_raw_BL,Numeric,8,2,Trails B raw score,None,None,8,Right,Scale,Input
+trailsb_ss_BL,Numeric,8,2,Trails B standard score,None,None,8,Right,Scale,Input
+trailsb_err_BL,Numeric,8,2,Trails B number of errors,None,None,8,Right,Scale,Input
+wcst_ver_BL,Numeric,8,2,WCST version,"{.00, STD}...",None,8,Right,Nominal,Input
+wcst_cat_raw_BL,Numeric,8,2,WCST total categories raw score,None,None,8,Right,Scale,Input
+wcst_cat_perc_BL,Numeric,8,2,WCST total categories percentile rank,"{.00, <1}...",None,8,Right,Scale,Input
+wcst_fms_raw_BL,Numeric,8,2,WCST failure to maintain set raw score,None,None,8,Right,Scale,Input
+wcst_fms_perc_BL,Numeric,8,2,WCST failure to maintain set percentile rank,"{.00, <1}...",None,8,Right,Scale,Input
+wcst_err_raw_BL,Numeric,8,2,WCST total errors raw score,None,None,8,Right,Scale,Input
+wcst_err_ss_BL,Numeric,8,2,WCST total errors standard score,None,None,8,Right,Scale,Input
+wcst_per_raw_BL,Numeric,8,2,WCST perseverations raw score,None,None,8,Right,Scale,Input
+wcst_per_ss_BL,Numeric,8,2,WCST perseverations standard score,None,None,8,Right,Scale,Input
+letfluency_ver_BL,Numeric,8,2,Letter Fluency version,"{.00, DKEFS-std}...",None,8,Right,Nominal,Input
+DKEFSletterflue_raw_BL,Numeric,8,2,"DKEFS Verbal Fluency, Letter Fluency Raw Score",None,None,8,Right,Scale,Input
+DKEFSletterflue_ss_BL,Numeric,8,2,"DKEFS Verbal Fluency, Letter Fluency Scaled Score",None,None,8,Right,Scale,Input
+DKEFSletterlfue_per_BL,Numeric,8,2,"DKEFS Verbal Fluency, Letter Fluency perseverations",None,None,8,Right,Scale,Input
+DKEFSleterflue_int_BL,Numeric,8,2,"DKEFS Verbal Fluency, Letter Fluency intrusions",None,None,8,Right,Scale,Input
+letfluency_raw_BL,Numeric,8,2,Letter Fluency raw score,None,None,8,Right,Scale,Input
+letfluency_ss_BL,Numeric,8,2,Letter Fluency standard score,None,None,8,Right,Scale,Input
+letfluency_per_BL,Numeric,8,2,Letter Fluency perseverations,None,None,8,Right,Scale,Input
+letfluency_int_BL,Numeric,8,2,Letter Fluency intrusions,None,None,8,Right,Scale,Input
+DKEFScatflu_raw_BL,Numeric,8,2,"DKEFS Verbal Fluency, Category Fluency raw score",None,None,8,Right,Scale,Input
+DKEFScatflu_ss_BL,Numeric,8,2,"DKEFS Verbal Fluency, Category Fluency scaled score",None,None,8,Right,Scale,Input
+DKEFScatflu_per_BL,Numeric,8,2,"DKEFS Verbal Fluency, Category Fluency perseverations",None,None,8,Right,Scale,Input
+DKEFScatflu_int_BL,Numeric,8,2,"DKEFS Verbal Fluency, Category Fluency intrusions",None,None,8,Right,Scale,Input
+catfluency_ver_BL,Numeric,8,2,Category Fluency version,"{.00, DKEFS-std}...",None,8,Right,Nominal,Input
+catfluency_raw_BL,Numeric,8,2,Category Fluency raw score,None,None,8,Right,Scale,Input
+catfluency_ss_BL,Numeric,8,2,Category Fluency standard score,None,None,8,Right,Scale,Input
+catfluency_per_BL,Numeric,8,2,Category Fluency perseverations,None,None,8,Right,Scale,Input
+catfluency_int_BL,Numeric,8,2,Category Fluency intrusions,None,None,8,Right,Scale,Input
+DKEFS_switch_vers_BL,Numeric,8,2,DKEFS Switching Version,"{.00, STD}...",None,8,Right,Nominal,Input
+DKEFSswitchfluency_raw_BL,Numeric,8,2,"If DKEFS Switching was administered, raw score",None,None,8,Right,Scale,Input
+DKEFSswitchfluency_ss_BL,Numeric,8,2,Switching fluency scaled score,None,None,8,Right,Scale,Input
+DKEFSswitchaccuracy_raw_BL,Numeric,8,2,Switching accuracy raw score,None,None,8,Right,Scale,Input
+DKEFSswitchaccuracy_ss_BL,Numeric,8,2,Switching accuracy scaled score,None,None,8,Right,Scale,Input
+DKEFSTrails_vis_scan_raw_BL,Numeric,8,2,DKEFS Trail Making Visual Scanning raw score,None,None,8,Right,Scale,Input
+DKEFSTrails_vis_scan_ss_BL,Numeric,8,2,DKEFS Trail Making Visual Scanning scaled score,None,None,8,Right,Scale,Input
+DKEFSTrails_num_seq_raw_BL,Numeric,8,2,DKEFS Number Sequencing raw score,None,None,8,Right,Scale,Input
+DKEFSTrails_num_seq_ss_BL,Numeric,8,2,DKEFS Number Sequencing scaled score,None,None,8,Right,Scale,Input
+DKEFSTrails_let_seq_raw_BL,Numeric,8,2,DKEFS Letter Sequencing raw score,None,None,8,Right,Scale,Input
+DKEFSTrails_let_seq_ss_BL,Numeric,8,2,DKEFS Letter Sequencing scaled score,None,None,8,Right,Scale,Input
+DKEFSTrails_switch_raw_BL,Numeric,8,2,DKEFS Number-Letter Switching raw score,None,None,8,Right,Scale,Input
+DKEFSTrails_switch_ss_BL,Numeric,8,2,DKEFS Number-Letter Switching scaled score,None,None,8,Right,Scale,Input
+DKEFSTrails_errors_raw_BL,Numeric,8,2,DKEFS Total Errors raw score,None,None,8,Right,Scale,Input
+DKEFSTrails_errors_ss_BL,Numeric,8,2,DKEFS Total Errors scaled score,None,None,8,Right,Scale,Input
+DKEFSTrails_mot_speed_raw_BL,Numeric,8,2,DKEFS Motor Speed raw score,None,None,8,Right,Scale,Input
+DKEFSTrails_mot_speed_ss_BL,Numeric,8,2,DKEFS Motor Speed scaled score,None,None,8,Right,Scale,Input
+DKEFSTower_ach_score_raw_BL,Numeric,8,2,DKEFS Tower Achievement Score raw score,None,None,8,Right,Scale,Input
+DKEFSTower_ach_score_ss_BL,Numeric,8,2,DKEFS Tower Achievement Score scaled score,None,None,8,Right,Scale,Input
+DKEFSTower_mean1move_raw_BL,Numeric,8,2,DKEFS Tower Mean First Move Time raw score,None,None,8,Right,Scale,Input
+DKEFSTower_mean1move_ss_BL,Numeric,8,2,DKEFS Tower Mean First Move Time scaled score,None,None,8,Right,Scale,Input
+DKEFSTower_timepermove_raw_BL,Numeric,8,2,DKEFS Tower Time/Move Ratio raw score,None,None,8,Right,Scale,Input
+DKEFSTower_timepermove_ss_BL,Numeric,8,2,DKEFS Tower Time/Move Ratio scaled score,None,None,8,Right,Scale,Input
+DKEFSTower_move_acc_raw_BL,Numeric,8,2,DKEFS Tower Move Accuracy Ratio raw score,None,None,8,Right,Scale,Input
+DKEFSTower_move_acc_ss_BL,Numeric,8,2,DKEFS Tower Move Accuracy Ratio scaled score,None,None,8,Right,Scale,Input
+DKEFSTower_rule_viol_raw_BL,Numeric,8,2,DKEFS Tower Rule-Violation/Item Ratio raw score,None,None,8,Right,Scale,Input
+DKEFSTower_rule_viol_ss_BL,Numeric,8,2,DKEFS Tower Rule-Violation/Item Ratio scaled score,None,None,8,Right,Scale,Input
+DKEFSTower_tot_rvs_raw_BL,Numeric,8,2,DKEFS Tower Total Rule Violations raw score,None,None,8,Right,Scale,Input
+DKEFSTower_tot_rvs_perc_BL,Numeric,8,2,DKEFS Tower Total Rule Violations percentile,"{.00, <2}...",None,8,Right,Nominal,Input
+book_cat_errors_raw_BL,Numeric,8,2,Booklet Category Test errors raw score,None,None,8,Right,Scale,Input
+book_cat_errors_ss_BL,Numeric,8,2,Booklet Category Test errors standard score,None,None,8,Right,Scale,Input
+TapSet_raw_BL,Numeric,8,2,Tapping Set raw score,None,None,8,Right,Scale,Input
+MotSeq_raw_BL,Numeric,8,2,Motor Sequencing raw score,None,None,8,Right,Scale,Input
+ML_PDE_raw_BL,Numeric,8,2,Multiple Loops PDE raw score,None,None,8,Right,Scale,Input
+ML_PFE_raw_BL,Numeric,8,2,Multiple Loops PFE raw score,None,None,8,Right,Scale,Input
+RS_PDE_raw_BL,Numeric,8,2,Recurrent Series PDE raw score,None,None,8,Right,Scale,Input
+RS_PFE_raw_BL,Numeric,8,2,Recurrent Series PFE raw score,None,None,8,Right,Scale,Input
+pegs_DH_trial1_raw_BL,Numeric,8,2,Grooved Pegboard Dominant Hand raw score,None,None,8,Right,Scale,Input
+pegs_DH_trial1_ss_BL,Numeric,8,2,Grooved Pegboard Dominant Hand standard score,None,None,8,Right,Scale,Input
+pegs_NDH_trial1_raw_BL,Numeric,8,2,Grooved Pegboard Non-Dominant Hand raw score,None,None,8,Right,Scale,Input
+pegs_NDH_trial1_ss_BL,Numeric,8,2,Grooved Pegboard Non-Dominant Hand standard score,None,None,8,Right,Scale,Input
+gripstrength_DH_raw_BL,Numeric,8,2,Grip Strength Dominant Hand raw score,None,None,8,Right,Scale,Input
+gripstrength_DH_ss_BL,Numeric,8,2,Grip Strength Dominant Hand scaled score,None,None,8,Right,Scale,Input
+gripstrength_NDH_raw_BL,Numeric,8,2,Grip Strength Non-Dominant Hand raw score,None,None,8,Right,Scale,Input
+gripstrength_NDH_ss_BL,Numeric,8,2,Grip Strength Non-Dominant Hand scaled score,None,None,8,Right,Scale,Input
+gds_raw_BL,Numeric,8,2,Geriatric Depression Scale raw score,None,None,8,Right,Scale,Input
+gds_class_BL,Numeric,8,2,Geriatric Depression Scale classification,"{.00, WNL}...",None,8,Right,Nominal,Input
+bdi_raw_BL,Numeric,8,2,BDI raw score,None,None,8,Right,Scale,Input
+bdi_class_BL,Numeric,8,2,BDI classification,"{.00, Min}...",None,8,Right,Nominal,Input
+depression_label_BL,Numeric,8,2,severity of depression (GDS or BDI),"{.00, WNL to mild}...",None,8,Right,Nominal,Input
+adfacs_iadlperc_BL,Numeric,8,2,ADFACS IADL percentile,None,None,8,Right,Scale,Input
+adfacs_adlperc_BL,Numeric,8,2,ADFACS ADL percentile,None,None,8,Right,Scale,Input
+adfacs_tot_BL,Numeric,8,2,ADFACS total score percentile,None,None,8,Right,Scale,Input
+maq_physio_panic_BL,Numeric,8,2,MAQ Physiological Panic standard score,None,None,8,Right,Scale,Input
+maq_soc_pho_BL,Numeric,8,2,MAQ Social Phobia standard score,None,None,8,Right,Scale,Input
+maq_worry_fear_BL,Numeric,8,2,MAQ Worry/Fears standard score,None,None,8,Right,Scale,Input
+maq_neg_aff_BL,Numeric,8,2,MAQ Negative Affectivity standard score,None,None,8,Right,Scale,Input
+maq_tot_BL,Numeric,8,2,Total MAQ standard score,None,None,8,Right,Scale,Input
+bai_raw_BL,Numeric,8,2,BAI raw score,None,None,8,Right,Scale,Input
+bai_class_BL,Numeric,8,2,BAI classification,"{.00, Min}...",None,8,Right,Nominal,Input
+VascularRisks_Burden,Numeric,8,2,,"{.00, 0-1 Vascular Risks}...",None,22,Right,Nominal,Input
+Differ_HC_WBV,Numeric,8,2,,None,None,15,Right,Scale,Input
+Differ_HC_FL,Numeric,8,2,,None,None,14,Right,Scale,Input
+Differ_HC_FL_R,Numeric,8,2,,None,None,16,Right,Scale,Input
+Differ_HC_FL_L,Numeric,8,2,,None,None,16,Right,Scale,Input
+Differ_HC_PL,Numeric,8,2,,None,None,14,Right,Scale,Input
+Differ_HC_PL_R,Numeric,8,2,,None,None,16,Right,Scale,Input
+Differ_HC_PL_L,Numeric,8,2,,None,None,16,Right,Scale,Input
+Differ_HC_TL,Numeric,8,2,,None,None,14,Right,Scale,Input
+Differ_HC_TL_R,Numeric,8,2,,None,None,16,Right,Scale,Input
+Differ_HC_TL_L,Numeric,8,2,,None,None,16,Right,Scale,Input
+Differ_HC_OL,Numeric,8,2,,None,None,14,Right,Scale,Input
+Differ_HC_OL_R,Numeric,8,2,,None,None,16,Right,Scale,Input
+Differ_HC_OL_L,Numeric,8,2,,None,None,16,Right,Scale,Input
+Hippocampus_Zscore1_3groups,Numeric,8,2,,None,None,29,Right,Nominal,Input
+wordlist_profile_lu_1.5SD,Numeric,8,2,wordlist profile using 1.5 SD cutoff,"{.00, storage impairment}...",None,26,Right,Nominal,Input
+LM_profile_lu_1.5SD,Numeric,8,2,LM profile using 1.5 SD cutoff,"{.00, storage impairment}...",None,12,Right,Nominal,Input
+VR_profile_lu_1.5SD,Numeric,8,2,VR profile using 1.5 SD cutoff,"{.00, storage impairment}...",None,14,Right,Nominal,Input
+memory_profile_1.5SD,Numeric,8,2,overall memory profile considering labels using 1.5SD,"{.00, impaired without normal}...",None,21,Right,Nominal,Input
+memory_profile_1.5SD_luLATEST,Numeric,8,2,,"{.00, storage only}...",None,35,Right,Nominal,Input
+wordlist_profile_lu_1SD,Numeric,8,2,wordlist profile using 1 SD cutoff,"{.00, storage impairment}...",None,3,Right,Nominal,Input
+wordlist_profile_petersenORIGINAL,Numeric,8,2,,"{.00, amnestic}...",None,8,Right,Nominal,Input
+wordlist_profile_petersenwithrecognition,Numeric,8,2,,"{.00, amnestic}...",None,8,Right,Nominal,Input
+LM_profile_lu_1SD,Numeric,8,2,LM profile using 1 SD cutoff,"{.00, storage impairment}...",None,30,Right,Nominal,Input
+VR_profile_lu_1SD,Numeric,8,2,VR profile using 1 SD cutoff,"{.00, storage impairment}...",None,27,Right,Nominal,Input
+memory_profile_1SD_luLATEST,Numeric,8,2,,"{.00, storage only}...",None,37,Right,Nominal,Input
+memory_profile_lu_1SD,Numeric,8,2,overall memory profile considering labels using 1 SD,"{.00, storage impairment}...",None,29,Right,Nominal,Input
+hvlt_profile_anthony,Numeric,8,2,HVLT profile for anthony's 2019 INS poster,"{.00, storage impairment}...",None,8,Right,Nominal,Input
+NeuroReaderDate_2,Date,10,0,Date of MRI scan with NR,None,None,8,Right,Scale,Input
+mTIV_2,Numeric,8,2,measured total intracranial volum (mTIV) mL,None,None,8,Right,Scale,Input
+WBV_vol_2,Numeric,8,2,Whole Brain Volume mL,None,None,8,Right,Scale,Input
+WBV_TIVperc_2,Numeric,8,2,Whole Brain vol/mTIV ratio (%),None,None,8,Right,Scale,Input
+WBV_Zscore_2,Numeric,8,2,Whole Brain Volume z score,None,None,8,Right,Scale,Input
+WBV_perc_2,Numeric,8,2,Whole Brain Volume percentile,None,None,8,Right,Scale,Input
+GrayMatter_vol_2,Numeric,8,2,Gray Matter Volume mL,None,None,8,Right,Scale,Input
+GrayMatter_TIVperc_2,Numeric,8,2,Gray Matter vol/mTIV ratio (%),None,None,8,Right,Scale,Input
+GrayMatter_Zscore_2,Numeric,8,2,Gray Matter Volume z score,None,None,8,Right,Scale,Input
+GrayMatter_perc_2,Numeric,8,2,Gray Matter Volume percentile,None,None,8,Right,Scale,Input
+WhiteMatter_vol_2,Numeric,8,2,White Matter Volume mL,None,None,8,Right,Scale,Input
+WhiteMatter_TIVperc_2,Numeric,8,2,White Matter vol/mTIV ratio (%),None,None,8,Right,Scale,Input
+WhiteMatter_Zscore_2,Numeric,8,2,White Matter Volume z score,None,None,8,Right,Scale,Input
+WhiteMatter_perc_2,Numeric,8,2,White Matter Volume percentile,None,None,8,Right,Scale,Input
+Hippocampus_Asym_Index_2,Numeric,8,2,Hippocampus asymmetry index,None,None,8,Right,Scale,Input
+Hippocampus_Asym_Zscor_2,Numeric,8,2,hippocampus asymmetry z score,None,None,8,Right,Scale,Input
+Hippocampus_Asym_percentile_2,Numeric,8,2,hippocampus asymmetry percentile,None,None,8,Right,Scale,Input
+Hippocampus_vol_2,Numeric,8,2,hippocampus volume,None,None,8,Right,Scale,Input
+Hippocampus_TIVperc_2,Numeric,8,2,hippocampus vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+Hippocampus_Zscore_2,Numeric,8,2,hippocampus z score,None,None,8,Right,Scale,Input
+Hippocampus_perc_2,Numeric,8,2,hippocampus percentile,None,None,8,Right,Scale,Input
+Hippocampus_R_vol_2,Numeric,8,2,Right hippocampus volume,None,None,8,Right,Scale,Input
+Hippocampus_R_TIVperc_2,Numeric,8,2,Right hippocampus vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+Hippocampus_R_Zscore_2,Numeric,8,2,Right hippocampus z score,None,None,8,Right,Scale,Input
+Hippocampus_R_perc_2,Numeric,8,2,Right hippocampus percentile,None,None,8,Right,Scale,Input
+Hippocampus_L_vol_2,Numeric,8,2,Left hippocampus volume,None,None,8,Right,Scale,Input
+Hippocampus_L_TIVperc_2,Numeric,8,2,Left hippocampus vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+Hippocampus_L_Zscore_2,Numeric,8,2,Left hippocampus z score,None,None,8,Right,Scale,Input
+Hippocampus_L_perc_2,Numeric,8,2,Left hippocampus percentile,None,None,8,Right,Scale,Input
+Amygdala_vol_2,Numeric,8,2,amygdala volume,None,None,8,Right,Scale,Input
+Amygdala_TIVperc_2,Numeric,8,2,amygdala vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+Amygdala_Zscore_2,Numeric,8,2,amygdala z score,None,None,8,Right,Scale,Input
+Amygdala_perc_2,Numeric,8,2,amygdala percentile,None,None,8,Right,Scale,Input
+Amygdala_R_vol_2,Numeric,8,2,Right amygdala volume,None,None,8,Right,Scale,Input
+Amygdala_R_TIVperc_2,Numeric,8,2,Right amygdala vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+Amygdala_R_Zscore_2,Numeric,8,2,Right amygdala z score,None,None,8,Right,Scale,Input
+Amygdala_R_perc_2,Numeric,8,2,Right amygdala percentile,None,None,8,Right,Scale,Input
+Amygdala_L_vol_2,Numeric,8,2,Left amygdala volume,None,None,8,Right,Scale,Input
+Amygdala_L_TIVperc_2,Numeric,8,2,Left amygdala vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+Amygdala_L_Zscore_2,Numeric,8,2,Left amygdala z score,None,None,8,Right,Scale,Input
+Amygdala_L_perc_2,Numeric,8,2,Left amygdala percentile,None,None,8,Right,Scale,Input
+Putamen_vol_2,Numeric,8,2,putamen volume,None,None,8,Right,Scale,Input
+Putamen_TIVperc_2,Numeric,8,2,putamen vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+Putamen_Zscore_2,Numeric,8,2,putamen z score,None,None,8,Right,Scale,Input
+Putamen_perc_2,Numeric,8,2,putamen percentile,None,None,8,Right,Scale,Input
+Putamen_R_vol_2,Numeric,8,2,Right putamen volume,None,None,8,Right,Scale,Input
+Putamen_R_TIVperc_2,Numeric,8,2,Right putamen vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+Putamen_R_Zscore_2,Numeric,8,2,Right putamen z score,None,None,8,Right,Scale,Input
+Putamen_R_perc_2,Numeric,8,2,Right putamen percentile,None,None,8,Right,Scale,Input
+Putamen_L_vol_2,Numeric,8,2,Left putamen volume,None,None,8,Right,Scale,Input
+Putamen_L_TIVperc_2,Numeric,8,2,Left putamen vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+Putamen_L_Zscore_2,Numeric,8,2,Left putamen z score,None,None,8,Right,Scale,Input
+Putamen_L_perc_2,Numeric,8,2,Left putamen percentile,None,None,8,Right,Scale,Input
+Thalamus_vol_2,Numeric,8,2,thalamus volume,None,None,8,Right,Scale,Input
+Thalamus_TIVperc_2,Numeric,8,2,thalamus vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+Thalamus_Zscore_2,Numeric,8,2,thalamus z score,None,None,8,Right,Scale,Input
+Thalamus_perc_2,Numeric,8,2,thalamus percentile,None,None,8,Right,Scale,Input
+Thalamus_R_vol_2,Numeric,8,2,Right thalamus volume,None,None,8,Right,Scale,Input
+Thalamus_R_TIVperc_2,Numeric,8,2,Right thalamus vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+Thalamus_R_Zscore_2,Numeric,8,2,Right thalamus z score,None,None,8,Right,Scale,Input
+Thalamus_R_perc_2,Numeric,8,2,Right thalamus percentile,None,None,8,Right,Scale,Input
+Thalamus_L_vol_2,Numeric,8,2,Left thalamus volume,None,None,8,Right,Scale,Input
+Thalamus_L_TIVperc_2,Numeric,8,2,Left thalamus vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+Thalamus_L_Zscore_2,Numeric,8,2,Left thalamus z score,None,None,8,Right,Scale,Input
+Thalamus_L_perc_2,Numeric,8,2,Left thalamus percentile,None,None,8,Right,Scale,Input
+VentD_vol_2,Numeric,8,2,Ventral diencephalon volume,None,None,8,Right,Scale,Input
+VentD_TIVperc_2,Numeric,8,2,Ventral diencephalon vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+VentD_Zscore_2,Numeric,8,2,Ventral diencephalon z score,None,None,8,Right,Scale,Input
+VentD_perc_2,Numeric,8,2,Ventral diencephalon percentile,None,None,8,Right,Scale,Input
+VentD_R_vol_2,Numeric,8,2,Right Ventral diencephalon volume,None,None,8,Right,Scale,Input
+VentD_R_TIVperc_2,Numeric,8,2,Right Ventral diencephalon vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+VentD_R_Zscore_2,Numeric,8,2,Right Ventral diencephalon z score,None,None,8,Right,Scale,Input
+VentD_R_perc_2,Numeric,8,2,Right Ventral diencephalon percentile,None,None,8,Right,Scale,Input
+VentD_L_vol_2,Numeric,8,2,Left Ventral diencephalon volume,None,None,8,Right,Scale,Input
+VentD_L_TIVperc_2,Numeric,8,2,Left Ventral diencephalon vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+VentD_L_Zscore_2,Numeric,8,2,Left Ventral diencephalon z score,None,None,8,Right,Scale,Input
+VentD_L_perc_2,Numeric,8,2,Left Diencephalon ventricles percentile,None,None,8,Right,Scale,Input
+Pallidum_vol_2,Numeric,8,2,pallidum volume,None,None,8,Right,Scale,Input
+Pallidum_TIVperc_2,Numeric,8,2,pallidum vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+Pallidum_Zscore_2,Numeric,8,2,pallidum z score,None,None,8,Right,Scale,Input
+Pallidum_perc_2,Numeric,8,2,pallidum percentile,None,None,8,Right,Scale,Input
+Pallidum_R_vol_2,Numeric,8,2,Right pallidum volume,None,None,8,Right,Scale,Input
+Pallidum_R_TIVperc_2,Numeric,8,2,Right pallidum vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+Pallidum_R_Zscore_2,Numeric,8,2,Right pallidum z score,None,None,8,Right,Scale,Input
+Pallidum_R_perc_2,Numeric,8,2,Right pallidum percentile,None,None,8,Right,Scale,Input
+Pallidum_L_vol_2,Numeric,8,2,Left pallidum volume,None,None,8,Right,Scale,Input
+Pallidum_L_TIVperc_2,Numeric,8,2,Left pallidum vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+Pallidum_L_Zscore_2,Numeric,8,2,Left pallidum z score,None,None,8,Right,Scale,Input
+Pallidum_L_perc_2,Numeric,8,2,Left pallidum percentile,None,None,8,Right,Scale,Input
+Caudate_vol_2,Numeric,8,2,caudate volume,None,None,8,Right,Scale,Input
+Caudate_TIVperc_2,Numeric,8,2,caudate vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+Caudate_Zscore_2,Numeric,8,2,caudate z score,None,None,8,Right,Scale,Input
+Caudate_perc_2,Numeric,8,2,caudate percentile,None,None,8,Right,Scale,Input
+Caudate_R_vol_2,Numeric,8,2,Right caudate volume,None,None,8,Right,Scale,Input
+Caudate_R_TIVperc_2,Numeric,8,2,Right caudate vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+Caudate_R_Zscore_2,Numeric,8,2,Right caudate z score,None,None,8,Right,Scale,Input
+Caudate_R_perc_2,Numeric,8,2,Right caudate percentile,None,None,8,Right,Scale,Input
+Caudate_L_vol_2,Numeric,8,2,Left caudate volume,None,None,8,Right,Scale,Input
+Caudate_L_TIVperc_2,Numeric,8,2,Left caudate vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+Caudate_L_Zscore_2,Numeric,8,2,Left caudate z score,None,None,8,Right,Scale,Input
+Caudate_L_perc_2,Numeric,8,2,Left caudate percentile,None,None,8,Right,Scale,Input
+BrainStem_vol_2,Numeric,8,2,brain stem volume,None,None,8,Right,Scale,Input
+BrainStem_TIVperc_2,Numeric,8,2,brain stem vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+BrainStem_Zscore_2,Numeric,8,2,brain stem z score,None,None,8,Right,Scale,Input
+BrainStem_perc_2,Numeric,8,2,brain stem percentile,None,None,8,Right,Scale,Input
+FrontalLobe_vol_2,Numeric,8,2,Frontal lobe volume,None,None,8,Right,Scale,Input
+FrontalLobe_TIVperc_2,Numeric,8,2,Frontal lobe vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+FrontalLobe_Zscore_2,Numeric,8,2,Frontal lobe z score,None,None,8,Right,Scale,Input
+FrontalLobe_perc_2,Numeric,8,2,Frontal lobe percentile,None,None,8,Right,Scale,Input
+FrontalLobe_R_vol_2,Numeric,8,2,Right Frontal lobe volume,None,None,8,Right,Scale,Input
+FrontalLobe_R_TIVperc_2,Numeric,8,2,Right Frontal lobe vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+FrontalLobe_R_Zscore_2,Numeric,8,2,Right Frontal lobe z score,None,None,8,Right,Scale,Input
+FrontalLobe_R_perc_2,Numeric,8,2,Right Frontal lobe percentile,None,None,8,Right,Scale,Input
+FrontalLobe_L_vol_2,Numeric,8,2,Left Frontal lobe volume,None,None,8,Right,Scale,Input
+FrontalLobe_L_TIVperc_2,Numeric,8,2,Left Frontal lobe vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+FrontalLobe_L_Zscore_2,Numeric,8,2,Left Frontal lobe z score,None,None,8,Right,Scale,Input
+FrontalLobe_L_perc_2,Numeric,8,2,Left Frontal lobe percentile,None,None,8,Right,Scale,Input
+ParietalLobe_vol_2,Numeric,8,2,Parietal lobe volume,None,None,8,Right,Scale,Input
+ParietalLobe_TIVperc_2,Numeric,8,2,Parietal lobe vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+ParietalLobe_Zscore_2,Numeric,8,2,Parietal lobe z score,None,None,8,Right,Scale,Input
+ParietalLobe_perc_2,Numeric,8,2,Parietal lobe percentile,None,None,8,Right,Scale,Input
+ParietalLobe_R_vol_2,Numeric,8,2,Right Parietal lobe volume,None,None,8,Right,Scale,Input
+ParietalLobe_R_TIVperc_2,Numeric,8,2,Right Parietal lobe vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+ParietalLobe_R_Zscore_2,Numeric,8,2,Right Parietal lobe z score,None,None,8,Right,Scale,Input
+ParietalLobe_R_perc_2,Numeric,8,2,Right Parietal lobe percentile,None,None,8,Right,Scale,Input
+ParietalLobe_L_vol_2,Numeric,8,2,Left Parietal lobe volume,None,None,8,Right,Scale,Input
+ParietalLobe_L_TIVperc_2,Numeric,8,2,Left Parietal lobe vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+ParietalLobe_L_Zscore_2,Numeric,8,2,Left Parietal lobe z score,None,None,8,Right,Scale,Input
+ParietalLobe_L_perc_2,Numeric,8,2,Left Parietal lobe percentile,None,None,8,Right,Scale,Input
+OccipitalLobe_vol_2,Numeric,8,2,Occipital lobe volume,None,None,8,Right,Scale,Input
+OccipitalLobe_TIVperc_2,Numeric,8,2,Occipital lobe vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+OccipitalLobe_Zscore_2,Numeric,8,2,Occipital lobe z score,None,None,8,Right,Scale,Input
+OccipitalLobe_perc_2,Numeric,8,2,Occipital lobe percentile,None,None,8,Right,Scale,Input
+OccipitalLobe_R_vol_2,Numeric,8,2,Right Occipital lobe volume,None,None,8,Right,Scale,Input
+OccipitalLobe_R_TIVperc_2,Numeric,8,2,Right Occipital lobe vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+OccipitalLobe_R_Zscore_2,Numeric,8,2,Right Occipital lobe z score,None,None,8,Right,Scale,Input
+OccipitalLobe_R_perc_2,Numeric,8,2,Right Occipital lobe percentile,None,None,8,Right,Scale,Input
+OccipitalLobe_L_vol_2,Numeric,8,2,Left Occipital lobe volume,None,None,8,Right,Scale,Input
+OccipitalLobe_L_TIVperc_2,Numeric,8,2,Left Occipital lobe vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+OccipitalLobe_L_Zscore_2,Numeric,8,2,Left Occipital lobe z score,None,None,8,Right,Scale,Input
+OccipitalLobe_L_perc_2,Numeric,8,2,Left Occipital lobe percentile,None,None,8,Right,Scale,Input
+TemporalLobe_vol_2,Numeric,8,2,Temporal lobe volume,None,None,8,Right,Scale,Input
+TemporalLobe_TIVperc_2,Numeric,8,2,Temporal lobe vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+TemporalLobe_Zscore_2,Numeric,8,2,Temporal lobe z score,None,None,8,Right,Scale,Input
+TemporalLobe_perc_2,Numeric,8,2,Temporal lobe percentile,None,None,8,Right,Scale,Input
+TemporalLobe_R_vol_2,Numeric,8,2,Right Temporal lobe volume,None,None,8,Right,Scale,Input
+TemporalLobe_R_TIVperc_2,Numeric,8,2,Right Temporal lobe vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+TemporalLobe_R_Zscore_2,Numeric,8,2,Right Temporal lobe z score,None,None,8,Right,Scale,Input
+TemporalLobe_R_perc_2,Numeric,8,2,Right Temporal lobe percentile,None,None,8,Right,Scale,Input
+TemporalLobe_L_vol_2,Numeric,8,2,Left Temporal lobe volume,None,None,8,Right,Scale,Input
+TemporalLobe_L_TIVperc_2,Numeric,8,2,Left Temporal lobe vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+TemporalLobe_L_Zscore_2,Numeric,8,2,Left Temporal lobe z score,None,None,8,Right,Scale,Input
+TemporalLobe_L_perc_2,Numeric,8,2,Left Temporal lobe percentile,None,None,8,Right,Scale,Input
+Cerebellum_vol_2,Numeric,8,2,cerebellum volume,None,None,8,Right,Scale,Input
+Cerebellum_TIVperc_2,Numeric,8,2,cerebellum vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+Cerebellum_Zscore_2,Numeric,8,2,cerebellum z score,None,None,8,Right,Scale,Input
+Cerebellum_perc_2,Numeric,8,2,cerebellum percentile,None,None,8,Right,Scale,Input
+Cerebellum_R_vol_2,Numeric,8,2,Right cerebellum volume,None,None,8,Right,Scale,Input
+Cerebellum_R_TIVperc_2,Numeric,8,2,Right cerebellum vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+Cerebellum_R_Zscore_2,Numeric,8,2,Right cerebellum z score,None,None,8,Right,Scale,Input
+Cerebellum_R_perc_2,Numeric,8,2,Right cerebellum percentile,None,None,8,Right,Scale,Input
+Cerebellum_L_vol_2,Numeric,8,2,Left cerebellum volume,None,None,8,Right,Scale,Input
+Cerebellum_L_TIVperc_2,Numeric,8,2,Left cerebellum vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+Cerebellum_L_Zscore_2,Numeric,8,2,Left cerebellum z score,None,None,8,Right,Scale,Input
+Cerebellum_L_perc_2,Numeric,8,2,Left cerebellum percentile,None,None,8,Right,Scale,Input
+CSF_Dura_vol_2,Numeric,8,2,CSF dura matter volume,None,None,8,Right,Scale,Input
+CSF_Dura_TIVperc_2,Numeric,8,2,CSF dura matter vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+CSF_Dura_Zscore_2,Numeric,8,2,CSF dura matter z score,None,None,8,Right,Scale,Input
+CSF_Dura_perc_2,Numeric,8,2,CSF dura matter percentile,None,None,8,Right,Scale,Input
+LateralVent_vol_2,Numeric,8,2,Lateral ventricles volume,None,None,8,Right,Scale,Input
+LateralVent_TIVperc_2,Numeric,8,2,Lateral ventricles vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+LateralVent_Zscore_2,Numeric,8,2,Lateral ventricles z score,None,None,8,Right,Scale,Input
+LateralVent_perc_2,Numeric,8,2,Lateral ventricles percentile,None,None,8,Right,Scale,Input
+LateralVent_R_vol_2,Numeric,8,2,Right Lateral ventricles volume,None,None,8,Right,Scale,Input
+LateralVent_R_TIVperc_2,Numeric,8,2,Right Lateral ventricles vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+LateralVent_R_Zscore_2,Numeric,8,2,Right Lateral ventricles z score,None,None,8,Right,Scale,Input
+LateralVent_R_perc_2,Numeric,8,2,Right Lateral ventricles percentile,None,None,8,Right,Scale,Input
+LateralVent_L_vol_2,Numeric,8,2,Left Lateral ventricles volume,None,None,8,Right,Scale,Input
+LateralVent_L_TIVperc_2,Numeric,8,2,Left Lateral ventricles vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+LateralVent_L_Zscore_2,Numeric,8,2,Left Lateral ventricles z score,None,None,8,Right,Scale,Input
+LateralVent_L_perc_2,Numeric,8,2,Left Lateral ventricles percentile,None,None,8,Right,Scale,Input
+CognitiveReserve1,Numeric,11,5,"educ (yrs), occup (categorized), WRAT_1 (SS) A-R  factor score   1 for analysis 1",None,None,13,Right,Scale,Input
+CognitiveReserve2,Numeric,11,5,"educ (yrs), occup (categorized), WRAT (SS with missing data)) A-R  factor score   1 for analysis 2",None,None,13,Right,Scale,Input
+CognitiveReserve3,Numeric,11,5,"educ (yrs), occup (categorized) A-R  factor score   1 for analysis 3",None,None,13,Right,Scale,Input
+CognitiveReserve4,Numeric,11,5,"educ (yrs), WRAT_1 (SS), A-R  factor score   1 for analysis 1",None,None,13,Right,Scale,Input
+CognitiveReserve5,Numeric,11,5,"educ (yrs), WRAT (SS w missing data), A-R  factor score   1 for analysis 2",None,None,13,Right,Scale,Input
+CognitiveReserve1_Dichot,Numeric,8,2,Median split of CognitiveReserve1,"{.00, Low CR}...",None,6,Right,Nominal,Input
+CognitiveReserve2_Dichot,Numeric,8,2,Median split of CognitiveReserve2,"{.00, Low CR}...",None,7,Right,Nominal,Input
+CognitiveReserve3_Dichot,Numeric,8,2,Median split of CognitiveReserve3,"{.00, Low CR}...",None,8,Right,Nominal,Input
+CognitiveReserve4_Dichot,Numeric,8,2,Median split of CognitiveReserve4,"{.00, Low CR}...",None,9,Right,Nominal,Input
+CognitiveReserve5_Dichot,Numeric,8,2,Median split of CognitiveReserve5,"{.00, Low CR}...",None,8,Right,Nominal,Input
+CR_BtwMeasureVariablility,Numeric,8,2,,"{.00, Consistently Low CR}...",None,24,Right,Nominal,Input
+memoryprofile_manuscript_includeVexclude,Numeric,8,2,exclude if normal and known history of stroke and no hvlt given,"{.00, include}...",None,8,Right,Nominal,Input
+all3memmeasures,Numeric,8,2,"completed hvlt, log mem, vis repro","{.00, yes}...",None,8,Right,Nominal,Input
+PPA_group,Numeric,8,2,,"{.00, logopenic}...",None,29,Right,Nominal,Input
+NeuroReaderDate_BL,Date,10,0,Date of MRI scan with NR,None,None,8,Right,Scale,Input
+mTIV_BL,Numeric,8,2,measured total intracranial volum (mTIV) mL,None,None,8,Right,Scale,Input
+WBV_vol_BL,Numeric,8,2,Whole Brain Volume mL,None,None,8,Right,Scale,Input
+WBV_TIVperc_BL,Numeric,8,2,Whole Brain vol/mTIV ratio (%),None,None,8,Right,Scale,Input
+WBV_Zscore_BL,Numeric,8,2,Whole Brain Volume z score,None,None,8,Right,Scale,Input
+WBV_perc_BL,Numeric,8,2,Whole Brain Volume percentile,None,None,8,Right,Scale,Input
+GrayMatter_vol_BL,Numeric,8,2,Gray Matter Volume mL,None,None,8,Right,Scale,Input
+GrayMatter_TIVperc_BL,Numeric,8,2,Gray Matter vol/mTIV ratio (%),None,None,8,Right,Scale,Input
+GrayMatter_Zscore_BL,Numeric,8,2,Gray Matter Volume z score,None,None,8,Right,Scale,Input
+GrayMatter_perc_BL,Numeric,8,2,Gray Matter Volume percentile,None,None,8,Right,Scale,Input
+WhiteMatter_vol_BL,Numeric,8,2,White Matter Volume mL,None,None,8,Right,Scale,Input
+WhiteMatter_TIVperc_BL,Numeric,8,2,White Matter vol/mTIV ratio (%),None,None,8,Right,Scale,Input
+WhiteMatter_Zscore_BL,Numeric,8,2,White Matter Volume z score,None,None,8,Right,Scale,Input
+WhiteMatter_perc_BL,Numeric,8,2,White Matter Volume percentile,None,None,8,Right,Scale,Input
+Hippocampus_Asym_Index_BL,Numeric,8,2,Hippocampus asymmetry index,None,None,8,Right,Scale,Input
+Hippocampus_Asym_Zscor_BL,Numeric,8,2,hippocampus asymmetry z score,None,None,8,Right,Scale,Input
+Hippocampus_Asym_percentile_BL,Numeric,8,2,hippocampus asymmetry percentile,None,None,8,Right,Scale,Input
+Hippocampus_vol_BL,Numeric,8,2,hippocampus volume,None,None,8,Right,Scale,Input
+Hippocampus_TIVperc_BL,Numeric,8,2,hippocampus vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+Hippocampus_Zscore_BL,Numeric,8,2,hippocampus z score,None,None,8,Right,Scale,Input
+Hippocampus_perc_BL,Numeric,8,2,hippocampus percentile,None,None,8,Right,Scale,Input
+Hippocampus_R_vol_BL,Numeric,8,2,Right hippocampus volume,None,None,8,Right,Scale,Input
+Hippocampus_R_TIVperc_BL,Numeric,8,2,Right hippocampus vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+Hippocampus_R_Zscore_BL,Numeric,8,2,Right hippocampus z score,None,None,8,Right,Scale,Input
+Hippocampus_R_perc_BL,Numeric,8,2,Right hippocampus percentile,None,None,8,Right,Scale,Input
+Hippocampus_L_vol_BL,Numeric,8,2,Left hippocampus volume,None,None,8,Right,Scale,Input
+Hippocampus_L_TIVperc_BL,Numeric,8,2,Left hippocampus vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+Hippocampus_L_Zscore_BL,Numeric,8,2,Left hippocampus z score,None,None,8,Right,Scale,Input
+Hippocampus_L_perc_BL,Numeric,8,2,Left hippocampus percentile,None,None,8,Right,Scale,Input
+Amygdala_vol_BL,Numeric,8,2,amygdala volume,None,None,8,Right,Scale,Input
+Amygdala_TIVperc_BL,Numeric,8,2,amygdala vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+Amygdala_Zscore_BL,Numeric,8,2,amygdala z score,None,None,8,Right,Scale,Input
+Amygdala_perc_BL,Numeric,8,2,amygdala percentile,None,None,8,Right,Scale,Input
+Amygdala_R_vol_BL,Numeric,8,2,Right amygdala volume,None,None,8,Right,Scale,Input
+Amygdala_R_TIVperc_BL,Numeric,8,2,Right amygdala vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+Amygdala_R_Zscore_BL,Numeric,8,2,Right amygdala z score,None,None,8,Right,Scale,Input
+Amygdala_R_perc_BL,Numeric,8,2,Right amygdala percentile,None,None,8,Right,Scale,Input
+Amygdala_L_vol_BL,Numeric,8,2,Left amygdala volume,None,None,8,Right,Scale,Input
+Amygdala_L_TIVperc_BL,Numeric,8,2,Left amygdala vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+Amygdala_L_Zscore_BL,Numeric,8,2,Left amygdala z score,None,None,8,Right,Scale,Input
+Amygdala_L_perc_BL,Numeric,8,2,Left amygdala percentile,None,None,8,Right,Scale,Input
+Putamen_vol_BL,Numeric,8,2,putamen volume,None,None,8,Right,Scale,Input
+Putamen_TIVperc_BL,Numeric,8,2,putamen vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+Putamen_Zscore_BL,Numeric,8,2,putamen z score,None,None,8,Right,Scale,Input
+Putamen_perc_BL,Numeric,8,2,putamen percentile,None,None,8,Right,Scale,Input
+Putamen_R_vol_BL,Numeric,8,2,Right putamen volume,None,None,8,Right,Scale,Input
+Putamen_R_TIVperc_BL,Numeric,8,2,Right putamen vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+Putamen_R_Zscore_BL,Numeric,8,2,Right putamen z score,None,None,8,Right,Scale,Input
+Putamen_R_perc_BL,Numeric,8,2,Right putamen percentile,None,None,8,Right,Scale,Input
+Putamen_L_vol_BL,Numeric,8,2,Left putamen volume,None,None,8,Right,Scale,Input
+Putamen_L_TIVperc_BL,Numeric,8,2,Left putamen vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+Putamen_L_Zscore_BL,Numeric,8,2,Left putamen z score,None,None,8,Right,Scale,Input
+Putamen_L_perc_BL,Numeric,8,2,Left putamen percentile,None,None,8,Right,Scale,Input
+Thalamus_vol_BL,Numeric,8,2,thalamus volume,None,None,8,Right,Scale,Input
+Thalamus_TIVperc_BL,Numeric,8,2,thalamus vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+Thalamus_Zscore_BL,Numeric,8,2,thalamus z score,None,None,8,Right,Scale,Input
+Thalamus_perc_BL,Numeric,8,2,thalamus percentile,None,None,8,Right,Scale,Input
+Thalamus_R_vol_BL,Numeric,8,2,Right thalamus volume,None,None,8,Right,Scale,Input
+Thalamus_R_TIVperc_BL,Numeric,8,2,Right thalamus vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+Thalamus_R_Zscore_BL,Numeric,8,2,Right thalamus z score,None,None,8,Right,Scale,Input
+Thalamus_R_perc_BL,Numeric,8,2,Right thalamus percentile,None,None,8,Right,Scale,Input
+Thalamus_L_vol_BL,Numeric,8,2,Left thalamus volume,None,None,8,Right,Scale,Input
+Thalamus_L_TIVperc_BL,Numeric,8,2,Left thalamus vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+Thalamus_L_Zscore_BL,Numeric,8,2,Left thalamus z score,None,None,8,Right,Scale,Input
+Thalamus_L_perc_BL,Numeric,8,2,Left thalamus percentile,None,None,8,Right,Scale,Input
+VentD_vol_BL,Numeric,8,2,Ventral diencephalon volume,None,None,8,Right,Scale,Input
+VentD_TIVperc_BL,Numeric,8,2,Ventral diencephalon vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+VentD_Zscore_BL,Numeric,8,2,Ventral diencephalon z score,None,None,8,Right,Scale,Input
+VentD_perc_BL,Numeric,8,2,Ventral diencephalon percentile,None,None,8,Right,Scale,Input
+VentD_R_vol_BL,Numeric,8,2,Right Ventral diencephalon volume,None,None,8,Right,Scale,Input
+VentD_R_TIVperc_BL,Numeric,8,2,Right Ventral diencephalon vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+VentD_R_Zscore_BL,Numeric,8,2,Right Ventral diencephalon z score,None,None,8,Right,Scale,Input
+VentD_R_perc_BL,Numeric,8,2,Right Ventral diencephalon percentile,None,None,8,Right,Scale,Input
+VentD_L_vol_BL,Numeric,8,2,Left Ventral diencephalon volume,None,None,8,Right,Scale,Input
+VentD_L_TIVperc_BL,Numeric,8,2,Left Ventral diencephalon vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+VentD_L_Zscore_BL,Numeric,8,2,Left Ventral diencephalon z score,None,None,8,Right,Scale,Input
+VentD_L_perc_BL,Numeric,8,2,Left Diencephalon ventricles percentile,None,None,8,Right,Scale,Input
+Pallidum_vol_BL,Numeric,8,2,pallidum volume,None,None,8,Right,Scale,Input
+Pallidum_TIVperc_BL,Numeric,8,2,pallidum vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+Pallidum_Zscore_BL,Numeric,8,2,pallidum z score,None,None,8,Right,Scale,Input
+Pallidum_perc_BL,Numeric,8,2,pallidum percentile,None,None,8,Right,Scale,Input
+Pallidum_R_vol_BL,Numeric,8,2,Right pallidum volume,None,None,8,Right,Scale,Input
+Pallidum_R_TIVperc_BL,Numeric,8,2,Right pallidum vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+Pallidum_R_Zscore_BL,Numeric,8,2,Right pallidum z score,None,None,8,Right,Scale,Input
+Pallidum_R_perc_BL,Numeric,8,2,Right pallidum percentile,None,None,8,Right,Scale,Input
+Pallidum_L_vol_BL,Numeric,8,2,Left pallidum volume,None,None,8,Right,Scale,Input
+Pallidum_L_TIVperc_BL,Numeric,8,2,Left pallidum vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+Pallidum_L_Zscore_BL,Numeric,8,2,Left pallidum z score,None,None,8,Right,Scale,Input
+Pallidum_L_perc_BL,Numeric,8,2,Left pallidum percentile,None,None,8,Right,Scale,Input
+Caudate_vol_BL,Numeric,8,2,caudate volume,None,None,8,Right,Scale,Input
+Caudate_TIVperc_BL,Numeric,8,2,caudate vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+Caudate_Zscore_BL,Numeric,8,2,caudate z score,None,None,8,Right,Scale,Input
+Caudate_perc_BL,Numeric,8,2,caudate percentile,None,None,8,Right,Scale,Input
+Caudate_R_vol_BL,Numeric,8,2,Right caudate volume,None,None,8,Right,Scale,Input
+Caudate_R_TIVperc_BL,Numeric,8,2,Right caudate vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+Caudate_R_Zscore_BL,Numeric,8,2,Right caudate z score,None,None,8,Right,Scale,Input
+Caudate_R_perc_BL,Numeric,8,2,Right caudate percentile,None,None,8,Right,Scale,Input
+Caudate_L_vol_BL,Numeric,8,2,Left caudate volume,None,None,8,Right,Scale,Input
+Caudate_L_TIVperc_BL,Numeric,8,2,Left caudate vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+Caudate_L_Zscore_BL,Numeric,8,2,Left caudate z score,None,None,8,Right,Scale,Input
+Caudate_L_perc_BL,Numeric,8,2,Left caudate percentile,None,None,8,Right,Scale,Input
+BrainStem_vol_BL,Numeric,8,2,brain stem volume,None,None,8,Right,Scale,Input
+BrainStem_TIVperc_BL,Numeric,8,2,brain stem vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+BrainStem_Zscore_BL,Numeric,8,2,brain stem z score,None,None,8,Right,Scale,Input
+BrainStem_perc_BL,Numeric,8,2,brain stem percentile,None,None,8,Right,Scale,Input
+FrontalLobe_vol_BL,Numeric,8,2,Frontal lobe volume,None,None,8,Right,Scale,Input
+FrontalLobe_TIVperc_BL,Numeric,8,2,Frontal lobe vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+FrontalLobe_Zscore_BL,Numeric,8,2,Frontal lobe z score,None,None,8,Right,Scale,Input
+FrontalLobe_perc_BL,Numeric,8,2,Frontal lobe percentile,None,None,8,Right,Scale,Input
+FrontalLobe_R_vol_BL,Numeric,8,2,Right Frontal lobe volume,None,None,8,Right,Scale,Input
+FrontalLobe_R_TIVperc_BL,Numeric,8,2,Right Frontal lobe vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+FrontalLobe_R_Zscore_BL,Numeric,8,2,Right Frontal lobe z score,None,None,8,Right,Scale,Input
+FrontalLobe_R_perc_BL,Numeric,8,2,Right Frontal lobe percentile,None,None,8,Right,Scale,Input
+FrontalLobe_L_vol_BL,Numeric,8,2,Left Frontal lobe volume,None,None,8,Right,Scale,Input
+FrontalLobe_L_TIVperc_BL,Numeric,8,2,Left Frontal lobe vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+FrontalLobe_L_Zscore_BL,Numeric,8,2,Left Frontal lobe z score,None,None,8,Right,Scale,Input
+FrontalLobe_L_perc_BL,Numeric,8,2,Left Frontal lobe percentile,None,None,8,Right,Scale,Input
+ParietalLobe_vol_BL,Numeric,8,2,Parietal lobe volume,None,None,8,Right,Scale,Input
+ParietalLobe_TIVperc_BL,Numeric,8,2,Parietal lobe vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+ParietalLobe_Zscore_BL,Numeric,8,2,Parietal lobe z score,None,None,8,Right,Scale,Input
+ParietalLobe_perc_BL,Numeric,8,2,Parietal lobe percentile,None,None,8,Right,Scale,Input
+ParietalLobe_R_vol_BL,Numeric,8,2,Right Parietal lobe volume,None,None,8,Right,Scale,Input
+ParietalLobe_R_TIVperc_BL,Numeric,8,2,Right Parietal lobe vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+ParietalLobe_R_Zscore_BL,Numeric,8,2,Right Parietal lobe z score,None,None,8,Right,Scale,Input
+ParietalLobe_R_perc_BL,Numeric,8,2,Right Parietal lobe percentile,None,None,8,Right,Scale,Input
+ParietalLobe_L_vol_BL,Numeric,8,2,Left Parietal lobe volume,None,None,8,Right,Scale,Input
+ParietalLobe_L_TIVperc_BL,Numeric,8,2,Left Parietal lobe vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+ParietalLobe_L_Zscore_BL,Numeric,8,2,Left Parietal lobe z score,None,None,8,Right,Scale,Input
+ParietalLobe_L_perc_BL,Numeric,8,2,Left Parietal lobe percentile,None,None,8,Right,Scale,Input
+OccipitalLobe_vol_BL,Numeric,8,2,Occipital lobe volume,None,None,8,Right,Scale,Input
+OccipitalLobe_TIVperc_BL,Numeric,8,2,Occipital lobe vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+OccipitalLobe_Zscore_BL,Numeric,8,2,Occipital lobe z score,None,None,8,Right,Scale,Input
+OccipitalLobe_perc_BL,Numeric,8,2,Occipital lobe percentile,None,None,8,Right,Scale,Input
+OccipitalLobe_R_vol_BL,Numeric,8,2,Right Occipital lobe volume,None,None,8,Right,Scale,Input
+OccipitalLobe_R_TIVperc_BL,Numeric,8,2,Right Occipital lobe vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+OccipitalLobe_R_Zscore_BL,Numeric,8,2,Right Occipital lobe z score,None,None,8,Right,Scale,Input
+OccipitalLobe_R_perc_BL,Numeric,8,2,Right Occipital lobe percentile,None,None,8,Right,Scale,Input
+OccipitalLobe_L_vol_BL,Numeric,8,2,Left Occipital lobe volume,None,None,8,Right,Scale,Input
+OccipitalLobe_L_TIVperc_BL,Numeric,8,2,Left Occipital lobe vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+OccipitalLobe_L_Zscore_BL,Numeric,8,2,Left Occipital lobe z score,None,None,8,Right,Scale,Input
+OccipitalLobe_L_perc_BL,Numeric,8,2,Left Occipital lobe percentile,None,None,8,Right,Scale,Input
+TemporalLobe_vol_BL,Numeric,8,2,Temporal lobe volume,None,None,8,Right,Scale,Input
+TemporalLobe_TIVperc_BL,Numeric,8,2,Temporal lobe vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+TemporalLobe_Zscore_BL,Numeric,8,2,Temporal lobe z score,None,None,8,Right,Scale,Input
+TemporalLobe_perc_BL,Numeric,8,2,Temporal lobe percentile,None,None,8,Right,Scale,Input
+TemporalLobe_R_vol_BL,Numeric,8,2,Right Temporal lobe volume,None,None,8,Right,Scale,Input
+TemporalLobe_R_TIVperc_BL,Numeric,8,2,Right Temporal lobe vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+TemporalLobe_R_Zscore_BL,Numeric,8,2,Right Temporal lobe z score,None,None,8,Right,Scale,Input
+TemporalLobe_R_perc_BL,Numeric,8,2,Right Temporal lobe percentile,None,None,8,Right,Scale,Input
+TemporalLobe_L_vol_BL,Numeric,8,2,Left Temporal lobe volume,None,None,8,Right,Scale,Input
+TemporalLobe_L_TIVperc_BL,Numeric,8,2,Left Temporal lobe vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+TemporalLobe_L_Zscore_BL,Numeric,8,2,Left Temporal lobe z score,None,None,8,Right,Scale,Input
+TemporalLobe_L_perc_BL,Numeric,8,2,Left Temporal lobe percentile,None,None,8,Right,Scale,Input
+Cerebellum_vol_BL,Numeric,8,2,cerebellum volume,None,None,8,Right,Scale,Input
+Cerebellum_TIVperc_BL,Numeric,8,2,cerebellum vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+Cerebellum_Zscore_BL,Numeric,8,2,cerebellum z score,None,None,8,Right,Scale,Input
+Cerebellum_perc_BL,Numeric,8,2,cerebellum percentile,None,None,8,Right,Scale,Input
+Cerebellum_R_vol_BL,Numeric,8,2,Right cerebellum volume,None,None,8,Right,Scale,Input
+Cerebellum_R_TIVperc_BL,Numeric,8,2,Right cerebellum vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+Cerebellum_R_Zscore_BL,Numeric,8,2,Right cerebellum z score,None,None,8,Right,Scale,Input
+Cerebellum_R_perc_BL,Numeric,8,2,Right cerebellum percentile,None,None,8,Right,Scale,Input
+Cerebellum_L_vol_BL,Numeric,8,2,Left cerebellum volume,None,None,8,Right,Scale,Input
+Cerebellum_L_TIVperc_BL,Numeric,8,2,Left cerebellum vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+Cerebellum_L_Zscore_BL,Numeric,8,2,Left cerebellum z score,None,None,8,Right,Scale,Input
+Cerebellum_L_perc_BL,Numeric,8,2,Left cerebellum percentile,None,None,8,Right,Scale,Input
+CSF_Dura_vol_BL,Numeric,8,2,CSF dura matter volume,None,None,8,Right,Scale,Input
+CSF_Dura_TIVperc_BL,Numeric,8,2,CSF dura matter vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+CSF_Dura_Zscore_BL,Numeric,8,2,CSF dura matter z score,None,None,8,Right,Scale,Input
+CSF_Dura_perc_BL,Numeric,8,2,CSF dura matter percentile,None,None,8,Right,Scale,Input
+LateralVent_vol_BL,Numeric,8,2,Lateral ventricles volume,None,None,8,Right,Scale,Input
+LateralVent_TIVperc_BL,Numeric,8,2,Lateral ventricles vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+LateralVent_Zscore_BL,Numeric,8,2,Lateral ventricles z score,None,None,8,Right,Scale,Input
+LateralVent_perc_BL,Numeric,8,2,Lateral ventricles percentile,None,None,8,Right,Scale,Input
+LateralVent_R_vol_BL,Numeric,8,2,Right Lateral ventricles volume,None,None,8,Right,Scale,Input
+LateralVent_R_TIVperc_BL,Numeric,8,2,Right Lateral ventricles vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+LateralVent_R_Zscore_BL,Numeric,8,2,Right Lateral ventricles z score,None,None,8,Right,Scale,Input
+LateralVent_R_perc_BL,Numeric,8,2,Right Lateral ventricles percentile,None,None,8,Right,Scale,Input
+LateralVent_L_vol_BL,Numeric,8,2,Left Lateral ventricles volume,None,None,8,Right,Scale,Input
+LateralVent_L_TIVperc_BL,Numeric,8,2,Left Lateral ventricles vol/mTIV ratio(%),None,None,8,Right,Scale,Input
+LateralVent_L_Zscore_BL,Numeric,8,2,Left Lateral ventricles z score,None,None,8,Right,Scale,Input
+LateralVent_L_perc_BL,Numeric,8,2,Left Lateral ventricles percentile,None,None,8,Right,Scale,Input
