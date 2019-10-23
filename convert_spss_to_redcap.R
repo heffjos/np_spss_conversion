@@ -17,6 +17,13 @@ prepare_instrument_data <- function(instrument, data) {
 
     out <- data %>%
       mutate(redcap_repeat_instrument = instrument) %>%
+      select(record_id, everything()) %>%
+      select(-redcap_repeat_instrument, -redcap_repeat_instance)
+
+  } else if (instrument == "repeated_demographics") {
+
+    out <- data %>%
+      mutate(redcap_repeat_instrument = instrument) %>%
       select(record_id, redcap_repeat_instrument, redcap_repeat_instance, everything())
 
   } else if (instrument == "neurology") {
@@ -29,7 +36,8 @@ prepare_instrument_data <- function(instrument, data) {
     
     out <- data %>%
       mutate(redcap_repeat_instrument = "") %>%
-      select(record_id, redcap_repeat_instrument, redcap_repeat_instance, everything())
+      select(record_id, everything()) %>%
+      select(-redcap_repeat_instrument, -redcap_repeat_instance)
 
   } else if (instrument == "neuropsych_tests") {
 
@@ -48,7 +56,8 @@ prepare_instrument_data <- function(instrument, data) {
 
     out <- data %>%
       mutate(redcap_repeat_instrument = "") %>%
-      select(record_id, redcap_repeat_instrument, redcap_repeat_instance, everything())
+      select(record_id, everything()) %>%
+      select(-redcap_repeat_instrument, -redcap_repeat_instance)
 
   } else {
 
@@ -60,7 +69,7 @@ prepare_instrument_data <- function(instrument, data) {
 }
   
 
-data <- read_tsv("/home/jheffernan/test.tsv")
+data <- read_tsv("/home/heffjos/Documents/Work/lumfleet/test.tsv")
 
 record_ids <- data %>%
   select(MRN) %>%
@@ -72,6 +81,11 @@ data <- data %>%
 
 name_mapper = c(
   "filter_$" = "filter_anc",
+
+  #demographics
+  "lang_sec_BL" = "lang_sec_BL_BL",
+  "lang_first_BL" = "lang_first_BL_BL",
+  "lang_fluency_BL" = "lang_fluency_BL_BL",
 
   # neuropsych_tests
   "cognitive_change" = "cognitive_change_1",
@@ -85,7 +99,66 @@ name_mapper = c(
   "trails_ver" = "trails_ver_1",
   "wcst_ver" = "wcst_ver_1",
   "NpsyDate_1" = "np_date_1",
-  "Date_BL" = "np_date_BL")
+  "Date_BL" = "np_date_BL",
+  "moca_1_date" = "moca_date_1",
+  "WordListMemProfile2" = "WordListMemProfile_2",
+  "wratread_ss_MissingData" = "wratread_ss_MissingData_BL",
+  "Amnestic_NPsyRating" = "Amnestic_NPsyRating_BL",
+  "MCIType_WMLoad" = "MCIType_WMLoad_BL",
+  # some profiles for something with neuropsych I think
+  "wordlist_profile_lu_1.5SD" = "wordlist_profile_lu_1d5SD_BL",
+  "LM_profile_lu_1.5SD" = "LM_profile_lu_1d5SD_BL",
+  "VR_profile_lu_1.5SD" = "VR_profile_lu_1d5SD_BL",
+  "memory_profile_1.5SD" = "memory_profile_1d5SD_BL",
+  "memory_profile_1.5SD_luLATEST" = "memory_profile_1d5SD_luLATEST_BL",
+  "wordlist_profile_lu_1SD" = "wordlist_profile_lu_1SD_BL",
+  "wordlist_profile_petersenORIGINAL" = "wordlist_profile_petersenORIGINAL_BL",
+  "wordlist_profile_petersenwithrecognition" = "wordlist_profile_petersenwithrecognition_BL",
+  "LM_profile_lu_1SD" = "LM_profile_lu_1SD_BL",
+  "VR_profile_lu_1SD" = "VR_profile_lu_1SD_BL",
+  "memory_profile_1SD_luLATEST" = "memory_profile_1SD_luLATEST_BL",
+  "memory_profile_lu_1SD" = "memory_profile_lu_1SD_BL",
+
+  # neurology
+  "VascularRisks_Burden" = "VascularRisks_Burden_BL",
+  "PPA_group" = "PPA_group_BL",
+  "etiology_1_NPsy" = "etiology_NPsy_1",
+  "Etiology_1_Neurology" = "etiology_neurology_1",
+  "etiology_1_Neurology_Explained" = "etiology_neurology_explained_1", 
+  "etiology_BL_explained" = "etiology_explained_BL",
+  "etiology_1_explained" = "etiology_explained_1",
+  "etiology_2_explained" = "etiology_explained_2",
+  "etiology_3_explained" = "etiology_explained_3",
+  # below are missing a timepoint, so I added them to baseline (_BL)
+  "Include_JakBondi" = "Include_JakBondi_BL", 
+  "JakBondi_MCI_type" = "JakBondi_MCI_type_BL", 
+  "JakBondi_MCI_AmnesticvsNonamnestic" = "JakBondi_MCI_AmnesticvsNonamnestic_BL", 
+  "JakBondi_Domains" = "JakBondi_Domains_BL", 
+  "PetersenMCItype" = "PetersenMCItype_BL", 
+  "PetersenMCI_Domains" = "PetersenMCI_Domains_BL", 
+  "Petersen_AmnesticvsNonamnestic" = "Petersen_AmnesticvsNonamnestic_BL", 
+  "notes" = "notes_BL", 
+  "Amnestic" = "Amnestic_BL", 
+  "PetersenAmnestic" = "PetersenAmnestic_BL", 
+  "Domains" = "Domains_BL", 
+  "PetersenDomains" = "PetersenDomains_BL", 
+  "MCItype" = "MCItype_BL", 
+  "frontosubcort_v_amnestic" = "frontosubcort_v_amnestic_BL", 
+  "frontosubcort_v_amnestic_anc" = "frontosubcort_v_amnestic_anc_BL", 
+  "original_frontosub_v_am_anc" = "original_frontosub_v_am_anc_BL", 
+  "etiology_NPsy_Explained" = "etiology_NPsy_Explained_BL", 
+  "neurologyvisitdate" = "neurologyvisitdate_BL", 
+  "neurology_dx_old" = "neurology_dx_old_BL", 
+  "etiology_anc" = "etiology_anc_BL", 
+  "neurobehav_anc" = "neurobehav_anc_BL", 
+  "data_entry_ambiguities" = "data_entry_ambiguities_BL", 
+  "VascularRisksPresent" = "VascularRisksPresent_BL", 
+  "VascularRisks_Number" = "VascularRisks_Number_BL",
+  "dxdiscrepancybetweenproviders" = "dxdiscrepancybetweenproviders_BL",
+
+  # neuroreader
+  "Hippocampus_Zscore1_3groups" = "Hippocampus_Zscore1_3groups_BL",
+  "CR_BtwMeasureVariability" = "CR_BtwMeasureVariability_BL")
 
 data_dictionary_file <- "clinical_data_dictionary_latest.csv"
 
@@ -125,6 +198,10 @@ data_long <- data %>%
          redcap = str_remove(key, "_([:digit:]|[bB][lL])$"),
          redcap = str_to_lower(redcap)) %>%
   left_join(data_dictionary %>% select(redcap, form_name), by = "redcap")
+
+no_values <- data_long %>%
+  select(key, redcap_repeat_instance, redcap, form_name) %>%
+  distinct()
 
 has_subtests <- data_long %>%
   filter(form_name == "neuropsych_tests", !is.na(redcap_repeat_instance)) %>%
@@ -177,7 +254,14 @@ nested_form_names <- data_long %>%
 # write out instruments
 nested_form_names %>%
   mutate(file_name = paste0("tp-all_", form_name, ".csv"),
-         prepared_data = walk2(prepared_data, file_name, write_csv))
+         prepared_data = walk2(prepared_data, file_name, write_csv, na = ""))
+
+# write out all instruments in one giant csv file
+nested_form_names %>%
+  filter(!is.na(form_name)) %>%
+  pull(prepared_data) %>%
+  bind_rows() %>%
+  write_csv("all_data.csv", na = "")
   
 
 # get variables with missing instances
@@ -200,9 +284,13 @@ extra_in_redcap <- data_dictionary %>%
   select(redcap, form_name)
 
 write_csv(extra_in_redcap, "info_extra_in_redcap.csv")
+
+# write out mapped variables information
+name_mapper_df <- tibble(original_key = names(name_mapper), new_key = unname(name_mapper))
+
+name_mapper_df <- name_mapper_df %>%
+  left_join(no_values, by = c("new_key" = "key"))
   
-
-
 # demographics     - has multiple instances, not a repeated instrument
 # neurology        - has multiple instances, not a repeated instrument
 # baseline_testing - looks good
