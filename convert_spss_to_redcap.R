@@ -65,6 +65,10 @@ prepare_instrument_data <- function(instrument, data) {
 
   }
 
+  if (!is.na(instrument)) {
+    out[paste0(instrument, "_complete")] = 2
+  }
+
   return(out)
 }
   
