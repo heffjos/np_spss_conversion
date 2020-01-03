@@ -86,11 +86,6 @@ data <- data %>%
 name_mapper = c(
   "filter_$" = "filter_anc",
 
-  #demographics
-  "lang_sec_BL" = "lang_sec_BL_BL",
-  "lang_first_BL" = "lang_first_BL_BL",
-  "lang_fluency_BL" = "lang_fluency_BL_BL",
-
   # neuropsych_tests
   "cognitive_change" = "cognitive_change_1",
   "depression_label" = "depression_label_1",
@@ -161,8 +156,7 @@ name_mapper = c(
   "dxdiscrepancybetweenproviders" = "dxdiscrepancybetweenproviders_BL",
 
   # neuroreader
-  "Hippocampus_Zscore1_3groups" = "Hippocampus_Zscore1_3groups_BL",
-  "CR_BtwMeasureVariability" = "CR_BtwMeasureVariability_BL")
+  "Hippocampus_Zscore1_3groups" = "Hippocampus_Zscore1_3groups_BL")
 
 data_dictionary_file <- "clinical_data_dictionary_latest.csv"
 
