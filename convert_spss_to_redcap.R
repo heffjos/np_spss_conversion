@@ -6,6 +6,13 @@ library(tidyverse)
 
 # non-repeated instruments do not have redcap_repeat_instrument or redcap_repeat_instance
 
+common_repeated_instruments <- c("repeated_demographics",
+                                 "neurology",
+                                 "neuroreader",
+                                 "health",
+                                 "medication",
+                                 "psychhx")
+
 prepare_instrument_data <- function(instrument, data) {
   cat("Instrument: ", instrument, "\n")
 
@@ -13,24 +20,18 @@ prepare_instrument_data <- function(instrument, data) {
 
     out <- data
 
+  } else if (instrument %in% common_repeated_instruments) {
+
+    out <- data %>%
+      mutate(redcap_repeat_instrument = instrument) %>%
+      select(record_id, redcap_repeat_instrument, redcap_repeat_instance, everything())
+
   } else if (instrument == "demographics") {
 
     out <- data %>%
       mutate(redcap_repeat_instrument = instrument) %>%
       select(record_id, everything()) %>%
       select(-redcap_repeat_instrument, -redcap_repeat_instance)
-
-  } else if (instrument == "repeated_demographics") {
-
-    out <- data %>%
-      mutate(redcap_repeat_instrument = instrument) %>%
-      select(record_id, redcap_repeat_instrument, redcap_repeat_instance, everything())
-
-  } else if (instrument == "neurology") {
-
-    out <- data %>%
-      mutate(redcap_repeat_instrument = instrument) %>%
-      select(record_id, redcap_repeat_instrument, redcap_repeat_instance, everything())
 
   } else if (instrument == "baseline_testing") {
     
@@ -45,12 +46,6 @@ prepare_instrument_data <- function(instrument, data) {
       mutate(redcap_repeat_instrument = instrument) %>%
       select(record_id, redcap_repeat_instrument, redcap_repeat_instance, everything()) %>%
       left_join(has_subtests, by = c("record_id", "redcap_repeat_instance"))
-
-  } else if (instrument == "neuroreader") {
-
-    out <- data %>%
-      mutate(redcap_repeat_instrument = instrument) %>%
-      select(record_id, redcap_repeat_instrument, redcap_repeat_instance, everything())
 
   } else if (instrument == "other") {
 
@@ -180,6 +175,7 @@ data_dictionary  <- read_csv(data_dictionary_file, skip = 1,
                                            "matrix_ranking", 
                                            "field_annotations"))
 
+# create tibble to inidicate if neuropsych test is part of a subtest
 neuropsych_subtests <- data_dictionary %>%
   filter(form_name == "neuropsych_tests", 
          str_detect(branching_logic, '\\[.*\\] = "1"')) %>%
