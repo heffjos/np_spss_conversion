@@ -68,15 +68,10 @@ prepare_instrument_data <- function(instrument, data) {
 }
   
 
-data <- read_tsv("/home/heffjos/Documents/Work/lumfleet/test.tsv")
-
-record_ids <- data %>%
-  select(MRN) %>%
-  distinct() %>%
-  mutate(record_id = 1:n())
+data <- read_csv("/home/jheffernan/test.tsv")
 
 data <- data %>%
-  left_join(record_ids, by = "MRN")
+  rename(record_id = "subjectID")
 
 name_mapper = c(
   "filter_$" = "filter_anc",
