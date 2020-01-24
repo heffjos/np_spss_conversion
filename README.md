@@ -44,7 +44,7 @@ All instruments require a "record_id" REDCap variable to be set. Repeatable inst
 
 ## Independently Modifiying REDCap data dictionary
 When idependently modifiying the redcap data dictionary to match newly added SPSS variables follow these naming scheme guidelines for the SPSS variables:
-* If the SPSS variables correspond to a non-repeatable instrument, do *not* add a timepoint to the end of the SPSS variable name. Examples of timepoints are "_1", "_2", and so on.
+* If the SPSS variables correspond to a non-repeatable instrument, do **not** add a timepoint to the end of the SPSS variable name. Examples of timepoints are "_1", "_2", and so on.
 * If the SPSS variables correspond to a repeatable instrument, indicate the timepoint for the variable by appending "_BL", "_1", "_2", and so on the the end of the base SPSS variable name. Keep the base SPSS variable name consistent across timepoints. If the variable is restricted to certain values, make sure the restrictions are the same in SPSS across timepoints.
 
 ## Definitions
